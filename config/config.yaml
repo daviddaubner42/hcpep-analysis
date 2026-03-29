@@ -1,0 +1,18 @@
+datadir:  "/data/cephfs-2/unmirrored/groups/ritter/MR_processing/HCP-EP/derivatives_2026/xcp_d"
+rootdir: "/data/cephfs-1/work/groups/ritter/users/dada15_c/hcep-analysis"
+outdir: "/data/cephfs-2/unmirrored/groups/ritter/MR_processing/HCP-EP/anlysis"
+
+excluded_participants:
+  - RSGK017
+  - LENMDA001
+  - LENMDA006
+  - LENMDA172
+  - LENMDA187
+  - LENMDA191
+
+window_size: 30
+step_size: 1
+
+min_density: 0.1
+max_density: 0.6
+density_step: 0.05
