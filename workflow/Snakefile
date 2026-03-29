@@ -169,7 +169,7 @@ rule reorder_to_networks:
         outdir = outdir,
         fcdir = os.path.join(outdir, "results", "static")
     output:
-        os.path.join(outdir, "results", "static", "{thread}_avg_nmdare_fc_reordered.csv"),
+        os.path.join(outdir, "results", "static", "{thread}_avg_patient_fc_reordered.csv"),
         os.path.join(outdir, "results", "static", "{thread}_avg_hc_fc_reordered.csv"),
         os.path.join(outdir, "results", "static", "{thread}_p_vals_reordered.csv"),
         os.path.join(outdir, "results", "static", "{thread}_p_vals_fdr_reordered.csv"),
