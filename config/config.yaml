@@ -1,6 +1,6 @@
 datadir:  "/data/cephfs-2/unmirrored/groups/ritter/MR_processing/HCP-EP/derivatives_2026/"
-rootdir: "/data/cephfs-1/work/groups/ritter/users/dada15_c/hcep-analysis"
-outdir: "/data/cephfs-2/unmirrored/groups/ritter/MR_processing/HCP-EP/anlysis"
+rootdir: "/data/cephfs-1/work/groups/ritter/users/dada15_c/hcpep-analysis"
+outdir: "/data/cephfs-2/unmirrored/groups/ritter/MR_processing/HCP-EP/analysis"
 
 excluded_participants:
   - RSGK017
