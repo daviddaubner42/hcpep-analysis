@@ -1,0 +1,13 @@
+prefix=/Users/brainsimulation/Desktop/hcpep-analysis/.snakemake/conda/dbde035f73f29d4902bb4ff9d7926cb9_
+exec_prefix=/Users/brainsimulation/Desktop/hcpep-analysis/.snakemake/conda/dbde035f73f29d4902bb4ff9d7926cb9_
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/coin
+
+Name: CLP
+Description: COIN-OR Linear Programming Solver
+URL: https://projects.coin-or.org/Clp
+Version: 1.17.11
+Libs: -L${libdir} -lClpSolver -lClp 
+Libs.private: 
+Cflags: -I${includedir}
+Requires.private: coinutils 

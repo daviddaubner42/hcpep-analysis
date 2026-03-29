@@ -1,0 +1,574 @@
+{
+  "name": "pulp",
+  "version": "2.8.0",
+  "build": "py313hf4b1061_3",
+  "build_number": 3,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "subdir": "osx-64",
+  "fn": "pulp-2.8.0-py313hf4b1061_3.conda",
+  "md5": "bb6ed2f0cb9f2053b9364ced73491e5d",
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/pulp-2.8.0-py313hf4b1061_3.conda",
+  "sha256": "f2950258e45e59a23bb6e7a81ee83af88417a59ffc9531a7e98e83a7b8aa9c02",
+  "depends": [
+    "amply >=0.1.2",
+    "coin-or-cbc",
+    "python >=3.13,<3.14.0a0",
+    "python_abi 3.13.* *_cp313"
+  ],
+  "constrains": [],
+  "license": "MIT",
+  "timestamp": 1757853494000,
+  "size": 226974,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/Users/brainsimulation/Applications/fsl/pkgs/pulp-2.8.0-py313hf4b1061_3",
+  "extracted_package_dir": "/Users/brainsimulation/Applications/fsl/pkgs/pulp-2.8.0-py313hf4b1061_3",
+  "files": [
+    "bin/pulptest",
+    "lib/python3.13/site-packages/pulp-2.8.0.dist-info/INSTALLER",
+    "lib/python3.13/site-packages/pulp-2.8.0.dist-info/METADATA",
+    "lib/python3.13/site-packages/pulp-2.8.0.dist-info/RECORD",
+    "lib/python3.13/site-packages/pulp-2.8.0.dist-info/REQUESTED",
+    "lib/python3.13/site-packages/pulp-2.8.0.dist-info/WHEEL",
+    "lib/python3.13/site-packages/pulp-2.8.0.dist-info/direct_url.json",
+    "lib/python3.13/site-packages/pulp-2.8.0.dist-info/entry_points.txt",
+    "lib/python3.13/site-packages/pulp-2.8.0.dist-info/licenses/AUTHORS",
+    "lib/python3.13/site-packages/pulp-2.8.0.dist-info/licenses/LICENSE",
+    "lib/python3.13/site-packages/pulp-2.8.0.dist-info/top_level.txt",
+    "lib/python3.13/site-packages/pulp/__init__.py",
+    "lib/python3.13/site-packages/pulp/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/__pycache__/constants.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/__pycache__/mps_lp.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/__pycache__/pulp.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/__pycache__/sparse.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/__pycache__/utilities.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/apis/__init__.py",
+    "lib/python3.13/site-packages/pulp/apis/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/apis/__pycache__/choco_api.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/apis/__pycache__/coin_api.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/apis/__pycache__/copt_api.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/apis/__pycache__/core.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/apis/__pycache__/cplex_api.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/apis/__pycache__/glpk_api.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/apis/__pycache__/gurobi_api.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/apis/__pycache__/highs_api.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/apis/__pycache__/mipcl_api.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/apis/__pycache__/mosek_api.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/apis/__pycache__/scip_api.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/apis/__pycache__/xpress_api.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/apis/choco_api.py",
+    "lib/python3.13/site-packages/pulp/apis/coin_api.py",
+    "lib/python3.13/site-packages/pulp/apis/copt_api.py",
+    "lib/python3.13/site-packages/pulp/apis/core.py",
+    "lib/python3.13/site-packages/pulp/apis/cplex_api.py",
+    "lib/python3.13/site-packages/pulp/apis/glpk_api.py",
+    "lib/python3.13/site-packages/pulp/apis/gurobi_api.py",
+    "lib/python3.13/site-packages/pulp/apis/highs_api.py",
+    "lib/python3.13/site-packages/pulp/apis/mipcl_api.py",
+    "lib/python3.13/site-packages/pulp/apis/mosek_api.py",
+    "lib/python3.13/site-packages/pulp/apis/scip_api.py",
+    "lib/python3.13/site-packages/pulp/apis/xpress_api.py",
+    "lib/python3.13/site-packages/pulp/constants.py",
+    "lib/python3.13/site-packages/pulp/mps_lp.py",
+    "lib/python3.13/site-packages/pulp/pulp.cfg.buildout",
+    "lib/python3.13/site-packages/pulp/pulp.cfg.linux",
+    "lib/python3.13/site-packages/pulp/pulp.cfg.osx",
+    "lib/python3.13/site-packages/pulp/pulp.cfg.win",
+    "lib/python3.13/site-packages/pulp/pulp.py",
+    "lib/python3.13/site-packages/pulp/solverdir/__init__.py",
+    "lib/python3.13/site-packages/pulp/solverdir/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/sparse.py",
+    "lib/python3.13/site-packages/pulp/tests/__init__.py",
+    "lib/python3.13/site-packages/pulp/tests/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/tests/__pycache__/bin_packing_problem.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/tests/__pycache__/run_tests.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/tests/__pycache__/test_examples.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/tests/__pycache__/test_gurobipy_env.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/tests/__pycache__/test_pulp.cpython-313.pyc",
+    "lib/python3.13/site-packages/pulp/tests/bin_packing_problem.py",
+    "lib/python3.13/site-packages/pulp/tests/run_tests.py",
+    "lib/python3.13/site-packages/pulp/tests/test_examples.py",
+    "lib/python3.13/site-packages/pulp/tests/test_gurobipy_env.py",
+    "lib/python3.13/site-packages/pulp/tests/test_pulp.py",
+    "lib/python3.13/site-packages/pulp/utilities.py"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "bin/pulptest",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/pulp_1757853259433/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "sha256": "13e7ab6bd4ffa822fd6893ccc2b116f11124ca89eae9097fce9d33ae91bcbee6",
+        "size_in_bytes": 456,
+        "sha256_in_prefix": "4c8c760c47044d7851db4fb5ca5ca6f1a2e806764977661d349ca9ceab1d22d7"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp-2.8.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5,
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp-2.8.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "312334dc872db8fbb01814b98a08e2893095551009bda5b6a08bbcf9529813b0",
+        "size_in_bytes": 5600,
+        "sha256_in_prefix": "312334dc872db8fbb01814b98a08e2893095551009bda5b6a08bbcf9529813b0"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp-2.8.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "90e498994ef5d276d9f5957a66d41f9162838a539418aba1021337058dc696fa",
+        "size_in_bytes": 6814,
+        "sha256_in_prefix": "90e498994ef5d276d9f5957a66d41f9162838a539418aba1021337058dc696fa"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp-2.8.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp-2.8.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "ff309ddcdd65ebd02bc724dbf2bcc4a0ff53a5b61792a44548d383e4ebb19d3b",
+        "size_in_bytes": 91,
+        "sha256_in_prefix": "ff309ddcdd65ebd02bc724dbf2bcc4a0ff53a5b61792a44548d383e4ebb19d3b"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp-2.8.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "c68103fa3f0be43cc796861cd855cf65e21a8330027acf1da0b3ca8e4e44e774",
+        "size_in_bytes": 92,
+        "sha256_in_prefix": "c68103fa3f0be43cc796861cd855cf65e21a8330027acf1da0b3ca8e4e44e774"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp-2.8.0.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "f5ee117558c949b7a0b408afd2a561d8e1cb1953207dceb0416f9c37174af560",
+        "size_in_bytes": 62,
+        "sha256_in_prefix": "f5ee117558c949b7a0b408afd2a561d8e1cb1953207dceb0416f9c37174af560"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp-2.8.0.dist-info/licenses/AUTHORS",
+        "path_type": "hardlink",
+        "sha256": "4b49d997d9227602e428e378b10735ae4a84eba30f3408efe3b785ab757934dd",
+        "size_in_bytes": 117,
+        "sha256_in_prefix": "4b49d997d9227602e428e378b10735ae4a84eba30f3408efe3b785ab757934dd"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp-2.8.0.dist-info/licenses/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "b41bca287571c8ac88dc634f7ccbad0910f5fe42e38fefe1304c3c3b85b94aec",
+        "size_in_bytes": 1127,
+        "sha256_in_prefix": "b41bca287571c8ac88dc634f7ccbad0910f5fe42e38fefe1304c3c3b85b94aec"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp-2.8.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "9a09346843b8532b895e61f9d9df434ff2f8592b31bfbea72ed09cc97cbe33ee",
+        "size_in_bytes": 5,
+        "sha256_in_prefix": "9a09346843b8532b895e61f9d9df434ff2f8592b31bfbea72ed09cc97cbe33ee"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "1dc32b7084034b45f7da490f06658e26454f4d2a5286a2038317d039eaa5490c",
+        "size_in_bytes": 1625,
+        "sha256_in_prefix": "1dc32b7084034b45f7da490f06658e26454f4d2a5286a2038317d039eaa5490c"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "876e3edfff8bdbc1536aa4538299a7746c7c8c6430011cbe2d98864f4fc3f4a2",
+        "size_in_bytes": 498,
+        "sha256_in_prefix": "876e3edfff8bdbc1536aa4538299a7746c7c8c6430011cbe2d98864f4fc3f4a2"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/__pycache__/constants.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "d6263f2809fd95797d08551fb26b7ea43b936ef53cf3159739fe630062a9f069",
+        "size_in_bytes": 2066,
+        "sha256_in_prefix": "d6263f2809fd95797d08551fb26b7ea43b936ef53cf3159739fe630062a9f069"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/__pycache__/mps_lp.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "f07c30d49820bcd02094e7f92e984e04555f2b30a42acdb069d24b3944f34981",
+        "size_in_bytes": 17379,
+        "sha256_in_prefix": "f07c30d49820bcd02094e7f92e984e04555f2b30a42acdb069d24b3944f34981"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/__pycache__/pulp.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "fd095adff6d51381be931486e0c6e018327dd5404dd4195d975cf4c4e56639fa",
+        "size_in_bytes": 98338,
+        "sha256_in_prefix": "fd095adff6d51381be931486e0c6e018327dd5404dd4195d975cf4c4e56639fa"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/__pycache__/sparse.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "805e321e6edb8780510487c3f73645b169f964b7301b5884e2ab1259ea950502",
+        "size_in_bytes": 3776,
+        "sha256_in_prefix": "805e321e6edb8780510487c3f73645b169f964b7301b5884e2ab1259ea950502"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/__pycache__/utilities.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "91459531af9323a0eeb3c4583d048a9a3b9c029b98fab859c05700fac1665401",
+        "size_in_bytes": 7759,
+        "sha256_in_prefix": "91459531af9323a0eeb3c4583d048a9a3b9c029b98fab859c05700fac1665401"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "ccc70cf2f8ce716d429aa3e2dd2272dafe3e7896c563ad06ab0bb3d3befd9be1",
+        "size_in_bytes": 4075,
+        "sha256_in_prefix": "ccc70cf2f8ce716d429aa3e2dd2272dafe3e7896c563ad06ab0bb3d3befd9be1"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "5a3545266df3164976fcdf00f310a57a60d527ca713ada7d58ea91df40ce2d6f",
+        "size_in_bytes": 5172,
+        "sha256_in_prefix": "5a3545266df3164976fcdf00f310a57a60d527ca713ada7d58ea91df40ce2d6f"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/__pycache__/choco_api.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "26186b59cec992ef5395d06e880a84f00f512b9045f1933f565cee8acbbd3a93",
+        "size_in_bytes": 6376,
+        "sha256_in_prefix": "26186b59cec992ef5395d06e880a84f00f512b9045f1933f565cee8acbbd3a93"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/__pycache__/coin_api.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "b5bcd507b8f9e4eb81861e76467130c6178bf2fb26b2165540f8f74db7136673",
+        "size_in_bytes": 34244,
+        "sha256_in_prefix": "b5bcd507b8f9e4eb81861e76467130c6178bf2fb26b2165540f8f74db7136673"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/__pycache__/copt_api.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "ee4a11a4c3b6bed57651b9faba914b3331d16b9f8089e127b1e8f9c1a0ea6b6e",
+        "size_in_bytes": 41791,
+        "sha256_in_prefix": "ee4a11a4c3b6bed57651b9faba914b3331d16b9f8089e127b1e8f9c1a0ea6b6e"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/__pycache__/core.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "3b05bfd80e7d596dd9a08344886f3bcc655bf7142933eae88aee6cd02f4de872",
+        "size_in_bytes": 19432,
+        "sha256_in_prefix": "3b05bfd80e7d596dd9a08344886f3bcc655bf7142933eae88aee6cd02f4de872"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/__pycache__/cplex_api.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "0a584601395413c6ef4e5e888f95f5e7e63ff437d8b20037a6f81f077f42054d",
+        "size_in_bytes": 28765,
+        "sha256_in_prefix": "0a584601395413c6ef4e5e888f95f5e7e63ff437d8b20037a6f81f077f42054d"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/__pycache__/glpk_api.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "90be3507aab9f4883bebb779c6e4b20b2127fa751a5bbd8e1cd8909ea72096f4",
+        "size_in_bytes": 19911,
+        "sha256_in_prefix": "90be3507aab9f4883bebb779c6e4b20b2127fa751a5bbd8e1cd8909ea72096f4"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/__pycache__/gurobi_api.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "0c42aaa2e67c6f31d4771fd0e45b28564eb4e442a7447795b5bed724dd75d459",
+        "size_in_bytes": 23788,
+        "sha256_in_prefix": "0c42aaa2e67c6f31d4771fd0e45b28564eb4e442a7447795b5bed724dd75d459"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/__pycache__/highs_api.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "6319e1b24c99d582deb8484b61e6df1713004634cc6657a8f0152f3a76957c82",
+        "size_in_bytes": 20523,
+        "sha256_in_prefix": "6319e1b24c99d582deb8484b61e6df1713004634cc6657a8f0152f3a76957c82"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/__pycache__/mipcl_api.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "677cb80b63563dbb3f5fbb4e3a72784ed5cfe686ee05ce601a0a21857320491a",
+        "size_in_bytes": 6094,
+        "sha256_in_prefix": "677cb80b63563dbb3f5fbb4e3a72784ed5cfe686ee05ce601a0a21857320491a"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/__pycache__/mosek_api.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "b691d0f4eeba470f88a852f2eba50c4606f65ae49d4337a13d1812ff6a5a8bf0",
+        "size_in_bytes": 18541,
+        "sha256_in_prefix": "b691d0f4eeba470f88a852f2eba50c4606f65ae49d4337a13d1812ff6a5a8bf0"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/__pycache__/scip_api.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "7aad049cb870a575021e54e925cf21a924518cf54ab3b34f8778a78c4e4a4ab4",
+        "size_in_bytes": 28174,
+        "sha256_in_prefix": "7aad049cb870a575021e54e925cf21a924518cf54ab3b34f8778a78c4e4a4ab4"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/__pycache__/xpress_api.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "a2a592939e27a2d5b269048ddfa1ad9a00e5702ef55e8dfb70008123c683b86c",
+        "size_in_bytes": 32698,
+        "sha256_in_prefix": "a2a592939e27a2d5b269048ddfa1ad9a00e5702ef55e8dfb70008123c683b86c"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/choco_api.py",
+        "path_type": "hardlink",
+        "sha256": "284745968b415ad21ed70eae59fcf96fd7b9a240fdd2b4a7d0e894456fec259e",
+        "size_in_bytes": 6088,
+        "sha256_in_prefix": "284745968b415ad21ed70eae59fcf96fd7b9a240fdd2b4a7d0e894456fec259e"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/coin_api.py",
+        "path_type": "hardlink",
+        "sha256": "bd0b8ab1af7a77685db48170d170aa32eb12da5252edf1a16b01f8019be509dd",
+        "size_in_bytes": 30199,
+        "sha256_in_prefix": "bd0b8ab1af7a77685db48170d170aa32eb12da5252edf1a16b01f8019be509dd"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/copt_api.py",
+        "path_type": "hardlink",
+        "sha256": "8729d7eeb4ae2314915472a488a945137154655e83c6ad9d5980ccfcf147f7a6",
+        "size_in_bytes": 35677,
+        "sha256_in_prefix": "8729d7eeb4ae2314915472a488a945137154655e83c6ad9d5980ccfcf147f7a6"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/core.py",
+        "path_type": "hardlink",
+        "sha256": "1e5c3227e49460e5daac188f4182c2aa542e898199d98b24fd212ce5e8f17334",
+        "size_in_bytes": 15666,
+        "sha256_in_prefix": "1e5c3227e49460e5daac188f4182c2aa542e898199d98b24fd212ce5e8f17334"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/cplex_api.py",
+        "path_type": "hardlink",
+        "sha256": "8783ea20769c338ebf5314afcb4603d4973276c32b9134d089c2f7c7056f27af",
+        "size_in_bytes": 22705,
+        "sha256_in_prefix": "8783ea20769c338ebf5314afcb4603d4973276c32b9134d089c2f7c7056f27af"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/glpk_api.py",
+        "path_type": "hardlink",
+        "sha256": "902f7fa4c948bcab4ca0518f220feab9c138a36a6aeeeb52906981046820e945",
+        "size_in_bytes": 16502,
+        "sha256_in_prefix": "902f7fa4c948bcab4ca0518f220feab9c138a36a6aeeeb52906981046820e945"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/gurobi_api.py",
+        "path_type": "hardlink",
+        "sha256": "cdbdce74e795ba8135719c7ad62a790a5d5a5429735f13c7e9feadd83909a980",
+        "size_in_bytes": 21612,
+        "sha256_in_prefix": "cdbdce74e795ba8135719c7ad62a790a5d5a5429735f13c7e9feadd83909a980"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/highs_api.py",
+        "path_type": "hardlink",
+        "sha256": "d1b8b5f1609a977c88683150fa880515374c551b53ea1bf0b77b220698548e6b",
+        "size_in_bytes": 19066,
+        "sha256_in_prefix": "d1b8b5f1609a977c88683150fa880515374c551b53ea1bf0b77b220698548e6b"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/mipcl_api.py",
+        "path_type": "hardlink",
+        "sha256": "ab1660026ddc05e80e8be8ee13e770de1d690cd5302d34902e84821ce89adf85",
+        "size_in_bytes": 5845,
+        "sha256_in_prefix": "ab1660026ddc05e80e8be8ee13e770de1d690cd5302d34902e84821ce89adf85"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/mosek_api.py",
+        "path_type": "hardlink",
+        "sha256": "74bda1bd21054c83fd638c7f23ce293437870b7fa03866bf1cfb3cd0843063ad",
+        "size_in_bytes": 14945,
+        "sha256_in_prefix": "74bda1bd21054c83fd638c7f23ce293437870b7fa03866bf1cfb3cd0843063ad"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/scip_api.py",
+        "path_type": "hardlink",
+        "sha256": "92ce7e22657d512ae74f8ae32e8b80190e168fbd7cb62fbc7250ce9cad4114e7",
+        "size_in_bytes": 27852,
+        "sha256_in_prefix": "92ce7e22657d512ae74f8ae32e8b80190e168fbd7cb62fbc7250ce9cad4114e7"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/apis/xpress_api.py",
+        "path_type": "hardlink",
+        "sha256": "4806f392ffe5c50b229f6635f850dda611b39014d06bba7711bac617c6b73de2",
+        "size_in_bytes": 31552,
+        "sha256_in_prefix": "4806f392ffe5c50b229f6635f850dda611b39014d06bba7711bac617c6b73de2"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/constants.py",
+        "path_type": "hardlink",
+        "sha256": "15250c3ab9a78b4ac2224c3f087dce6d5c40ebf9ab44ebfd6f989e65df033850",
+        "size_in_bytes": 3274,
+        "sha256_in_prefix": "15250c3ab9a78b4ac2224c3f087dce6d5c40ebf9ab44ebfd6f989e65df033850"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/mps_lp.py",
+        "path_type": "hardlink",
+        "sha256": "b3150adb2f364bc7c62259762032eb1f3867628772b360ad08d016ef0672514e",
+        "size_in_bytes": 14002,
+        "sha256_in_prefix": "b3150adb2f364bc7c62259762032eb1f3867628772b360ad08d016ef0672514e"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/pulp.cfg.buildout",
+        "path_type": "hardlink",
+        "sha256": "566d96620acf3bb51b00c675ef765fbfbbaa31cf31cb8c30c393c610d42e4287",
+        "size_in_bytes": 1231,
+        "sha256_in_prefix": "566d96620acf3bb51b00c675ef765fbfbbaa31cf31cb8c30c393c610d42e4287"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/pulp.cfg.linux",
+        "path_type": "hardlink",
+        "sha256": "3f3084e12855d5b94963b50c3d9c36fb35bd9296e0a5637cb8e692b6abd095c4",
+        "size_in_bytes": 955,
+        "sha256_in_prefix": "3f3084e12855d5b94963b50c3d9c36fb35bd9296e0a5637cb8e692b6abd095c4"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/pulp.cfg.osx",
+        "path_type": "hardlink",
+        "sha256": "3f3084e12855d5b94963b50c3d9c36fb35bd9296e0a5637cb8e692b6abd095c4",
+        "size_in_bytes": 955,
+        "sha256_in_prefix": "3f3084e12855d5b94963b50c3d9c36fb35bd9296e0a5637cb8e692b6abd095c4"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/pulp.cfg.win",
+        "path_type": "hardlink",
+        "sha256": "dcaa82ace0960137a0ac2ed4bdc46283ac8b77abf409b950c2aae1f7ca841e53",
+        "size_in_bytes": 838,
+        "sha256_in_prefix": "dcaa82ace0960137a0ac2ed4bdc46283ac8b77abf409b950c2aae1f7ca841e53"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/pulp.py",
+        "path_type": "hardlink",
+        "sha256": "9a4d9dc9fa683c91cd6e380a928153f729050174266427106f131758cd363e64",
+        "size_in_bytes": 73883,
+        "sha256_in_prefix": "9a4d9dc9fa683c91cd6e380a928153f729050174266427106f131758cd363e64"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/solverdir/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/solverdir/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "5c595f7f936b8a1a2d38b451990bab0207ef464643b1b3d0a104ffacb2af3f8c",
+        "size_in_bytes": 152,
+        "sha256_in_prefix": "5c595f7f936b8a1a2d38b451990bab0207ef464643b1b3d0a104ffacb2af3f8c"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/sparse.py",
+        "path_type": "hardlink",
+        "sha256": "58ca3da7bb3d81ef026ae90aa3b0208a3ac92c141f803c635f987d432be294ec",
+        "size_in_bytes": 3387,
+        "sha256_in_prefix": "58ca3da7bb3d81ef026ae90aa3b0208a3ac92c141f803c635f987d432be294ec"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "4a930320aa27cca9a0d6c1a662e93cc5c8a76986b19a241c57260c1b5ee0e5c6",
+        "size_in_bytes": 35,
+        "sha256_in_prefix": "4a930320aa27cca9a0d6c1a662e93cc5c8a76986b19a241c57260c1b5ee0e5c6"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/tests/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "5b496068c3b802eeaa688f212bd2e3bc93b770801a6e8a30db48bcbb1c1e4c28",
+        "size_in_bytes": 196,
+        "sha256_in_prefix": "5b496068c3b802eeaa688f212bd2e3bc93b770801a6e8a30db48bcbb1c1e4c28"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/tests/__pycache__/bin_packing_problem.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "c76aa190a18f1c10357dd5e4b4603eba98bfe5c4add56cdebd8caa222cc2cfa3",
+        "size_in_bytes": 2897,
+        "sha256_in_prefix": "c76aa190a18f1c10357dd5e4b4603eba98bfe5c4add56cdebd8caa222cc2cfa3"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/tests/__pycache__/run_tests.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "4acadc95bf2bb316667fca6ef154bb64a7da0b1193eabca4057ce17ee2e3684a",
+        "size_in_bytes": 1619,
+        "sha256_in_prefix": "4acadc95bf2bb316667fca6ef154bb64a7da0b1193eabca4057ce17ee2e3684a"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/tests/__pycache__/test_examples.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "5cc2e1db716d3d89e74357b82030f3b76f32e9af6bea0ecdc3b2904aadecc0e3",
+        "size_in_bytes": 2166,
+        "sha256_in_prefix": "5cc2e1db716d3d89e74357b82030f3b76f32e9af6bea0ecdc3b2904aadecc0e3"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/tests/__pycache__/test_gurobipy_env.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "477c6c4dbcf0a14390d411ee92395b70ee31d58518836811ef3148ec92d59b79",
+        "size_in_bytes": 6435,
+        "sha256_in_prefix": "477c6c4dbcf0a14390d411ee92395b70ee31d58518836811ef3148ec92d59b79"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/tests/__pycache__/test_pulp.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "67c425d28fd73168b70abd2d9ebb5c152a81a331268d31e3ca4c167c8aab6353",
+        "size_in_bytes": 86572,
+        "sha256_in_prefix": "67c425d28fd73168b70abd2d9ebb5c152a81a331268d31e3ca4c167c8aab6353"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/tests/bin_packing_problem.py",
+        "path_type": "hardlink",
+        "sha256": "17be94bfdee51177757b14592bc48d242aee58ce179aa801c53338baf367a346",
+        "size_in_bytes": 1570,
+        "sha256_in_prefix": "17be94bfdee51177757b14592bc48d242aee58ce179aa801c53338baf367a346"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/tests/run_tests.py",
+        "path_type": "hardlink",
+        "sha256": "d2d7571d473cd3217c8270e8198e00e733a8d639727abd5eac9d0d7f1803a7d8",
+        "size_in_bytes": 1029,
+        "sha256_in_prefix": "d2d7571d473cd3217c8270e8198e00e733a8d639727abd5eac9d0d7f1803a7d8"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/tests/test_examples.py",
+        "path_type": "hardlink",
+        "sha256": "178e944276c5bd353961343617b5991ee1fb2445d04c559448cf2e0cdf894763",
+        "size_in_bytes": 915,
+        "sha256_in_prefix": "178e944276c5bd353961343617b5991ee1fb2445d04c559448cf2e0cdf894763"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/tests/test_gurobipy_env.py",
+        "path_type": "hardlink",
+        "sha256": "0bcb6598b4a7aa332d9d76b9faeda12a8109818931fedc71b528ddbe6da7e74e",
+        "size_in_bytes": 3508,
+        "sha256_in_prefix": "0bcb6598b4a7aa332d9d76b9faeda12a8109818931fedc71b528ddbe6da7e74e"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/tests/test_pulp.py",
+        "path_type": "hardlink",
+        "sha256": "df4eb2ac9e52cd29384fafc5c132ab16e38f2cb0824a0a5c7b7c38571bb72688",
+        "size_in_bytes": 63245,
+        "sha256_in_prefix": "df4eb2ac9e52cd29384fafc5c132ab16e38f2cb0824a0a5c7b7c38571bb72688"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/pulp/utilities.py",
+        "path_type": "hardlink",
+        "sha256": "15ad3f72b08e26d0f2ba6564b0f0785146a7686f1feedc48350e71c18be6886b",
+        "size_in_bytes": 6138,
+        "sha256_in_prefix": "15ad3f72b08e26d0f2ba6564b0f0785146a7686f1feedc48350e71c18be6886b"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/brainsimulation/Applications/fsl/pkgs/pulp-2.8.0-py313hf4b1061_3",
+    "type": 1
+  }
+}

@@ -1,0 +1,13 @@
+prefix=/Users/brainsimulation/Desktop/hcpep-analysis/.snakemake/conda/dbde035f73f29d4902bb4ff9d7926cb9_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+xcbproto_version=1.17.0
+
+Name: XCB
+Description: X-protocol C Binding
+Version: 1.17.0
+Requires.private: xau >= 0.99.2 xdmcp
+Libs: -L${libdir} -lxcb
+Libs.private: 
+Cflags: -I${includedir}

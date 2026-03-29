@@ -1,0 +1,10 @@
+prefix=/Users/brainsimulation/Desktop/hcpep-analysis/.snakemake/conda/dbde035f73f29d4902bb4ff9d7926cb9_
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: qhull_r
+Description: Qhull reentrant shared library
+Version: 8.0.2
+Libs: -L${libdir} -lqhull_r
+Cflags: -I${includedir}
+

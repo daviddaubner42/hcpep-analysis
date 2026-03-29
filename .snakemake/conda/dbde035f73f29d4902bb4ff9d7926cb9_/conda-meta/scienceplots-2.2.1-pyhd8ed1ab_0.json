@@ -1,0 +1,541 @@
+{
+  "name": "scienceplots",
+  "version": "2.2.1",
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "subdir": "noarch",
+  "fn": "scienceplots-2.2.1-pyhd8ed1ab_0.conda",
+  "md5": "90e74ed49180b3584f3c449444d747b6",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/scienceplots-2.2.1-pyhd8ed1ab_0.conda",
+  "sha256": "0cded01beb7ad6fba31a4d4abc97aa18c96bc38b2acbe1f86ceef2e6a357f69a",
+  "depends": [
+    "matplotlib-base",
+    "python >=3.10"
+  ],
+  "constrains": [],
+  "noarch": "python",
+  "license": "MIT",
+  "package_type": "noarch_python",
+  "timestamp": 1772001120000,
+  "size": 24438,
+  "requested_spec": "scienceplots",
+  "package_tarball_full_path": "/Users/brainsimulation/Applications/fsl/pkgs/scienceplots-2.2.1-pyhd8ed1ab_0",
+  "extracted_package_dir": "/Users/brainsimulation/Applications/fsl/pkgs/scienceplots-2.2.1-pyhd8ed1ab_0",
+  "files": [
+    "lib/python3.13/site-packages/scienceplots-0.0.0.dist-info/INSTALLER",
+    "lib/python3.13/site-packages/scienceplots-0.0.0.dist-info/METADATA",
+    "lib/python3.13/site-packages/scienceplots-0.0.0.dist-info/RECORD",
+    "lib/python3.13/site-packages/scienceplots-0.0.0.dist-info/REQUESTED",
+    "lib/python3.13/site-packages/scienceplots-0.0.0.dist-info/WHEEL",
+    "lib/python3.13/site-packages/scienceplots-0.0.0.dist-info/direct_url.json",
+    "lib/python3.13/site-packages/scienceplots-0.0.0.dist-info/licenses/LICENSE",
+    "lib/python3.13/site-packages/scienceplots-0.0.0.dist-info/top_level.txt",
+    "lib/python3.13/site-packages/scienceplots/__init__.py",
+    "lib/python3.13/site-packages/scienceplots/styles/color/bright.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-1.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-10.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-11.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-12.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-13.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-14.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-15.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-16.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-17.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-18.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-19.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-2.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-20.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-21.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-22.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-23.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-3.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-4.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-5.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-6.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-7.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-8.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-9.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/high-contrast.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/high-vis.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/light.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/muted.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/retro.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/std-colors.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/color/vibrant.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/journals/ieee.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/journals/nature.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/languages/cjk-jp-font.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/languages/cjk-kr-font.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/languages/cjk-sc-font.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/languages/cjk-tc-font.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/languages/russian-font.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/languages/turkish-font.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/misc/grid.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/misc/latex-sans.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/misc/no-latex.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/misc/pgf.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/misc/sans.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/notebook.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/scatter.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles/science.mplstyle",
+    "lib/python3.13/site-packages/scienceplots/styles_discovery.py",
+    "lib/python3.13/site-packages/scienceplots/tests/__init__.py",
+    "lib/python3.13/site-packages/scienceplots/tests/conftest.py",
+    "lib/python3.13/site-packages/scienceplots/tests/test_scienceplots.py",
+    "lib/python3.13/site-packages/scienceplots/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/scienceplots/__pycache__/styles_discovery.cpython-313.pyc",
+    "lib/python3.13/site-packages/scienceplots/tests/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/scienceplots/tests/__pycache__/conftest.cpython-313.pyc",
+    "lib/python3.13/site-packages/scienceplots/tests/__pycache__/test_scienceplots.cpython-313.pyc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "site-packages/scienceplots-0.0.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5,
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8"
+      },
+      {
+        "_path": "site-packages/scienceplots-0.0.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "d9d54f949115d1bbeb92c6af3a264d69ac96721333a49a69fe653c44ff2c14a2",
+        "size_in_bytes": 14308,
+        "sha256_in_prefix": "d9d54f949115d1bbeb92c6af3a264d69ac96721333a49a69fe653c44ff2c14a2"
+      },
+      {
+        "_path": "site-packages/scienceplots-0.0.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "20306a250d50b9d18fcdab9057dee45eb30d3d67c9f5bc79a33b19bb58f7b92c",
+        "size_in_bytes": 6792,
+        "sha256_in_prefix": "20306a250d50b9d18fcdab9057dee45eb30d3d67c9f5bc79a33b19bb58f7b92c"
+      },
+      {
+        "_path": "site-packages/scienceplots-0.0.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "site-packages/scienceplots-0.0.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "6027f0606398322e49870d9f538c8d83012bc9b6f6217e4f13004a57865b741a",
+        "size_in_bytes": 91,
+        "sha256_in_prefix": "6027f0606398322e49870d9f538c8d83012bc9b6f6217e4f13004a57865b741a"
+      },
+      {
+        "_path": "site-packages/scienceplots-0.0.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "6ea63a044851e223bd46fe8696f50fb80ef1bbbdc7f1f47564e08371d88b2bbb",
+        "size_in_bytes": 108,
+        "sha256_in_prefix": "6ea63a044851e223bd46fe8696f50fb80ef1bbbdc7f1f47564e08371d88b2bbb"
+      },
+      {
+        "_path": "site-packages/scienceplots-0.0.0.dist-info/licenses/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "9e5d935909270a14c3e9dc5ede0bcfc73a69fc3411f70ddd9e05065602a46cdb",
+        "size_in_bytes": 1068,
+        "sha256_in_prefix": "9e5d935909270a14c3e9dc5ede0bcfc73a69fc3411f70ddd9e05065602a46cdb"
+      },
+      {
+        "_path": "site-packages/scienceplots-0.0.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "43fdc859edef96edd49221642432e88b6b8789ec8d4da314aa25c2e05b1c17e5",
+        "size_in_bytes": 13,
+        "sha256_in_prefix": "43fdc859edef96edd49221642432e88b6b8789ec8d4da314aa25c2e05b1c17e5"
+      },
+      {
+        "_path": "site-packages/scienceplots/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "814803fb97e199c9e3796f2b37a5b503e67c9ccd09d9c191d85434053c008d7a",
+        "size_in_bytes": 805,
+        "sha256_in_prefix": "814803fb97e199c9e3796f2b37a5b503e67c9ccd09d9c191d85434053c008d7a"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/bright.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "7cfd8e552f93a3962324955a44a427b49171b8ff9595d8cc0c0496ea9042f15f",
+        "size_in_bytes": 230,
+        "sha256_in_prefix": "7cfd8e552f93a3962324955a44a427b49171b8ff9595d8cc0c0496ea9042f15f"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-1.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "96c8aa508e7bcd29dffc6727a05755b036458441bf73eaff5f242ad8963b4ac2",
+        "size_in_bytes": 174,
+        "sha256_in_prefix": "96c8aa508e7bcd29dffc6727a05755b036458441bf73eaff5f242ad8963b4ac2"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-10.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "d9a28ac383748b45491d517f2b74b4187f72f91d6d6a57c62397d06bc465f3f6",
+        "size_in_bytes": 266,
+        "sha256_in_prefix": "d9a28ac383748b45491d517f2b74b4187f72f91d6d6a57c62397d06bc465f3f6"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-11.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "8f9aa442f53b3f49d078c273299bd968651ae46ad524fbc2714a98adef5bc7b6",
+        "size_in_bytes": 276,
+        "sha256_in_prefix": "8f9aa442f53b3f49d078c273299bd968651ae46ad524fbc2714a98adef5bc7b6"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-12.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "172bc3a7bad1d7620cc84e48220a78fd6839d66fabba28b88091bacd4de88f1d",
+        "size_in_bytes": 286,
+        "sha256_in_prefix": "172bc3a7bad1d7620cc84e48220a78fd6839d66fabba28b88091bacd4de88f1d"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-13.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "5c8f250cba8432998cdb8d2f30735a263836c0c3c190783f3b932a4553411fdf",
+        "size_in_bytes": 296,
+        "sha256_in_prefix": "5c8f250cba8432998cdb8d2f30735a263836c0c3c190783f3b932a4553411fdf"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-14.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "5af63ece507de11c0ba1df48e446b709dc1992b7d69d6f0a73ecf2cadf4b9575",
+        "size_in_bytes": 306,
+        "sha256_in_prefix": "5af63ece507de11c0ba1df48e446b709dc1992b7d69d6f0a73ecf2cadf4b9575"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-15.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "6f2e0767bed6481546d3117e02e8341a4d0b5651e18dd8790676841a33af280b",
+        "size_in_bytes": 316,
+        "sha256_in_prefix": "6f2e0767bed6481546d3117e02e8341a4d0b5651e18dd8790676841a33af280b"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-16.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "8d74558e39a67c62d0aebb543c9d044db7879eaadf24c47cbef2373e4d7eb9ec",
+        "size_in_bytes": 326,
+        "sha256_in_prefix": "8d74558e39a67c62d0aebb543c9d044db7879eaadf24c47cbef2373e4d7eb9ec"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-17.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "7e533dad15dd93fceb9b8d28840a7004581559b9df494c77ac1128d7fac677f2",
+        "size_in_bytes": 336,
+        "sha256_in_prefix": "7e533dad15dd93fceb9b8d28840a7004581559b9df494c77ac1128d7fac677f2"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-18.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "7ae70b43b4ebae4f79eefcea8864c4202f9fe2f5d18a9abe0b308eb9424eb82c",
+        "size_in_bytes": 346,
+        "sha256_in_prefix": "7ae70b43b4ebae4f79eefcea8864c4202f9fe2f5d18a9abe0b308eb9424eb82c"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-19.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "ef310b0fb194d7424b2c28edc3cebf16d7e90e8816e08a3c8264fdb90bcea17c",
+        "size_in_bytes": 356,
+        "sha256_in_prefix": "ef310b0fb194d7424b2c28edc3cebf16d7e90e8816e08a3c8264fdb90bcea17c"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-2.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "8ed30d005b1e6d3f012efd2ed2457bf7b2c752ea3d0e9514b125645503212d8f",
+        "size_in_bytes": 185,
+        "sha256_in_prefix": "8ed30d005b1e6d3f012efd2ed2457bf7b2c752ea3d0e9514b125645503212d8f"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-20.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "f53fa01533a728cec12aceb3a7f76b875d3fee3cbb05b4ad2a6a7c4522ffdc31",
+        "size_in_bytes": 366,
+        "sha256_in_prefix": "f53fa01533a728cec12aceb3a7f76b875d3fee3cbb05b4ad2a6a7c4522ffdc31"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-21.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "4637c66ec25faf76b44d242ebf5a99d0d566c818530a3789aecacfbdf16e9f18",
+        "size_in_bytes": 376,
+        "sha256_in_prefix": "4637c66ec25faf76b44d242ebf5a99d0d566c818530a3789aecacfbdf16e9f18"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-22.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "9df60d27538bd2b2c15e37d5187a34fdfab6ac7b2f1d2decf6dbee0d5ab834d5",
+        "size_in_bytes": 386,
+        "sha256_in_prefix": "9df60d27538bd2b2c15e37d5187a34fdfab6ac7b2f1d2decf6dbee0d5ab834d5"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-23.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "ad60f7e314e69f10ecaa0292f41256e30dc7e6d084b8afc243dad41764d65d8f",
+        "size_in_bytes": 396,
+        "sha256_in_prefix": "ad60f7e314e69f10ecaa0292f41256e30dc7e6d084b8afc243dad41764d65d8f"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-3.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "e4be3fd7fdf5e8e436bde07ef208f9e262f72421dd97ab5eb73226d6bb5882ce",
+        "size_in_bytes": 195,
+        "sha256_in_prefix": "e4be3fd7fdf5e8e436bde07ef208f9e262f72421dd97ab5eb73226d6bb5882ce"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-4.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "25aaf2cee14da680b4bf9fdad40e1433b8823de8fa91159a01de271a6516baac",
+        "size_in_bytes": 205,
+        "sha256_in_prefix": "25aaf2cee14da680b4bf9fdad40e1433b8823de8fa91159a01de271a6516baac"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-5.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "9db5cdeeb9037a70b48b5199a62b8bf2af778096194c8d6fed4126bf0dd50d8d",
+        "size_in_bytes": 215,
+        "sha256_in_prefix": "9db5cdeeb9037a70b48b5199a62b8bf2af778096194c8d6fed4126bf0dd50d8d"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-6.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "600c06010f8098a984972dc03f6d48356c9d8901791389a65ef4d78bbfc95f5a",
+        "size_in_bytes": 225,
+        "sha256_in_prefix": "600c06010f8098a984972dc03f6d48356c9d8901791389a65ef4d78bbfc95f5a"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-7.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "d3857090a8ca6528c3d5f30c11cdb4fad3da83d22ca73dc675a934b4102f8660",
+        "size_in_bytes": 235,
+        "sha256_in_prefix": "d3857090a8ca6528c3d5f30c11cdb4fad3da83d22ca73dc675a934b4102f8660"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-8.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "79285a7ac00537880e9331abb0d1d0940866a0f6b2bd82841f82ef162cd4d1ad",
+        "size_in_bytes": 245,
+        "sha256_in_prefix": "79285a7ac00537880e9331abb0d1d0940866a0f6b2bd82841f82ef162cd4d1ad"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/discrete-rainbow/discrete-rainbow-9.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "fd1460d8c91aa03a0411c675323dc1570298688b0191e955e26f750a8364da15",
+        "size_in_bytes": 255,
+        "sha256_in_prefix": "fd1460d8c91aa03a0411c675323dc1570298688b0191e955e26f750a8364da15"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/high-contrast.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "6feebdb87e27a5affed70bc749f2ae99d780a90a13860d427c576a251abbb4b7",
+        "size_in_bytes": 197,
+        "sha256_in_prefix": "6feebdb87e27a5affed70bc749f2ae99d780a90a13860d427c576a251abbb4b7"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/high-vis.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "e44da4d3b04f14af3ed7013406a366af5e7fca7a3b9c465f25e30313ddbcba05",
+        "size_in_bytes": 237,
+        "sha256_in_prefix": "e44da4d3b04f14af3ed7013406a366af5e7fca7a3b9c465f25e30313ddbcba05"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/light.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "48f2475d584bfb52587120dd81fdc5ba2495c0ff5c3c6b65be4cf8d59536ef7b",
+        "size_in_bytes": 249,
+        "sha256_in_prefix": "48f2475d584bfb52587120dd81fdc5ba2495c0ff5c3c6b65be4cf8d59536ef7b"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/muted.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "04fd475fdb1155c9ecb01181a7a475fd97c095942a978b5a3fe6a4d39c72a61e",
+        "size_in_bytes": 259,
+        "sha256_in_prefix": "04fd475fdb1155c9ecb01181a7a475fd97c095942a978b5a3fe6a4d39c72a61e"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/retro.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "80c64c6295832e13a869beffa7c174ef9c847c8c8cb9c5ac5a0202a9ec857889",
+        "size_in_bytes": 135,
+        "sha256_in_prefix": "80c64c6295832e13a869beffa7c174ef9c847c8c8cb9c5ac5a0202a9ec857889"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/std-colors.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "783d4627a6fac05e1eca040efb0c1ab1e1ca2bce53315f6da84c47e4266cc17d",
+        "size_in_bytes": 201,
+        "sha256_in_prefix": "783d4627a6fac05e1eca040efb0c1ab1e1ca2bce53315f6da84c47e4266cc17d"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/color/vibrant.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "973e2e0d2b26bad8a38565a2c26d055048cfd2f0818891733f04c182c6a70df0",
+        "size_in_bytes": 231,
+        "sha256_in_prefix": "973e2e0d2b26bad8a38565a2c26d055048cfd2f0818891733f04c182c6a70df0"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/journals/ieee.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "36f0c2a97b0fc3d3867fd602a08413573ba0598310cea668779afa23a6f1044a",
+        "size_in_bytes": 393,
+        "sha256_in_prefix": "36f0c2a97b0fc3d3867fd602a08413573ba0598310cea668779afa23a6f1044a"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/journals/nature.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "1d39b7974b71da2b92349f7f95d2e17f94dc83b335a0e1c18dfab522b363b0e2",
+        "size_in_bytes": 906,
+        "sha256_in_prefix": "1d39b7974b71da2b92349f7f95d2e17f94dc83b335a0e1c18dfab522b363b0e2"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/languages/cjk-jp-font.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "103418af4ed26318af24114260520b769ae235bc70c2786d2658033c4544c815",
+        "size_in_bytes": 144,
+        "sha256_in_prefix": "103418af4ed26318af24114260520b769ae235bc70c2786d2658033c4544c815"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/languages/cjk-kr-font.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "7ca1e5efbfd865ed9677a6cf28ad9cdd2fabe99360be3c124fb4d967b9c5439e",
+        "size_in_bytes": 142,
+        "sha256_in_prefix": "7ca1e5efbfd865ed9677a6cf28ad9cdd2fabe99360be3c124fb4d967b9c5439e"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/languages/cjk-sc-font.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "31269b89523d423312e32ebe938a960f9d60bae930141db8589e2f767e5ca54c",
+        "size_in_bytes": 154,
+        "sha256_in_prefix": "31269b89523d423312e32ebe938a960f9d60bae930141db8589e2f767e5ca54c"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/languages/cjk-tc-font.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "d8c8ddd6096f61d796c48d66c47da532d5663362d3be257f5bffde4eea1a1256",
+        "size_in_bytes": 155,
+        "sha256_in_prefix": "d8c8ddd6096f61d796c48d66c47da532d5663362d3be257f5bffde4eea1a1256"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/languages/russian-font.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "bacad59b097a630bf6a9e5e1ea376beaa5e3876edc8ef070493806628deb37f4",
+        "size_in_bytes": 197,
+        "sha256_in_prefix": "bacad59b097a630bf6a9e5e1ea376beaa5e3876edc8ef070493806628deb37f4"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/languages/turkish-font.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "7ccff8a79f6e5e9aabe6b04ffd9bb2e779648f8db9ca744d886d02d4811f3567",
+        "size_in_bytes": 188,
+        "sha256_in_prefix": "7ccff8a79f6e5e9aabe6b04ffd9bb2e779648f8db9ca744d886d02d4811f3567"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/misc/grid.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "aa18187ff6ec8c4c2a9add7474f9d3737b30c2e3593143df430e56caf90f43ed",
+        "size_in_bytes": 272,
+        "sha256_in_prefix": "aa18187ff6ec8c4c2a9add7474f9d3737b30c2e3593143df430e56caf90f43ed"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/misc/latex-sans.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "d559e6091b223da062e2f3332851c6f09adcc71d463c02b20f3fdbcaf6e019fc",
+        "size_in_bytes": 378,
+        "sha256_in_prefix": "d559e6091b223da062e2f3332851c6f09adcc71d463c02b20f3fdbcaf6e019fc"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/misc/no-latex.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "a2f7749add6d6e658891fa89eb51df2ab5758f35ab36be109495fae11ac0640b",
+        "size_in_bytes": 195,
+        "sha256_in_prefix": "a2f7749add6d6e658891fa89eb51df2ab5758f35ab36be109495fae11ac0640b"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/misc/pgf.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "7bef8c2a5121e0c606505260481bf70971f29f5bea57d8c00e86f3114daa3980",
+        "size_in_bytes": 130,
+        "sha256_in_prefix": "7bef8c2a5121e0c606505260481bf70971f29f5bea57d8c00e86f3114daa3980"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/misc/sans.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "60676b8575950c57a8d18bdda86892b85e91ac3d8dc72255e60ad5c69a9c2925",
+        "size_in_bytes": 364,
+        "sha256_in_prefix": "60676b8575950c57a8d18bdda86892b85e91ac3d8dc72255e60ad5c69a9c2925"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/notebook.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "d18ffc0d0a889f4c8945bf9bc7f8ca072a752b53c3f5f9030eaa7b88b955e19d",
+        "size_in_bytes": 643,
+        "sha256_in_prefix": "d18ffc0d0a889f4c8945bf9bc7f8ca072a752b53c3f5f9030eaa7b88b955e19d"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/scatter.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "83c6f105ff9eb952b070ddf97a60681f380606313f3aec74cbb049978b2bfdc3",
+        "size_in_bytes": 333,
+        "sha256_in_prefix": "83c6f105ff9eb952b070ddf97a60681f380606313f3aec74cbb049978b2bfdc3"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles/science.mplstyle",
+        "path_type": "hardlink",
+        "sha256": "b7ab81c1d1bc762f389a0c50c895a3f6346cbb1dfce53778d6f443a319aa9fa1",
+        "size_in_bytes": 1110,
+        "sha256_in_prefix": "b7ab81c1d1bc762f389a0c50c895a3f6346cbb1dfce53778d6f443a319aa9fa1"
+      },
+      {
+        "_path": "site-packages/scienceplots/styles_discovery.py",
+        "path_type": "hardlink",
+        "sha256": "7aa940de739530d4c8631b55725a85423b19f920cd3242e20a868b00aa046774",
+        "size_in_bytes": 758,
+        "sha256_in_prefix": "7aa940de739530d4c8631b55725a85423b19f920cd3242e20a868b00aa046774"
+      },
+      {
+        "_path": "site-packages/scienceplots/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "site-packages/scienceplots/tests/conftest.py",
+        "path_type": "hardlink",
+        "sha256": "c9e388759f52fd7a54e4a6f8ebc6ffe72d85211a0d6b2ab18ff34c57d6dad8d5",
+        "size_in_bytes": 1265,
+        "sha256_in_prefix": "c9e388759f52fd7a54e4a6f8ebc6ffe72d85211a0d6b2ab18ff34c57d6dad8d5"
+      },
+      {
+        "_path": "site-packages/scienceplots/tests/test_scienceplots.py",
+        "path_type": "hardlink",
+        "sha256": "3218c7946dd9c1bdf7d9d70d5273f7a08642d8c16dcc760eb2ec4b88b587ad4e",
+        "size_in_bytes": 1781,
+        "sha256_in_prefix": "3218c7946dd9c1bdf7d9d70d5273f7a08642d8c16dcc760eb2ec4b88b587ad4e"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/scienceplots/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/scienceplots/__pycache__/styles_discovery.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/scienceplots/tests/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/scienceplots/tests/__pycache__/conftest.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/scienceplots/tests/__pycache__/test_scienceplots.cpython-313.pyc",
+        "path_type": "pyc_file"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/brainsimulation/Applications/fsl/pkgs/scienceplots-2.2.1-pyhd8ed1ab_0",
+    "type": 1
+  }
+}

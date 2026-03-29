@@ -1,0 +1,11 @@
+prefix=/Users/brainsimulation/Desktop/hcpep-analysis/.snakemake/conda/dbde035f73f29d4902bb4ff9d7926cb9_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: lcms2
+Description: LCMS Color Management Library
+Version: 2.18
+Libs: -L${libdir} -llcms2 
+Libs.private: -lm -lpthread
+Cflags: -I${includedir}

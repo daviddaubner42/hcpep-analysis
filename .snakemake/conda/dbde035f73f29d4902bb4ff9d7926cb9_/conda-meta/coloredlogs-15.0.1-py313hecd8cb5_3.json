@@ -1,0 +1,237 @@
+{
+  "name": "coloredlogs",
+  "version": "15.0.1",
+  "build": "py313hecd8cb5_3",
+  "build_number": 3,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-64",
+  "subdir": "osx-64",
+  "fn": "coloredlogs-15.0.1-py313hecd8cb5_3.conda",
+  "md5": "ac28cb707cc2cf108c74a4f88cf4a70b",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-64/coloredlogs-15.0.1-py313hecd8cb5_3.conda",
+  "sha256": "08840382c1421235a98898e1f3aab7a9a61723145aacd7d678cb5b13e987434e",
+  "depends": [
+    "python >=3.13,<3.14.0a0",
+    "python_abi 3.13.* *_cp313",
+    "humanfriendly >=9.1"
+  ],
+  "constrains": [],
+  "license": "MIT",
+  "timestamp": 1736874118000,
+  "size": 87007,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/Users/brainsimulation/Applications/fsl/pkgs/coloredlogs-15.0.1-py313hecd8cb5_3",
+  "extracted_package_dir": "/Users/brainsimulation/Applications/fsl/pkgs/coloredlogs-15.0.1-py313hecd8cb5_3",
+  "files": [
+    "bin/coloredlogs",
+    "lib/python3.13/site-packages/coloredlogs-15.0.1.dist-info/INSTALLER",
+    "lib/python3.13/site-packages/coloredlogs-15.0.1.dist-info/LICENSE.txt",
+    "lib/python3.13/site-packages/coloredlogs-15.0.1.dist-info/METADATA",
+    "lib/python3.13/site-packages/coloredlogs-15.0.1.dist-info/RECORD",
+    "lib/python3.13/site-packages/coloredlogs-15.0.1.dist-info/REQUESTED",
+    "lib/python3.13/site-packages/coloredlogs-15.0.1.dist-info/WHEEL",
+    "lib/python3.13/site-packages/coloredlogs-15.0.1.dist-info/direct_url.json",
+    "lib/python3.13/site-packages/coloredlogs-15.0.1.dist-info/entry_points.txt",
+    "lib/python3.13/site-packages/coloredlogs-15.0.1.dist-info/top_level.txt",
+    "lib/python3.13/site-packages/coloredlogs.pth",
+    "lib/python3.13/site-packages/coloredlogs/__init__.py",
+    "lib/python3.13/site-packages/coloredlogs/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/coloredlogs/__pycache__/cli.cpython-313.pyc",
+    "lib/python3.13/site-packages/coloredlogs/__pycache__/demo.cpython-313.pyc",
+    "lib/python3.13/site-packages/coloredlogs/__pycache__/syslog.cpython-313.pyc",
+    "lib/python3.13/site-packages/coloredlogs/__pycache__/tests.cpython-313.pyc",
+    "lib/python3.13/site-packages/coloredlogs/cli.py",
+    "lib/python3.13/site-packages/coloredlogs/converter/__init__.py",
+    "lib/python3.13/site-packages/coloredlogs/converter/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/coloredlogs/converter/__pycache__/colors.cpython-313.pyc",
+    "lib/python3.13/site-packages/coloredlogs/converter/colors.py",
+    "lib/python3.13/site-packages/coloredlogs/demo.py",
+    "lib/python3.13/site-packages/coloredlogs/syslog.py",
+    "lib/python3.13/site-packages/coloredlogs/tests.py"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "bin/coloredlogs",
+        "prefix_placeholder": "/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_6epkw43jw5/croot/coloredlogs_1736873924789/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "sha256": "364dcb02a2ad81ed528a0dcf3a87c2ea8abe3a9cd7a063eda1fb935a1ad23286",
+        "size_in_bytes": 468,
+        "sha256_in_prefix": "556f243db2465080ffd192428dbfd0e7bf67e8341ee10c826046ca1c746e4edb"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs-15.0.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5,
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs-15.0.1.dist-info/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "0bef4ffb1855b65570304f2018c6d44e4bab97bd5df8716ecd7800014d717267",
+        "size_in_bytes": 1056,
+        "sha256_in_prefix": "0bef4ffb1855b65570304f2018c6d44e4bab97bd5df8716ecd7800014d717267"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs-15.0.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "c70381cfe32cb975eac01449aaad8c1c05fd8cbafa42ceb34885c93f7d415f9c",
+        "size_in_bytes": 12386,
+        "sha256_in_prefix": "c70381cfe32cb975eac01449aaad8c1c05fd8cbafa42ceb34885c93f7d415f9c"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs-15.0.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "fbb064273cb4f7fc1bca4226501a394a2861b6044e5b98c87eb1f24f919f6184",
+        "size_in_bytes": 1906,
+        "sha256_in_prefix": "fbb064273cb4f7fc1bca4226501a394a2861b6044e5b98c87eb1f24f919f6184"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs-15.0.1.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs-15.0.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "0075fab56937a96b9c7bbbca2eb8fb967ba554711d5a896d81aba8f1b8025e05",
+        "size_in_bytes": 109,
+        "sha256_in_prefix": "0075fab56937a96b9c7bbbca2eb8fb967ba554711d5a896d81aba8f1b8025e05"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs-15.0.1.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "29854e488f393a5331a3e009150b18427415f0d88df03b17f61dc31b5d78bf0f",
+        "size_in_bytes": 142,
+        "sha256_in_prefix": "29854e488f393a5331a3e009150b18427415f0d88df03b17f61dc31b5d78bf0f"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs-15.0.1.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "8f1f7ca53bc05268ee9f01407260e89e87db0c5debe10938eec20650ada19abe",
+        "size_in_bytes": 53,
+        "sha256_in_prefix": "8f1f7ca53bc05268ee9f01407260e89e87db0c5debe10938eec20650ada19abe"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs-15.0.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "0f72ee46fbac110f3129484fa303d498f58d9bcf054b0f2db37c76ba5bc24b24",
+        "size_in_bytes": 12,
+        "sha256_in_prefix": "0f72ee46fbac110f3129484fa303d498f58d9bcf054b0f2db37c76ba5bc24b24"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs.pth",
+        "path_type": "hardlink",
+        "sha256": "dda83a855986efa5cd87f0248b0199c0086eb0e8e7fece7d6741959c5ce39536",
+        "size_in_bytes": 147,
+        "sha256_in_prefix": "dda83a855986efa5cd87f0248b0199c0086eb0e8e7fece7d6741959c5ce39536"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "1716a2235a50d09cd161bc762b97ff02bf566b599e64b8395ca1961ca80f04da",
+        "size_in_bytes": 64423,
+        "sha256_in_prefix": "1716a2235a50d09cd161bc762b97ff02bf566b599e64b8395ca1961ca80f04da"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "d9fd95a1e488161339255126ec3293b2a0e72a8831b0234f2d0df6a87baa12e3",
+        "size_in_bytes": 61320,
+        "sha256_in_prefix": "d9fd95a1e488161339255126ec3293b2a0e72a8831b0234f2d0df6a87baa12e3"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs/__pycache__/cli.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "d63c90db99ca1caf8f9a1457af2b747627725cf10051c64b4d249ae601f9e23b",
+        "size_in_bytes": 4003,
+        "sha256_in_prefix": "d63c90db99ca1caf8f9a1457af2b747627725cf10051c64b4d249ae601f9e23b"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs/__pycache__/demo.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "984edd089ed21db28c0c592185498140fb1f1fb9f0480be685b42fec5a91eebe",
+        "size_in_bytes": 1870,
+        "sha256_in_prefix": "984edd089ed21db28c0c592185498140fb1f1fb9f0480be685b42fec5a91eebe"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs/__pycache__/syslog.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "e364c118b7d23504611755c5142dd72d45f47498d7e6a31c7d22a3e0164b7978",
+        "size_in_bytes": 11832,
+        "sha256_in_prefix": "e364c118b7d23504611755c5142dd72d45f47498d7e6a31c7d22a3e0164b7978"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs/__pycache__/tests.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "a86ef5e57b8ac362958f77b017178fa09d5bfb5e44e6e068519abb926df913cd",
+        "size_in_bytes": 38485,
+        "sha256_in_prefix": "a86ef5e57b8ac362958f77b017178fa09d5bfb5e44e6e068519abb926df913cd"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs/cli.py",
+        "path_type": "hardlink",
+        "sha256": "89a1e05157873e5e6221e70a1b558932c94e24429d844bac6f18fb078af5b072",
+        "size_in_bytes": 3493,
+        "sha256_in_prefix": "89a1e05157873e5e6221e70a1b558932c94e24429d844bac6f18fb078af5b072"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs/converter/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "bcf8af3f49cb58a6c361ba1f71a1a1a41d3550c45cd7c913337d5ed38ab2cfeb",
+        "size_in_bytes": 18458,
+        "sha256_in_prefix": "bcf8af3f49cb58a6c361ba1f71a1a1a41d3550c45cd7c913337d5ed38ab2cfeb"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs/converter/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "2f7e120928ef8dbbaecba7e5fcf68db14627a028530728feab72b732a143020e",
+        "size_in_bytes": 15584,
+        "sha256_in_prefix": "2f7e120928ef8dbbaecba7e5fcf68db14627a028530728feab72b732a143020e"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs/converter/__pycache__/colors.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "fd08734ddd454ba56ef48f3576cf85eccfd2b1debd42fd72cbf412c67650df86",
+        "size_in_bytes": 2738,
+        "sha256_in_prefix": "fd08734ddd454ba56ef48f3576cf85eccfd2b1debd42fd72cbf412c67650df86"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs/converter/colors.py",
+        "path_type": "hardlink",
+        "sha256": "d4dd8fa426be11830c5b20ba0f0ed21b6597d600baec5f45e4eb5e7855b9d923",
+        "size_in_bytes": 5387,
+        "sha256_in_prefix": "d4dd8fa426be11830c5b20ba0f0ed21b6597d600baec5f45e4eb5e7855b9d923"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs/demo.py",
+        "path_type": "hardlink",
+        "sha256": "09a3d518e07aac2b490f27aa9345412e2d2dd398e05049e2b81fff558a39921a",
+        "size_in_bytes": 1825,
+        "sha256_in_prefix": "09a3d518e07aac2b490f27aa9345412e2d2dd398e05049e2b81fff558a39921a"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs/syslog.py",
+        "path_type": "hardlink",
+        "sha256": "f97c91533236d102934ed56a84902d7d873e963c3472bb23c6a8d60e3aab72a5",
+        "size_in_bytes": 11849,
+        "sha256_in_prefix": "f97c91533236d102934ed56a84902d7d873e963c3472bb23c6a8d60e3aab72a5"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/coloredlogs/tests.py",
+        "path_type": "hardlink",
+        "sha256": "a1efe95a74c67cd108eeca58dff540eb67d7ff4f59115155111bebf6c04caa73",
+        "size_in_bytes": 30791,
+        "sha256_in_prefix": "a1efe95a74c67cd108eeca58dff540eb67d7ff4f59115155111bebf6c04caa73"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/brainsimulation/Applications/fsl/pkgs/coloredlogs-15.0.1-py313hecd8cb5_3",
+    "type": 1
+  }
+}

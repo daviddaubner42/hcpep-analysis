@@ -1,0 +1,413 @@
+{
+  "name": "bctpy",
+  "version": "0.6.1",
+  "build": "pyhd8ed1ab_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "subdir": "noarch",
+  "fn": "bctpy-0.6.1-pyhd8ed1ab_1.conda",
+  "md5": "c2a980034013570c5db66edafd26bbde",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/bctpy-0.6.1-pyhd8ed1ab_1.conda",
+  "sha256": "5f12423382845e5b3b92535518ff1d69b3cb5c1d7ce974b777effe9b1357204e",
+  "depends": [
+    "numpy",
+    "python >=3.9",
+    "scipy"
+  ],
+  "constrains": [],
+  "noarch": "python",
+  "license": "GPL-3.0-only",
+  "package_type": "noarch_python",
+  "timestamp": 1736271792000,
+  "size": 94449,
+  "requested_spec": "bctpy",
+  "package_tarball_full_path": "/Users/brainsimulation/Applications/fsl/pkgs/bctpy-0.6.1-pyhd8ed1ab_1",
+  "extracted_package_dir": "/Users/brainsimulation/Applications/fsl/pkgs/bctpy-0.6.1-pyhd8ed1ab_1",
+  "files": [
+    "lib/python3.13/site-packages/bct/__init__.py",
+    "lib/python3.13/site-packages/bct/algorithms/__init__.py",
+    "lib/python3.13/site-packages/bct/algorithms/centrality.py",
+    "lib/python3.13/site-packages/bct/algorithms/clustering.py",
+    "lib/python3.13/site-packages/bct/algorithms/core.py",
+    "lib/python3.13/site-packages/bct/algorithms/degree.py",
+    "lib/python3.13/site-packages/bct/algorithms/distance.py",
+    "lib/python3.13/site-packages/bct/algorithms/efficiency.py",
+    "lib/python3.13/site-packages/bct/algorithms/generative.py",
+    "lib/python3.13/site-packages/bct/algorithms/models.py",
+    "lib/python3.13/site-packages/bct/algorithms/modularity.py",
+    "lib/python3.13/site-packages/bct/algorithms/motifs.py",
+    "lib/python3.13/site-packages/bct/algorithms/physical_connectivity.py",
+    "lib/python3.13/site-packages/bct/algorithms/reference.py",
+    "lib/python3.13/site-packages/bct/algorithms/similarity.py",
+    "lib/python3.13/site-packages/bct/citations.py",
+    "lib/python3.13/site-packages/bct/due.py",
+    "lib/python3.13/site-packages/bct/nbs.py",
+    "lib/python3.13/site-packages/bct/nbs_parallel.py",
+    "lib/python3.13/site-packages/bct/utils/__init__.py",
+    "lib/python3.13/site-packages/bct/utils/miscellaneous_utilities.py",
+    "lib/python3.13/site-packages/bct/utils/other.py",
+    "lib/python3.13/site-packages/bct/utils/visualization.py",
+    "lib/python3.13/site-packages/bct/version.py",
+    "lib/python3.13/site-packages/bctpy-0.6.1.dist-info/INSTALLER",
+    "lib/python3.13/site-packages/bctpy-0.6.1.dist-info/LICENSE",
+    "lib/python3.13/site-packages/bctpy-0.6.1.dist-info/METADATA",
+    "lib/python3.13/site-packages/bctpy-0.6.1.dist-info/RECORD",
+    "lib/python3.13/site-packages/bctpy-0.6.1.dist-info/REQUESTED",
+    "lib/python3.13/site-packages/bctpy-0.6.1.dist-info/WHEEL",
+    "lib/python3.13/site-packages/bctpy-0.6.1.dist-info/direct_url.json",
+    "lib/python3.13/site-packages/bctpy-0.6.1.dist-info/top_level.txt",
+    "lib/python3.13/site-packages/bct/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/algorithms/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/algorithms/__pycache__/centrality.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/algorithms/__pycache__/clustering.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/algorithms/__pycache__/core.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/algorithms/__pycache__/degree.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/algorithms/__pycache__/distance.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/algorithms/__pycache__/efficiency.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/algorithms/__pycache__/generative.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/algorithms/__pycache__/models.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/algorithms/__pycache__/modularity.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/algorithms/__pycache__/motifs.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/algorithms/__pycache__/physical_connectivity.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/algorithms/__pycache__/reference.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/algorithms/__pycache__/similarity.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/__pycache__/citations.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/__pycache__/due.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/__pycache__/nbs.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/__pycache__/nbs_parallel.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/utils/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/utils/__pycache__/miscellaneous_utilities.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/utils/__pycache__/other.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/utils/__pycache__/visualization.cpython-313.pyc",
+    "lib/python3.13/site-packages/bct/__pycache__/version.cpython-313.pyc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "site-packages/bct/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "241614f45f748abb6bff020004de3b48bfd8bb9f4ed1e3c021216b19444349aa",
+        "size_in_bytes": 392,
+        "sha256_in_prefix": "241614f45f748abb6bff020004de3b48bfd8bb9f4ed1e3c021216b19444349aa"
+      },
+      {
+        "_path": "site-packages/bct/algorithms/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "b39c3b35acb58706a9cf9a94d167047cc2e7b148ed34b0800ae445f31e2a7652",
+        "size_in_bytes": 306,
+        "sha256_in_prefix": "b39c3b35acb58706a9cf9a94d167047cc2e7b148ed34b0800ae445f31e2a7652"
+      },
+      {
+        "_path": "site-packages/bct/algorithms/centrality.py",
+        "path_type": "hardlink",
+        "sha256": "e185aa58110ca6fd5328b89b42e33c48f8817a32e9e783922de9d7ea6e896b87",
+        "size_in_bytes": 29181,
+        "sha256_in_prefix": "e185aa58110ca6fd5328b89b42e33c48f8817a32e9e783922de9d7ea6e896b87"
+      },
+      {
+        "_path": "site-packages/bct/algorithms/clustering.py",
+        "path_type": "hardlink",
+        "sha256": "87484c0d82c9b6f463f6305f7bd0858e4effdf1eb818152036f656659613e329",
+        "size_in_bytes": 27242,
+        "sha256_in_prefix": "87484c0d82c9b6f463f6305f7bd0858e4effdf1eb818152036f656659613e329"
+      },
+      {
+        "_path": "site-packages/bct/algorithms/core.py",
+        "path_type": "hardlink",
+        "sha256": "708f57c8e1d4c5dfa97ae4a6225b814ed32861aba16cea1ab3f4f74bb7ed110c",
+        "size_in_bytes": 24180,
+        "sha256_in_prefix": "708f57c8e1d4c5dfa97ae4a6225b814ed32861aba16cea1ab3f4f74bb7ed110c"
+      },
+      {
+        "_path": "site-packages/bct/algorithms/degree.py",
+        "path_type": "hardlink",
+        "sha256": "e8e8aea2e39d6c44d0301fcbe73b9401787c8ade88e34cfff4bbd4c8dd93ccf4",
+        "size_in_bytes": 4683,
+        "sha256_in_prefix": "e8e8aea2e39d6c44d0301fcbe73b9401787c8ade88e34cfff4bbd4c8dd93ccf4"
+      },
+      {
+        "_path": "site-packages/bct/algorithms/distance.py",
+        "path_type": "hardlink",
+        "sha256": "c1037ef1526e3c5543e603dca03e03352f6386d898fa6f2df17b2a180819e97d",
+        "size_in_bytes": 32878,
+        "sha256_in_prefix": "c1037ef1526e3c5543e603dca03e03352f6386d898fa6f2df17b2a180819e97d"
+      },
+      {
+        "_path": "site-packages/bct/algorithms/efficiency.py",
+        "path_type": "hardlink",
+        "sha256": "66331b4aa7457c7a2665250d9da189500dedb9acffa654613cb9c47a3cc149a5",
+        "size_in_bytes": 14517,
+        "sha256_in_prefix": "66331b4aa7457c7a2665250d9da189500dedb9acffa654613cb9c47a3cc149a5"
+      },
+      {
+        "_path": "site-packages/bct/algorithms/generative.py",
+        "path_type": "hardlink",
+        "sha256": "92b35c4b06bb3a8fb50ad1ce218bf622d7f4ac247f393d852eea1a0ca80d22f5",
+        "size_in_bytes": 22936,
+        "sha256_in_prefix": "92b35c4b06bb3a8fb50ad1ce218bf622d7f4ac247f393d852eea1a0ca80d22f5"
+      },
+      {
+        "_path": "site-packages/bct/algorithms/models.py",
+        "path_type": "hardlink",
+        "sha256": "0698cab52e72c41572bcf1ea7ed355d522e0c8ab26512ac2b54a224e90e1a65e",
+        "size_in_bytes": 2472,
+        "sha256_in_prefix": "0698cab52e72c41572bcf1ea7ed355d522e0c8ab26512ac2b54a224e90e1a65e"
+      },
+      {
+        "_path": "site-packages/bct/algorithms/modularity.py",
+        "path_type": "hardlink",
+        "sha256": "2ecf0f2fb2a9eaaecb0df1fdeab716fd669f07c6b5e7b6ee9c07bb34e3dc8a65",
+        "size_in_bytes": 60869,
+        "sha256_in_prefix": "2ecf0f2fb2a9eaaecb0df1fdeab716fd669f07c6b5e7b6ee9c07bb34e3dc8a65"
+      },
+      {
+        "_path": "site-packages/bct/algorithms/motifs.py",
+        "path_type": "hardlink",
+        "sha256": "24e9da46bc224db227339c0601d2a6beb3ad89582b61239d877c7c1a2eaa06fc",
+        "size_in_bytes": 30829,
+        "sha256_in_prefix": "24e9da46bc224db227339c0601d2a6beb3ad89582b61239d877c7c1a2eaa06fc"
+      },
+      {
+        "_path": "site-packages/bct/algorithms/physical_connectivity.py",
+        "path_type": "hardlink",
+        "sha256": "e336f299032a2830c0c08de642212b61aa5bac1d7a099d33bc5d43878484f29c",
+        "size_in_bytes": 5569,
+        "sha256_in_prefix": "e336f299032a2830c0c08de642212b61aa5bac1d7a099d33bc5d43878484f29c"
+      },
+      {
+        "_path": "site-packages/bct/algorithms/reference.py",
+        "path_type": "hardlink",
+        "sha256": "93db1647cc0119c3dcfd257125f3e24292c11b823a02070da20d38e361efb1d8",
+        "size_in_bytes": 60498,
+        "sha256_in_prefix": "93db1647cc0119c3dcfd257125f3e24292c11b823a02070da20d38e361efb1d8"
+      },
+      {
+        "_path": "site-packages/bct/algorithms/similarity.py",
+        "path_type": "hardlink",
+        "sha256": "026970527a12e6a7767fca1395ff6a4d7bc055870104893d87782974a2d39efd",
+        "size_in_bytes": 11568,
+        "sha256_in_prefix": "026970527a12e6a7767fca1395ff6a4d7bc055870104893d87782974a2d39efd"
+      },
+      {
+        "_path": "site-packages/bct/citations.py",
+        "path_type": "hardlink",
+        "sha256": "846117ed08e065aeecd10d0133860d0e2ff6acff88cee09ffefcbf29b68d038c",
+        "size_in_bytes": 13894,
+        "sha256_in_prefix": "846117ed08e065aeecd10d0133860d0e2ff6acff88cee09ffefcbf29b68d038c"
+      },
+      {
+        "_path": "site-packages/bct/due.py",
+        "path_type": "hardlink",
+        "sha256": "06f5c5fb472c634eff1a5a44577279726a246651b3637830a166cd34cce759f3",
+        "size_in_bytes": 2018,
+        "sha256_in_prefix": "06f5c5fb472c634eff1a5a44577279726a246651b3637830a166cd34cce759f3"
+      },
+      {
+        "_path": "site-packages/bct/nbs.py",
+        "path_type": "hardlink",
+        "sha256": "95d07eb1d256a8b81f2b309c021e5243e28e979580b95a5c1062dd430eb34c17",
+        "size_in_bytes": 9875,
+        "sha256_in_prefix": "95d07eb1d256a8b81f2b309c021e5243e28e979580b95a5c1062dd430eb34c17"
+      },
+      {
+        "_path": "site-packages/bct/nbs_parallel.py",
+        "path_type": "hardlink",
+        "sha256": "c32df6d2f6cf25ca84af2fc3e7b95379db18e4aca747851a017f63054d5d3a1b",
+        "size_in_bytes": 5720,
+        "sha256_in_prefix": "c32df6d2f6cf25ca84af2fc3e7b95379db18e4aca747851a017f63054d5d3a1b"
+      },
+      {
+        "_path": "site-packages/bct/utils/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "455a75cec8effb8233887efb5a716c0848d148ced42df6f46db4a1fdaa220cb3",
+        "size_in_bytes": 89,
+        "sha256_in_prefix": "455a75cec8effb8233887efb5a716c0848d148ced42df6f46db4a1fdaa220cb3"
+      },
+      {
+        "_path": "site-packages/bct/utils/miscellaneous_utilities.py",
+        "path_type": "hardlink",
+        "sha256": "af386867cf9ab084b91bf64446abe0a19ad61ee6cbe7a3ba60c4f76bd884a32f",
+        "size_in_bytes": 3584,
+        "sha256_in_prefix": "af386867cf9ab084b91bf64446abe0a19ad61ee6cbe7a3ba60c4f76bd884a32f"
+      },
+      {
+        "_path": "site-packages/bct/utils/other.py",
+        "path_type": "hardlink",
+        "sha256": "4e5daa4ffd37d59cca9255311f5f559f9576a7af9e4b05ba178359a885e184e6",
+        "size_in_bytes": 8869,
+        "sha256_in_prefix": "4e5daa4ffd37d59cca9255311f5f559f9576a7af9e4b05ba178359a885e184e6"
+      },
+      {
+        "_path": "site-packages/bct/utils/visualization.py",
+        "path_type": "hardlink",
+        "sha256": "2c39a6d12212de44772c316bb6ef47ed257ef5f3c350ca47b7c8a2575312ee64",
+        "size_in_bytes": 26923,
+        "sha256_in_prefix": "2c39a6d12212de44772c316bb6ef47ed257ef5f3c350ca47b7c8a2575312ee64"
+      },
+      {
+        "_path": "site-packages/bct/version.py",
+        "path_type": "hardlink",
+        "sha256": "37e529262cb80eadda48af77e28de83afcf5d047ea995e8564f7ce9f403e1694",
+        "size_in_bytes": 87,
+        "sha256_in_prefix": "37e529262cb80eadda48af77e28de83afcf5d047ea995e8564f7ce9f403e1694"
+      },
+      {
+        "_path": "site-packages/bctpy-0.6.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5,
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8"
+      },
+      {
+        "_path": "site-packages/bctpy-0.6.1.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "0ae0485a5bd37a63e63603596417e4eb0e653334fa6c7f932ca3a0e85d4af227",
+        "size_in_bytes": 35148,
+        "sha256_in_prefix": "0ae0485a5bd37a63e63603596417e4eb0e653334fa6c7f932ca3a0e85d4af227"
+      },
+      {
+        "_path": "site-packages/bctpy-0.6.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "22f9d6a4470a28b6ccaa89158df3cc6b09054124087df0f5f4363f17efa75692",
+        "size_in_bytes": 4286,
+        "sha256_in_prefix": "22f9d6a4470a28b6ccaa89158df3cc6b09054124087df0f5f4363f17efa75692"
+      },
+      {
+        "_path": "site-packages/bctpy-0.6.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "d2ad91f04999b6227804de6f4e201daa4443b2ea2bef63c511b9d8c3307011b8",
+        "size_in_bytes": 3847,
+        "sha256_in_prefix": "d2ad91f04999b6227804de6f4e201daa4443b2ea2bef63c511b9d8c3307011b8"
+      },
+      {
+        "_path": "site-packages/bctpy-0.6.1.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "site-packages/bctpy-0.6.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "3d9504c5d7fbd548bfb28ebb417a724ae1ed0a2dfe277c2f1783912ba93f4bc5",
+        "size_in_bytes": 91,
+        "sha256_in_prefix": "3d9504c5d7fbd548bfb28ebb417a724ae1ed0a2dfe277c2f1783912ba93f4bc5"
+      },
+      {
+        "_path": "site-packages/bctpy-0.6.1.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "ef52315b590407f1e450b15a1ef3c848ef150f68ab97ba35737e4bc76646029d",
+        "size_in_bytes": 101,
+        "sha256_in_prefix": "ef52315b590407f1e450b15a1ef3c848ef150f68ab97ba35737e4bc76646029d"
+      },
+      {
+        "_path": "site-packages/bctpy-0.6.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "3539dcb13342d7acfb3bd0bedb71c6c6bf9b2d5ac82ef465defd7cd72007c73e",
+        "size_in_bytes": 4,
+        "sha256_in_prefix": "3539dcb13342d7acfb3bd0bedb71c6c6bf9b2d5ac82ef465defd7cd72007c73e"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/algorithms/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/algorithms/__pycache__/centrality.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/algorithms/__pycache__/clustering.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/algorithms/__pycache__/core.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/algorithms/__pycache__/degree.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/algorithms/__pycache__/distance.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/algorithms/__pycache__/efficiency.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/algorithms/__pycache__/generative.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/algorithms/__pycache__/models.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/algorithms/__pycache__/modularity.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/algorithms/__pycache__/motifs.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/algorithms/__pycache__/physical_connectivity.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/algorithms/__pycache__/reference.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/algorithms/__pycache__/similarity.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/__pycache__/citations.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/__pycache__/due.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/__pycache__/nbs.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/__pycache__/nbs_parallel.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/utils/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/utils/__pycache__/miscellaneous_utilities.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/utils/__pycache__/other.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/utils/__pycache__/visualization.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/bct/__pycache__/version.cpython-313.pyc",
+        "path_type": "pyc_file"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/brainsimulation/Applications/fsl/pkgs/bctpy-0.6.1-pyhd8ed1ab_1",
+    "type": 1
+  }
+}

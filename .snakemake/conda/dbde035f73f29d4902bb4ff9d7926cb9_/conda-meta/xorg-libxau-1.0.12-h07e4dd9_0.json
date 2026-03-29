@@ -1,0 +1,64 @@
+{
+  "name": "xorg-libxau",
+  "version": "1.0.12",
+  "build": "h07e4dd9_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-64",
+  "subdir": "osx-64",
+  "fn": "xorg-libxau-1.0.12-h07e4dd9_0.conda",
+  "md5": "627b6dd3985d421b2bfd39a8fe8f2e9b",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-64/xorg-libxau-1.0.12-h07e4dd9_0.conda",
+  "sha256": "ae5558ac8988f261aa05a6e28dfe8532e7b430e4ca66de25d2be03ffc37e7d3b",
+  "depends": [],
+  "constrains": [],
+  "license": "MIT",
+  "timestamp": 1745958740000,
+  "size": 13212,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/Users/brainsimulation/Applications/fsl/pkgs/xorg-libxau-1.0.12-h07e4dd9_0",
+  "extracted_package_dir": "/Users/brainsimulation/Applications/fsl/pkgs/xorg-libxau-1.0.12-h07e4dd9_0",
+  "files": [
+    "include/X11/Xauth.h",
+    "lib/libXau.6.dylib",
+    "lib/libXau.dylib",
+    "lib/pkgconfig/xau.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "include/X11/Xauth.h",
+        "path_type": "hardlink",
+        "sha256": "d0bc0612c0d2eb38bf7519190ebb60ea0d538c86589a6fbc06e0d761ec22f9c4",
+        "size_in_bytes": 4973,
+        "sha256_in_prefix": "d0bc0612c0d2eb38bf7519190ebb60ea0d538c86589a6fbc06e0d761ec22f9c4"
+      },
+      {
+        "_path": "lib/libXau.6.dylib",
+        "path_type": "hardlink",
+        "sha256": "40ec2464002fbd937cfb8bd1fe5765477a5dd3349b01ec70a331f5b4789c1fed",
+        "size_in_bytes": 18440,
+        "sha256_in_prefix": "40ec2464002fbd937cfb8bd1fe5765477a5dd3349b01ec70a331f5b4789c1fed"
+      },
+      {
+        "_path": "lib/libXau.dylib",
+        "path_type": "softlink",
+        "sha256": "40ec2464002fbd937cfb8bd1fe5765477a5dd3349b01ec70a331f5b4789c1fed",
+        "size_in_bytes": 18440
+      },
+      {
+        "_path": "lib/pkgconfig/xau.pc",
+        "prefix_placeholder": "/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_6ec5p190rl/croot/xorg-libxau_1745958696844/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "sha256": "dcdd50691eeee9cb092e8df6640b61cc1629c974475410ffdb97515c53739aa3",
+        "size_in_bytes": 485,
+        "sha256_in_prefix": "33c00c32b6c8a762e228ebaf11e9cdf2ad362a06c0f26dad390570d9a6baf453"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/brainsimulation/Applications/fsl/pkgs/xorg-libxau-1.0.12-h07e4dd9_0",
+    "type": 1
+  }
+}

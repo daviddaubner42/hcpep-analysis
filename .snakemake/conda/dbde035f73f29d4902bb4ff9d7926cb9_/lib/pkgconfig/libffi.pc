@@ -1,0 +1,11 @@
+prefix=/Users/brainsimulation/Desktop/hcpep-analysis/.snakemake/conda/dbde035f73f29d4902bb4ff9d7926cb9_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+toolexeclibdir=${libdir}
+includedir=/Users/brainsimulation/Desktop/hcpep-analysis/.snakemake/conda/dbde035f73f29d4902bb4ff9d7926cb9_/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.5.2
+Libs: -L${toolexeclibdir} -lffi
+Cflags: -I${includedir}

@@ -1,0 +1,13 @@
+prefix=/Users/brainsimulation/Desktop/hcpep-analysis/.snakemake/conda/dbde035f73f29d4902bb4ff9d7926cb9_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+
+Name: libxslt
+Version: 1.1.43
+Description: XSLT library version 2.
+Requires: libxml-2.0
+Cflags: -I${includedir} 
+Libs: -L${libdir} -lxslt
+Libs.private:  

@@ -1,0 +1,58 @@
+{
+  "name": "libgfortran5",
+  "version": "15.2.0",
+  "build": "hd16e46c_18",
+  "build_number": 18,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "subdir": "osx-64",
+  "fn": "libgfortran5-15.2.0-hd16e46c_18.conda",
+  "md5": "ca52daf58cea766656266c8771d8be81",
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/libgfortran5-15.2.0-hd16e46c_18.conda",
+  "sha256": "ddaf9dcf008c031b10987991aa78643e03c24a534ad420925cbd5851b31faa11",
+  "depends": [
+    "libgcc >=15.2.0"
+  ],
+  "constrains": [
+    "libgfortran 15.2.0"
+  ],
+  "license": "GPL-3.0-only WITH GCC-exception-3.1",
+  "timestamp": 1771378232000,
+  "size": 1062274,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/Users/brainsimulation/Applications/fsl/pkgs/libgfortran5-15.2.0-hd16e46c_18",
+  "extracted_package_dir": "/Users/brainsimulation/Applications/fsl/pkgs/libgfortran5-15.2.0-hd16e46c_18",
+  "files": [
+    "lib/libgfortran.5.dylib",
+    "lib/libgfortran.dylib",
+    "share/licenses/libgfortran/RUNTIME.LIBRARY.EXCEPTION"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/libgfortran.5.dylib",
+        "path_type": "hardlink",
+        "sha256": "194bca38a309866481bc792d08d3156d371a95f2d41302bf6ae36ca9dcc49bb1",
+        "size_in_bytes": 3940440,
+        "sha256_in_prefix": "194bca38a309866481bc792d08d3156d371a95f2d41302bf6ae36ca9dcc49bb1"
+      },
+      {
+        "_path": "lib/libgfortran.dylib",
+        "path_type": "softlink",
+        "sha256": "194bca38a309866481bc792d08d3156d371a95f2d41302bf6ae36ca9dcc49bb1",
+        "size_in_bytes": 3940440
+      },
+      {
+        "_path": "share/licenses/libgfortran/RUNTIME.LIBRARY.EXCEPTION",
+        "path_type": "hardlink",
+        "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74",
+        "size_in_bytes": 3324,
+        "sha256_in_prefix": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/brainsimulation/Applications/fsl/pkgs/libgfortran5-15.2.0-hd16e46c_18",
+    "type": 1
+  }
+}

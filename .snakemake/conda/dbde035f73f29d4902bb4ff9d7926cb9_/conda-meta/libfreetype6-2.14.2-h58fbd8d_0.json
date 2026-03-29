@@ -1,0 +1,45 @@
+{
+  "name": "libfreetype6",
+  "version": "2.14.2",
+  "build": "h58fbd8d_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "subdir": "osx-64",
+  "fn": "libfreetype6-2.14.2-h58fbd8d_0.conda",
+  "md5": "2e6760656fde7df787fdef045d0fc65d",
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/libfreetype6-2.14.2-h58fbd8d_0.conda",
+  "sha256": "75dcab3b5c2c1fe3b2d5a4b97230bc04d9c11151739d9644ec9fa2728886cc1d",
+  "depends": [
+    "__osx >=11.0",
+    "libpng >=1.6.55,<1.7.0a0",
+    "libzlib >=1.3.1,<2.0a0"
+  ],
+  "constrains": [
+    "freetype >=2.14.2"
+  ],
+  "license": "GPL-2.0-only OR FTL",
+  "timestamp": 1772756327000,
+  "size": 364817,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/Users/brainsimulation/Applications/fsl/pkgs/libfreetype6-2.14.2-h58fbd8d_0",
+  "extracted_package_dir": "/Users/brainsimulation/Applications/fsl/pkgs/libfreetype6-2.14.2-h58fbd8d_0",
+  "files": [
+    "lib/libfreetype.6.dylib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/libfreetype.6.dylib",
+        "path_type": "hardlink",
+        "sha256": "be9a8c9e7ae9e430563a3c25dd2d1705c841ecb5dd37b3bdfde78469ba786c85",
+        "size_in_bytes": 787376,
+        "sha256_in_prefix": "be9a8c9e7ae9e430563a3c25dd2d1705c841ecb5dd37b3bdfde78469ba786c85"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/brainsimulation/Applications/fsl/pkgs/libfreetype6-2.14.2-h58fbd8d_0",
+    "type": 1
+  }
+}

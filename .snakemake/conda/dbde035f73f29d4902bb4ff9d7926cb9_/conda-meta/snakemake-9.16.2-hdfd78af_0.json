@@ -1,0 +1,38 @@
+{
+  "name": "snakemake",
+  "version": "9.16.2",
+  "build": "hdfd78af_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/noarch",
+  "subdir": "noarch",
+  "fn": "snakemake-9.16.2-hdfd78af_0.conda",
+  "md5": "5da0df6564ba0bbd4e23911699fdfad1",
+  "url": "https://conda.anaconda.org/bioconda/noarch/snakemake-9.16.2-hdfd78af_0.conda",
+  "sha256": "a3b14c7f9eaf2f16bc608baa85829e9da3856c9cf8ef0232a77f78ed5d913371",
+  "depends": [
+    "eido",
+    "pandas",
+    "peppy",
+    "pygments",
+    "slack_sdk",
+    "snakemake-minimal 9.16.2.*"
+  ],
+  "constrains": [],
+  "noarch": "generic",
+  "license": "MIT",
+  "package_type": "noarch_generic",
+  "timestamp": 1769700500000,
+  "size": 10431,
+  "requested_spec": "snakemake",
+  "package_tarball_full_path": "/Users/brainsimulation/Applications/fsl/pkgs/snakemake-9.16.2-hdfd78af_0",
+  "extracted_package_dir": "/Users/brainsimulation/Applications/fsl/pkgs/snakemake-9.16.2-hdfd78af_0",
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "/Users/brainsimulation/Applications/fsl/pkgs/snakemake-9.16.2-hdfd78af_0",
+    "type": 1
+  }
+}

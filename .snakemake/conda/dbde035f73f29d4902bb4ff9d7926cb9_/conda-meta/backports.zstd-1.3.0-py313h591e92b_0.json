@@ -1,0 +1,438 @@
+{
+  "name": "backports.zstd",
+  "version": "1.3.0",
+  "build": "py313h591e92b_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "subdir": "osx-64",
+  "fn": "backports.zstd-1.3.0-py313h591e92b_0.conda",
+  "md5": "c602f30b6c45567cd5cfb074631beb5d",
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/backports.zstd-1.3.0-py313h591e92b_0.conda",
+  "sha256": "4133ba0e5ab6a0955b57a49ad4014148df6e4b79bef4309a1cdd407afd853444",
+  "depends": [
+    "python",
+    "__osx >=10.13",
+    "python_abi 3.13.* *_cp313",
+    "zstd >=1.5.7,<1.6.0a0"
+  ],
+  "constrains": [],
+  "license": "BSD-3-Clause AND MIT AND EPL-2.0",
+  "timestamp": 1767044991000,
+  "size": 241212,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/Users/brainsimulation/Applications/fsl/pkgs/backports.zstd-1.3.0-py313h591e92b_0",
+  "extracted_package_dir": "/Users/brainsimulation/Applications/fsl/pkgs/backports.zstd-1.3.0-py313h591e92b_0",
+  "files": [
+    "lib/python3.13/site-packages/backports/zstd/__init__.py",
+    "lib/python3.13/site-packages/backports/zstd/__init__.pyi",
+    "lib/python3.13/site-packages/backports/zstd/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/backports/zstd/__pycache__/_shutil.cpython-313.pyc",
+    "lib/python3.13/site-packages/backports/zstd/__pycache__/_streams.cpython-313.pyc",
+    "lib/python3.13/site-packages/backports/zstd/__pycache__/_zstd.cpython-313.pyc",
+    "lib/python3.13/site-packages/backports/zstd/__pycache__/_zstdfile.cpython-313.pyc",
+    "lib/python3.13/site-packages/backports/zstd/__pycache__/tarfile.cpython-313.pyc",
+    "lib/python3.13/site-packages/backports/zstd/_cffi/__init__.py",
+    "lib/python3.13/site-packages/backports/zstd/_cffi/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/backports/zstd/_cffi/__pycache__/_blocks_output_buffer.cpython-313.pyc",
+    "lib/python3.13/site-packages/backports/zstd/_cffi/__pycache__/_common.cpython-313.pyc",
+    "lib/python3.13/site-packages/backports/zstd/_cffi/__pycache__/buffer.cpython-313.pyc",
+    "lib/python3.13/site-packages/backports/zstd/_cffi/__pycache__/compressor.cpython-313.pyc",
+    "lib/python3.13/site-packages/backports/zstd/_cffi/__pycache__/decompressor.cpython-313.pyc",
+    "lib/python3.13/site-packages/backports/zstd/_cffi/__pycache__/zstddict.cpython-313.pyc",
+    "lib/python3.13/site-packages/backports/zstd/_cffi/_blocks_output_buffer.py",
+    "lib/python3.13/site-packages/backports/zstd/_cffi/_common.py",
+    "lib/python3.13/site-packages/backports/zstd/_cffi/buffer.py",
+    "lib/python3.13/site-packages/backports/zstd/_cffi/compressor.py",
+    "lib/python3.13/site-packages/backports/zstd/_cffi/decompressor.py",
+    "lib/python3.13/site-packages/backports/zstd/_cffi/zstddict.py",
+    "lib/python3.13/site-packages/backports/zstd/_shutil.py",
+    "lib/python3.13/site-packages/backports/zstd/_streams.py",
+    "lib/python3.13/site-packages/backports/zstd/_zstd.cpython-313-darwin.so",
+    "lib/python3.13/site-packages/backports/zstd/_zstd.py",
+    "lib/python3.13/site-packages/backports/zstd/_zstdfile.py",
+    "lib/python3.13/site-packages/backports/zstd/py.typed",
+    "lib/python3.13/site-packages/backports/zstd/tarfile.py",
+    "lib/python3.13/site-packages/backports/zstd/tarfile.pyi",
+    "lib/python3.13/site-packages/backports/zstd/zipfile/__init__.py",
+    "lib/python3.13/site-packages/backports/zstd/zipfile/__init__.pyi",
+    "lib/python3.13/site-packages/backports/zstd/zipfile/__main__.py",
+    "lib/python3.13/site-packages/backports/zstd/zipfile/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/backports/zstd/zipfile/__pycache__/__main__.cpython-313.pyc",
+    "lib/python3.13/site-packages/backports/zstd/zipfile/_path/__init__.py",
+    "lib/python3.13/site-packages/backports/zstd/zipfile/_path/__init__.pyi",
+    "lib/python3.13/site-packages/backports/zstd/zipfile/_path/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/backports/zstd/zipfile/_path/__pycache__/glob.cpython-313.pyc",
+    "lib/python3.13/site-packages/backports/zstd/zipfile/_path/glob.py",
+    "lib/python3.13/site-packages/backports/zstd/zipfile/_path/glob.pyi",
+    "lib/python3.13/site-packages/backports_zstd-1.3.0.dist-info/INSTALLER",
+    "lib/python3.13/site-packages/backports_zstd-1.3.0.dist-info/METADATA",
+    "lib/python3.13/site-packages/backports_zstd-1.3.0.dist-info/RECORD",
+    "lib/python3.13/site-packages/backports_zstd-1.3.0.dist-info/REQUESTED",
+    "lib/python3.13/site-packages/backports_zstd-1.3.0.dist-info/WHEEL",
+    "lib/python3.13/site-packages/backports_zstd-1.3.0.dist-info/direct_url.json",
+    "lib/python3.13/site-packages/backports_zstd-1.3.0.dist-info/licenses/LICENSE.txt",
+    "lib/python3.13/site-packages/backports_zstd-1.3.0.dist-info/licenses/LICENSE_zstd.txt",
+    "lib/python3.13/site-packages/backports_zstd-1.3.0.dist-info/top_level.txt"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "b746d89492cd20c0df852e396e935a4be6a2cbb3dc84a1a1a2d7e3c0fdedd48b",
+        "size_in_bytes": 9327,
+        "sha256_in_prefix": "b746d89492cd20c0df852e396e935a4be6a2cbb3dc84a1a1a2d7e3c0fdedd48b"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/__init__.pyi",
+        "path_type": "hardlink",
+        "sha256": "c797e569bcf75b4f16424eadcc50302135825566d4ef7b95bc2d975663fdc7ea",
+        "size_in_bytes": 8257,
+        "sha256_in_prefix": "c797e569bcf75b4f16424eadcc50302135825566d4ef7b95bc2d975663fdc7ea"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "7d2d36c0998b50bf7fbb81876a3f89b279e53e9219ad1449f93b1b2293d24b49",
+        "size_in_bytes": 12416,
+        "sha256_in_prefix": "7d2d36c0998b50bf7fbb81876a3f89b279e53e9219ad1449f93b1b2293d24b49"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/__pycache__/_shutil.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "c1d5f9d21a3a3dd09029dd22b64a90b21d4980285a8fd09a6555f8d35eb923ed",
+        "size_in_bytes": 7355,
+        "sha256_in_prefix": "c1d5f9d21a3a3dd09029dd22b64a90b21d4980285a8fd09a6555f8d35eb923ed"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/__pycache__/_streams.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "a3aa7d6d68dde6897b9edd24c9295d8145e34d608fc8d048eefc3b89a23d7902",
+        "size_in_bytes": 8073,
+        "sha256_in_prefix": "a3aa7d6d68dde6897b9edd24c9295d8145e34d608fc8d048eefc3b89a23d7902"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/__pycache__/_zstd.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "a68df6245e23addab48738c7eff5d951867ba9f3b94ad7042436a620e123d7ae",
+        "size_in_bytes": 1642,
+        "sha256_in_prefix": "a68df6245e23addab48738c7eff5d951867ba9f3b94ad7042436a620e123d7ae"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/__pycache__/_zstdfile.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "4861466e76571fbf79428962daed266b477f66c89c4ca668a09d4f92cb10f439",
+        "size_in_bytes": 15762,
+        "sha256_in_prefix": "4861466e76571fbf79428962daed266b477f66c89c4ca668a09d4f92cb10f439"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/__pycache__/tarfile.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "9c179eb9afe142d121b84a63cab0215af2d4665bc84f8986b25c54b4ab035c3c",
+        "size_in_bytes": 128825,
+        "sha256_in_prefix": "9c179eb9afe142d121b84a63cab0215af2d4665bc84f8986b25c54b4ab035c3c"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/_cffi/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "2548b434e15d6be4b7b74a4305363909410792c31ed50bca313aed1852dc365f",
+        "size_in_bytes": 8190,
+        "sha256_in_prefix": "2548b434e15d6be4b7b74a4305363909410792c31ed50bca313aed1852dc365f"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/_cffi/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "0ad7762b00e8c625f8ef5319ef6b9f283785606fe04c4f7bb144637ff3052ff9",
+        "size_in_bytes": 9985,
+        "sha256_in_prefix": "0ad7762b00e8c625f8ef5319ef6b9f283785606fe04c4f7bb144637ff3052ff9"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/_cffi/__pycache__/_blocks_output_buffer.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "9dad0092d8ce96b5c7461ffcb06949703fbbae9a7a2f6216098a99c06cc31882",
+        "size_in_bytes": 4479,
+        "sha256_in_prefix": "9dad0092d8ce96b5c7461ffcb06949703fbbae9a7a2f6216098a99c06cc31882"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/_cffi/__pycache__/_common.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "970517f11ad91dc6a04891954a9f3c28f7c6eeefbe465853eab3e2023c8b6a02",
+        "size_in_bytes": 8035,
+        "sha256_in_prefix": "970517f11ad91dc6a04891954a9f3c28f7c6eeefbe465853eab3e2023c8b6a02"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/_cffi/__pycache__/buffer.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "003da3155e0f76804f780f83e17547ee9c0c6d8a444bc67ce368b24f0b3b57c7",
+        "size_in_bytes": 1788,
+        "sha256_in_prefix": "003da3155e0f76804f780f83e17547ee9c0c6d8a444bc67ce368b24f0b3b57c7"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/_cffi/__pycache__/compressor.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "ad3cd2e505df8110d412b397d39789149862cfc7adf33a60b59a3b73d4a9e3aa",
+        "size_in_bytes": 15757,
+        "sha256_in_prefix": "ad3cd2e505df8110d412b397d39789149862cfc7adf33a60b59a3b73d4a9e3aa"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/_cffi/__pycache__/decompressor.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "1d489c5a04fecc09e581d1685c28ad772b1cc47674a3b23ce51da4d607846d8a",
+        "size_in_bytes": 14275,
+        "sha256_in_prefix": "1d489c5a04fecc09e581d1685c28ad772b1cc47674a3b23ce51da4d607846d8a"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/_cffi/__pycache__/zstddict.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "b44d37c4227b93744b816aa3e895dde7fe13082af1887923e095d1bd35fa70fc",
+        "size_in_bytes": 8613,
+        "sha256_in_prefix": "b44d37c4227b93744b816aa3e895dde7fe13082af1887923e095d1bd35fa70fc"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/_cffi/_blocks_output_buffer.py",
+        "path_type": "hardlink",
+        "sha256": "4669fbd2f3d383618d11dbe2d902983d2b0509d853fcec8da79bbcea636979ba",
+        "size_in_bytes": 3403,
+        "sha256_in_prefix": "4669fbd2f3d383618d11dbe2d902983d2b0509d853fcec8da79bbcea636979ba"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/_cffi/_common.py",
+        "path_type": "hardlink",
+        "sha256": "91ae3372d56d5325aaa2ac480712cb22752a88210e1b602e5b65bee8b47dfa97",
+        "size_in_bytes": 4866,
+        "sha256_in_prefix": "91ae3372d56d5325aaa2ac480712cb22752a88210e1b602e5b65bee8b47dfa97"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/_cffi/buffer.py",
+        "path_type": "hardlink",
+        "sha256": "114f447abc4ed6a61c44ead4e82721cb87427d1b5d6242d646f36166a539552c",
+        "size_in_bytes": 797,
+        "sha256_in_prefix": "114f447abc4ed6a61c44ead4e82721cb87427d1b5d6242d646f36166a539552c"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/_cffi/compressor.py",
+        "path_type": "hardlink",
+        "sha256": "725adb5be1c2fe2d7dd070fcd5becef4e50abd88397c145d280f11b6a6d2a3db",
+        "size_in_bytes": 13635,
+        "sha256_in_prefix": "725adb5be1c2fe2d7dd070fcd5becef4e50abd88397c145d280f11b6a6d2a3db"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/_cffi/decompressor.py",
+        "path_type": "hardlink",
+        "sha256": "6bed17f1aa070168f0616d0959b5292e63847103da97ab62b3b65e3b3dcd1914",
+        "size_in_bytes": 13230,
+        "sha256_in_prefix": "6bed17f1aa070168f0616d0959b5292e63847103da97ab62b3b65e3b3dcd1914"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/_cffi/zstddict.py",
+        "path_type": "hardlink",
+        "sha256": "9cc6fd6920bf373d2a431e74c8520002486b67a639275d3c68174c6ea05b989b",
+        "size_in_bytes": 6288,
+        "sha256_in_prefix": "9cc6fd6920bf373d2a431e74c8520002486b67a639275d3c68174c6ea05b989b"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/_shutil.py",
+        "path_type": "hardlink",
+        "sha256": "da9b51d3de24269dcae6ff0b949667a36269e6a3460dcab746c5a34ce24fed76",
+        "size_in_bytes": 5467,
+        "sha256_in_prefix": "da9b51d3de24269dcae6ff0b949667a36269e6a3460dcab746c5a34ce24fed76"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/_streams.py",
+        "path_type": "hardlink",
+        "sha256": "8b8e943815c748d030e540a023400cb87fb13f75c2f0615a63ec42ef9f156c92",
+        "size_in_bytes": 5670,
+        "sha256_in_prefix": "8b8e943815c748d030e540a023400cb87fb13f75c2f0615a63ec42ef9f156c92"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/_zstd.cpython-313-darwin.so",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/bld/rattler-build_backports.zstd_1767044991/host_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "sha256": "8dcb8e6d7e5b727659499a6184ba046790a53a2d77695259711554dc9653c9c2",
+        "size_in_bytes": 59248,
+        "sha256_in_prefix": "c654ad9da52c7a265182c9bced5d78fad56f9df301149a6a3987823e259fe67e"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/_zstd.py",
+        "path_type": "hardlink",
+        "sha256": "6315b4f43f503e7660cd19aa5480dc224182d35a1394218ea43d2d0a8099f6d5",
+        "size_in_bytes": 1039,
+        "sha256_in_prefix": "6315b4f43f503e7660cd19aa5480dc224182d35a1394218ea43d2d0a8099f6d5"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/_zstdfile.py",
+        "path_type": "hardlink",
+        "sha256": "36bbeb595add032ed66d1799f0d201e6f42aaf51bb0a4d158035507179b54877",
+        "size_in_bytes": 12296,
+        "sha256_in_prefix": "36bbeb595add032ed66d1799f0d201e6f42aaf51bb0a4d158035507179b54877"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/tarfile.py",
+        "path_type": "hardlink",
+        "sha256": "c4b3afa7a0d097181d0ec10eed2be5c9a7b2ede48ec3a2964deed738b6bef558",
+        "size_in_bytes": 117197,
+        "sha256_in_prefix": "c4b3afa7a0d097181d0ec10eed2be5c9a7b2ede48ec3a2964deed738b6bef558"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/tarfile.pyi",
+        "path_type": "hardlink",
+        "sha256": "dd6467fa60084fce2716831fd5076743e1df915b5c909fb867cd52aa3ebc3939",
+        "size_in_bytes": 26487,
+        "sha256_in_prefix": "dd6467fa60084fce2716831fd5076743e1df915b5c909fb867cd52aa3ebc3939"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/zipfile/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "fdba4597ff2a19a87a6f09cc19fe67628021ee4a7042a5b45105a99f51f0ce0d",
+        "size_in_bytes": 92276,
+        "sha256_in_prefix": "fdba4597ff2a19a87a6f09cc19fe67628021ee4a7042a5b45105a99f51f0ce0d"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/zipfile/__init__.pyi",
+        "path_type": "hardlink",
+        "sha256": "98b854f0a1b46d874597fdef377d1dde317414c2ff48e4dbaee153179b978a76",
+        "size_in_bytes": 8777,
+        "sha256_in_prefix": "98b854f0a1b46d874597fdef377d1dde317414c2ff48e4dbaee153179b978a76"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/zipfile/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "e418cdbb27adf0063e3cec28179ac6b7bdb6ac743bb49d157f450551fcf38be2",
+        "size_in_bytes": 58,
+        "sha256_in_prefix": "e418cdbb27adf0063e3cec28179ac6b7bdb6ac743bb49d157f450551fcf38be2"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/zipfile/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "2942932c84cb85a56af052a41a482454b105f2454d067b1d82d5e3aa2b3957f9",
+        "size_in_bytes": 107612,
+        "sha256_in_prefix": "2942932c84cb85a56af052a41a482454b105f2454d067b1d82d5e3aa2b3957f9"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/zipfile/__pycache__/__main__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "1ae8992b73230d1b18205ab2da3ebadd0d70412c1169a6403088e40b727106f1",
+        "size_in_bytes": 517,
+        "sha256_in_prefix": "1ae8992b73230d1b18205ab2da3ebadd0d70412c1169a6403088e40b727106f1"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/zipfile/_path/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "2e51a9a168b566cd62e0397dcb94cba6085ba85034a17d6334920a95aefb8311",
+        "size_in_bytes": 12073,
+        "sha256_in_prefix": "2e51a9a168b566cd62e0397dcb94cba6085ba85034a17d6334920a95aefb8311"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/zipfile/_path/__init__.pyi",
+        "path_type": "hardlink",
+        "sha256": "e0e980145fa91270dc11f320aca4470f4ab9df56529286f8d9c37ca328877f7f",
+        "size_in_bytes": 2704,
+        "sha256_in_prefix": "e0e980145fa91270dc11f320aca4470f4ab9df56529286f8d9c37ca328877f7f"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/zipfile/_path/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "9a7c448ac5b2101a9b00867b2631d267e4a71d4c4f6d80d85b16a2e8bb65a3a6",
+        "size_in_bytes": 20641,
+        "sha256_in_prefix": "9a7c448ac5b2101a9b00867b2631d267e4a71d4c4f6d80d85b16a2e8bb65a3a6"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/zipfile/_path/__pycache__/glob.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "3950096fc546ace647a93afffaf52be580c44c4c1a7a1b4bc76bc6bb52764cb3",
+        "size_in_bytes": 5648,
+        "sha256_in_prefix": "3950096fc546ace647a93afffaf52be580c44c4c1a7a1b4bc76bc6bb52764cb3"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/zipfile/_path/glob.py",
+        "path_type": "hardlink",
+        "sha256": "edefea638f250b9e011526141d83b222a06466a68e357b6d780a8b4173d802f7",
+        "size_in_bytes": 3314,
+        "sha256_in_prefix": "edefea638f250b9e011526141d83b222a06466a68e357b6d780a8b4173d802f7"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports/zstd/zipfile/_path/glob.pyi",
+        "path_type": "hardlink",
+        "sha256": "e8f5c0eee1f9df4edeeec58f387cb9d26d55a8603cdb25736a80c92648071f8d",
+        "size_in_bytes": 671,
+        "sha256_in_prefix": "e8f5c0eee1f9df4edeeec58f387cb9d26d55a8603cdb25736a80c92648071f8d"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports_zstd-1.3.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "bc33022edcb7639ff53355b4e91dade50a0bbf0299efeb6171d1ec0ba5029cfc",
+        "size_in_bytes": 6,
+        "sha256_in_prefix": "bc33022edcb7639ff53355b4e91dade50a0bbf0299efeb6171d1ec0ba5029cfc"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports_zstd-1.3.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "ae2bf1a4290d3ee18fe9694fd4c855d35c6eb0b42432743151ddb306c8e70cc3",
+        "size_in_bytes": 6869,
+        "sha256_in_prefix": "ae2bf1a4290d3ee18fe9694fd4c855d35c6eb0b42432743151ddb306c8e70cc3"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports_zstd-1.3.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "fbf90a65572172b71d8791c3bfab0e7eb39d932ecf32110f1929d83a3865d9ee",
+        "size_in_bytes": 4038,
+        "sha256_in_prefix": "fbf90a65572172b71d8791c3bfab0e7eb39d932ecf32110f1929d83a3865d9ee"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports_zstd-1.3.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports_zstd-1.3.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "1639298b50f122ddf554aaad25db27d02fecd0f481b7c0a4fdb17c05ae21fee2",
+        "size_in_bytes": 111,
+        "sha256_in_prefix": "1639298b50f122ddf554aaad25db27d02fecd0f481b7c0a4fdb17c05ae21fee2"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports_zstd-1.3.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "d48ed61759e584533613d32bdb4a70638efb24bfeb1668da0d0bb6a6407eab5a",
+        "size_in_bytes": 117,
+        "sha256_in_prefix": "d48ed61759e584533613d32bdb4a70638efb24bfeb1668da0d0bb6a6407eab5a"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports_zstd-1.3.0.dist-info/licenses/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "b0e25a78cffb43f4d92de8b61ccfa1f1f98ecbc22330b54b5251e7b6ba010231",
+        "size_in_bytes": 13804,
+        "sha256_in_prefix": "b0e25a78cffb43f4d92de8b61ccfa1f1f98ecbc22330b54b5251e7b6ba010231"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports_zstd-1.3.0.dist-info/licenses/LICENSE_zstd.txt",
+        "path_type": "hardlink",
+        "sha256": "f89ef2b03b52ad7c3342aeb2e1c961737f9de4892d41b1d083b0060c6191e1bf",
+        "size_in_bytes": 1724,
+        "sha256_in_prefix": "f89ef2b03b52ad7c3342aeb2e1c961737f9de4892d41b1d083b0060c6191e1bf"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/backports_zstd-1.3.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "7068da2cc3a8051d452b4029a23b73595995893b49ec91882bf1f05e212cbed5",
+        "size_in_bytes": 10,
+        "sha256_in_prefix": "7068da2cc3a8051d452b4029a23b73595995893b49ec91882bf1f05e212cbed5"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/brainsimulation/Applications/fsl/pkgs/backports.zstd-1.3.0-py313h591e92b_0",
+    "type": 1
+  }
+}

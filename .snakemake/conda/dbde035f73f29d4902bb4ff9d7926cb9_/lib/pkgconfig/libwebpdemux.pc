@@ -1,0 +1,11 @@
+prefix=/Users/brainsimulation/Desktop/hcpep-analysis/.snakemake/conda/dbde035f73f29d4902bb4ff9d7926cb9_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libwebpdemux
+Description: Library for parsing the WebP graphics format container
+Version: 1.6.0
+Requires.private: libwebp >= 0.2.0
+Cflags: -I${includedir}
+Libs: -L${libdir} -lwebpdemux

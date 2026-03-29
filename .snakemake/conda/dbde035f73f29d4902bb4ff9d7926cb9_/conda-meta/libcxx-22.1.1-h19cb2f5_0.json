@@ -1,0 +1,71 @@
+{
+  "name": "libcxx",
+  "version": "22.1.1",
+  "build": "h19cb2f5_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "subdir": "osx-64",
+  "fn": "libcxx-22.1.1-h19cb2f5_0.conda",
+  "md5": "799141ac68a99265f04bcee196b2df51",
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/libcxx-22.1.1-h19cb2f5_0.conda",
+  "sha256": "db3adcb33eaca02311d3ba17e06c60ceaedda20240414f7b1df6e7f9ec902bfa",
+  "depends": [
+    "__osx >=11.0"
+  ],
+  "constrains": [],
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "timestamp": 1773203656000,
+  "size": 564942,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/Users/brainsimulation/Applications/fsl/pkgs/libcxx-22.1.1-h19cb2f5_0.conda",
+  "extracted_package_dir": "/Users/brainsimulation/Applications/fsl/pkgs/libcxx-22.1.1-h19cb2f5_0",
+  "files": [
+    "lib/libc++.1.0.dylib",
+    "lib/libc++.1.dylib",
+    "lib/libc++.a",
+    "lib/libc++.dylib",
+    "lib/libc++experimental.a"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/libc++.1.0.dylib",
+        "path_type": "hardlink",
+        "sha256": "4cff71c662cdceaf06c11eb2f48d5a54c0a957b6abb721715c50798ef4bc400c",
+        "size_in_bytes": 1146616,
+        "sha256_in_prefix": "4cff71c662cdceaf06c11eb2f48d5a54c0a957b6abb721715c50798ef4bc400c"
+      },
+      {
+        "_path": "lib/libc++.1.dylib",
+        "path_type": "softlink",
+        "sha256": "4cff71c662cdceaf06c11eb2f48d5a54c0a957b6abb721715c50798ef4bc400c",
+        "size_in_bytes": 1146616
+      },
+      {
+        "_path": "lib/libc++.a",
+        "path_type": "hardlink",
+        "sha256": "bebeeba3473c8bd0daff9127cb06a6181616be293c09bb6494e33d9d2bdca0f2",
+        "size_in_bytes": 1669736,
+        "sha256_in_prefix": "bebeeba3473c8bd0daff9127cb06a6181616be293c09bb6494e33d9d2bdca0f2"
+      },
+      {
+        "_path": "lib/libc++.dylib",
+        "path_type": "softlink",
+        "sha256": "4cff71c662cdceaf06c11eb2f48d5a54c0a957b6abb721715c50798ef4bc400c",
+        "size_in_bytes": 1146616
+      },
+      {
+        "_path": "lib/libc++experimental.a",
+        "path_type": "hardlink",
+        "sha256": "2b78491b860331a631dc3336584996b3c02874e44d70e75fb8017a991366f6cf",
+        "size_in_bytes": 328688,
+        "sha256_in_prefix": "2b78491b860331a631dc3336584996b3c02874e44d70e75fb8017a991366f6cf"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/brainsimulation/Applications/fsl/pkgs/libcxx-22.1.1-h19cb2f5_0",
+    "type": 1
+  }
+}

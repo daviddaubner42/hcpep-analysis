@@ -1,0 +1,64 @@
+{
+  "name": "xorg-libxdmcp",
+  "version": "1.1.5",
+  "build": "h07e4dd9_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-64",
+  "subdir": "osx-64",
+  "fn": "xorg-libxdmcp-1.1.5-h07e4dd9_0.conda",
+  "md5": "450b21745f43b17c67e0072727ee4f23",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-64/xorg-libxdmcp-1.1.5-h07e4dd9_0.conda",
+  "sha256": "fabd68adce4a18eae6fa539083956c7f5be4ac4e0d147a51677700d78c75ebf3",
+  "depends": [],
+  "constrains": [],
+  "license": "MIT",
+  "timestamp": 1745992399000,
+  "size": 19014,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/Users/brainsimulation/Applications/fsl/pkgs/xorg-libxdmcp-1.1.5-h07e4dd9_0",
+  "extracted_package_dir": "/Users/brainsimulation/Applications/fsl/pkgs/xorg-libxdmcp-1.1.5-h07e4dd9_0",
+  "files": [
+    "include/X11/Xdmcp.h",
+    "lib/libXdmcp.6.dylib",
+    "lib/libXdmcp.dylib",
+    "lib/pkgconfig/xdmcp.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "include/X11/Xdmcp.h",
+        "path_type": "hardlink",
+        "sha256": "7fd3eb99f92b1c566c87cab744ccbb85a4530152eeace73dbb493952a4f40477",
+        "size_in_bytes": 8535,
+        "sha256_in_prefix": "7fd3eb99f92b1c566c87cab744ccbb85a4530152eeace73dbb493952a4f40477"
+      },
+      {
+        "_path": "lib/libXdmcp.6.dylib",
+        "path_type": "hardlink",
+        "sha256": "4feb49562188fa1d73e9e39ccd62e68ceb223cbdeedb14eb2cb95cfe3bd03b63",
+        "size_in_bytes": 27576,
+        "sha256_in_prefix": "4feb49562188fa1d73e9e39ccd62e68ceb223cbdeedb14eb2cb95cfe3bd03b63"
+      },
+      {
+        "_path": "lib/libXdmcp.dylib",
+        "path_type": "softlink",
+        "sha256": "4feb49562188fa1d73e9e39ccd62e68ceb223cbdeedb14eb2cb95cfe3bd03b63",
+        "size_in_bytes": 27576
+      },
+      {
+        "_path": "lib/pkgconfig/xdmcp.pc",
+        "prefix_placeholder": "/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_6ezv5_6sao/croot/xorg-libxdmcp_1745992267793/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "sha256": "b03cdb62e34a680e5503a88b6641620274db6318978eddfda75b2b06279f7341",
+        "size_in_bytes": 491,
+        "sha256_in_prefix": "b55f72f1aa1507650d603dc3860b3077491f0b47d742fc330194ec424f799a22"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/brainsimulation/Applications/fsl/pkgs/xorg-libxdmcp-1.1.5-h07e4dd9_0",
+    "type": 1
+  }
+}

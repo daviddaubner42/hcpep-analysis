@@ -1,0 +1,58 @@
+{
+  "name": "libxml2",
+  "version": "2.15.2",
+  "build": "hd552753_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "subdir": "osx-64",
+  "fn": "libxml2-2.15.2-hd552753_0.conda",
+  "md5": "eea3155f3b4a3b75af504c871ec23858",
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/libxml2-2.15.2-hd552753_0.conda",
+  "sha256": "5b9e8a5146275ac0539231f646ee51a9e4629e730026ff69dadff35bfb745911",
+  "depends": [
+    "__osx >=11.0",
+    "icu >=78.2,<79.0a0",
+    "libiconv >=1.18,<2.0a0",
+    "liblzma >=5.8.2,<6.0a0",
+    "libxml2-16 2.15.2 h7a90416_0",
+    "libzlib >=1.3.1,<2.0a0"
+  ],
+  "constrains": [],
+  "license": "MIT",
+  "timestamp": 1772705465000,
+  "size": 41106,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/Users/brainsimulation/Applications/fsl/pkgs/libxml2-2.15.2-hd552753_0",
+  "extracted_package_dir": "/Users/brainsimulation/Applications/fsl/pkgs/libxml2-2.15.2-hd552753_0",
+  "files": [
+    "bin/xmlcatalog",
+    "bin/xmllint"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "bin/xmlcatalog",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/libxml2-split_1772704589549/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "sha256": "109791060ddb6e876eb7530b635fd29ad8e905ff541309d42ab4ed804cc1829f",
+        "size_in_bytes": 23440,
+        "sha256_in_prefix": "c3946d9c43700e1f4653e0b07ff15853b237a705bc677211d8cb4053c59fdb3f"
+      },
+      {
+        "_path": "bin/xmllint",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/libxml2-split_1772704589549/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "sha256": "49c22e1afb46e83e38caa130b6e2ad2683f346040b99e448cf11a71e4c5dbe71",
+        "size_in_bytes": 81640,
+        "sha256_in_prefix": "a30b5eefdc8beb4528407825b89705c47da7f7e4b54fe32f4d150055d8ae94a7"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/brainsimulation/Applications/fsl/pkgs/libxml2-2.15.2-hd552753_0",
+    "type": 1
+  }
+}

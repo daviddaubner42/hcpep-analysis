@@ -1,0 +1,74 @@
+{
+  "name": "yaml",
+  "version": "0.2.5",
+  "build": "haf1e3a3_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-64",
+  "subdir": "osx-64",
+  "fn": "yaml-0.2.5-haf1e3a3_0.conda",
+  "md5": "73628ed86f99adf6a0cb81dd20e426cd",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-64/yaml-0.2.5-haf1e3a3_0.conda",
+  "sha256": "6bffb10328d883c274639032af4f9963bbfa48bb29adc86a30cf85da1efdb4ec",
+  "depends": [],
+  "constrains": [],
+  "license": "MIT",
+  "timestamp": 1593116269000,
+  "size": 73357,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/Users/brainsimulation/Applications/fsl/pkgs/yaml-0.2.5-haf1e3a3_0",
+  "extracted_package_dir": "/Users/brainsimulation/Applications/fsl/pkgs/yaml-0.2.5-haf1e3a3_0",
+  "files": [
+    "include/yaml.h",
+    "lib/libyaml-0.2.dylib",
+    "lib/libyaml.a",
+    "lib/libyaml.dylib",
+    "lib/pkgconfig/yaml-0.1.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "include/yaml.h",
+        "path_type": "hardlink",
+        "sha256": "de39c9fc2b2c8584775e6d0dc0f13c8e778ceba47d419cff9d85465ca35d6954",
+        "size_in_bytes": 54439,
+        "sha256_in_prefix": "de39c9fc2b2c8584775e6d0dc0f13c8e778ceba47d419cff9d85465ca35d6954"
+      },
+      {
+        "_path": "lib/libyaml-0.2.dylib",
+        "prefix_placeholder": "/opt/concourse/worker/volumes/live/5fb26cea-7158-4943-4360-30d0164e4e2d/volume/yaml_1593116121024/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "sha256": "636b21da57b056ee7ecf71efca9b8870fb99c2ff72239560889a7a4a9f495ce5",
+        "size_in_bytes": 129892,
+        "sha256_in_prefix": "46d707c733d9abf6963eeab96ce9ade3ff1d510141f06c9690c5a665c6a0777a"
+      },
+      {
+        "_path": "lib/libyaml.a",
+        "path_type": "hardlink",
+        "sha256": "c430aa905ddeecdd09cf0e333e045d454487d3962a5030024e8f59cb9d0f88a2",
+        "size_in_bytes": 149152,
+        "sha256_in_prefix": "c430aa905ddeecdd09cf0e333e045d454487d3962a5030024e8f59cb9d0f88a2"
+      },
+      {
+        "_path": "lib/libyaml.dylib",
+        "path_type": "softlink",
+        "sha256": "636b21da57b056ee7ecf71efca9b8870fb99c2ff72239560889a7a4a9f495ce5",
+        "size_in_bytes": 129892
+      },
+      {
+        "_path": "lib/pkgconfig/yaml-0.1.pc",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "sha256": "ccaa923d9a666534b8b05bd03b38e0ce1f92ee3ccf4e2c0aad93b29f19db613f",
+        "size_in_bytes": 240,
+        "sha256_in_prefix": "59390f387d158e74ddbb1a42fa89ba507b8dc5382e7fbe67c1c3682e1c2bd8d1"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/brainsimulation/Applications/fsl/pkgs/yaml-0.2.5-haf1e3a3_0",
+    "type": 1
+  }
+}

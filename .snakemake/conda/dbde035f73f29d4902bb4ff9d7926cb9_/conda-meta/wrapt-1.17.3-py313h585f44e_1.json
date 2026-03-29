@@ -1,0 +1,235 @@
+{
+  "name": "wrapt",
+  "version": "1.17.3",
+  "build": "py313h585f44e_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "subdir": "osx-64",
+  "fn": "wrapt-1.17.3-py313h585f44e_1.conda",
+  "md5": "765dc9b39fc2d62e1351c3a26e316607",
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/wrapt-1.17.3-py313h585f44e_1.conda",
+  "sha256": "dd8f1b31d78220dae5fd046d53d4c4b90251661086b44aef074e7775398719fc",
+  "depends": [
+    "__osx >=10.13",
+    "python >=3.13,<3.14.0a0",
+    "python_abi 3.13.* *_cp313"
+  ],
+  "constrains": [],
+  "license": "BSD-2-Clause",
+  "timestamp": 1756851742000,
+  "size": 61239,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/Users/brainsimulation/Applications/fsl/pkgs/wrapt-1.17.3-py313h585f44e_1",
+  "extracted_package_dir": "/Users/brainsimulation/Applications/fsl/pkgs/wrapt-1.17.3-py313h585f44e_1",
+  "files": [
+    "lib/python3.13/site-packages/wrapt-1.17.3.dist-info/INSTALLER",
+    "lib/python3.13/site-packages/wrapt-1.17.3.dist-info/METADATA",
+    "lib/python3.13/site-packages/wrapt-1.17.3.dist-info/RECORD",
+    "lib/python3.13/site-packages/wrapt-1.17.3.dist-info/REQUESTED",
+    "lib/python3.13/site-packages/wrapt-1.17.3.dist-info/WHEEL",
+    "lib/python3.13/site-packages/wrapt-1.17.3.dist-info/direct_url.json",
+    "lib/python3.13/site-packages/wrapt-1.17.3.dist-info/licenses/LICENSE",
+    "lib/python3.13/site-packages/wrapt-1.17.3.dist-info/top_level.txt",
+    "lib/python3.13/site-packages/wrapt/__init__.py",
+    "lib/python3.13/site-packages/wrapt/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/wrapt/__pycache__/__wrapt__.cpython-313.pyc",
+    "lib/python3.13/site-packages/wrapt/__pycache__/arguments.cpython-313.pyc",
+    "lib/python3.13/site-packages/wrapt/__pycache__/decorators.cpython-313.pyc",
+    "lib/python3.13/site-packages/wrapt/__pycache__/importer.cpython-313.pyc",
+    "lib/python3.13/site-packages/wrapt/__pycache__/patches.cpython-313.pyc",
+    "lib/python3.13/site-packages/wrapt/__pycache__/weakrefs.cpython-313.pyc",
+    "lib/python3.13/site-packages/wrapt/__pycache__/wrappers.cpython-313.pyc",
+    "lib/python3.13/site-packages/wrapt/__wrapt__.py",
+    "lib/python3.13/site-packages/wrapt/_wrappers.cpython-313-darwin.so",
+    "lib/python3.13/site-packages/wrapt/arguments.py",
+    "lib/python3.13/site-packages/wrapt/decorators.py",
+    "lib/python3.13/site-packages/wrapt/importer.py",
+    "lib/python3.13/site-packages/wrapt/patches.py",
+    "lib/python3.13/site-packages/wrapt/weakrefs.py",
+    "lib/python3.13/site-packages/wrapt/wrappers.py"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/python3.13/site-packages/wrapt-1.17.3.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5,
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt-1.17.3.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "40db244fa00f49f0f1ab8f0c66ccdac11db164c7ba4d7c468299f0dff575f4f4",
+        "size_in_bytes": 6373,
+        "sha256_in_prefix": "40db244fa00f49f0f1ab8f0c66ccdac11db164c7ba4d7c468299f0dff575f4f4"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt-1.17.3.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "73a47871ba786216c0a3b08af59bcd07428391d7c89031641fe675955ed90f5a",
+        "size_in_bytes": 1735,
+        "sha256_in_prefix": "73a47871ba786216c0a3b08af59bcd07428391d7c89031641fe675955ed90f5a"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt-1.17.3.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt-1.17.3.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "1639298b50f122ddf554aaad25db27d02fecd0f481b7c0a4fdb17c05ae21fee2",
+        "size_in_bytes": 111,
+        "sha256_in_prefix": "1639298b50f122ddf554aaad25db27d02fecd0f481b7c0a4fdb17c05ae21fee2"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt-1.17.3.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "e3b5351a3a921404b1ddcb9ccedea922f1508dfa60905ec03a55edcfa7dc5f48",
+        "size_in_bytes": 93,
+        "sha256_in_prefix": "e3b5351a3a921404b1ddcb9ccedea922f1508dfa60905ec03a55edcfa7dc5f48"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt-1.17.3.dist-info/licenses/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "5974efbbc8b626b2050810d63c3a907ee21c92bf64b3740fc623ad05eb3448ab",
+        "size_in_bytes": 1304,
+        "sha256_in_prefix": "5974efbbc8b626b2050810d63c3a907ee21c92bf64b3740fc623ad05eb3448ab"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt-1.17.3.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "25fee472e5edc2350933038bd10cc02c38365a24a25e21fd4e128c8cdeb80d6d",
+        "size_in_bytes": 6,
+        "sha256_in_prefix": "25fee472e5edc2350933038bd10cc02c38365a24a25e21fd4e128c8cdeb80d6d"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "3013f31a72ffe09c7bf75515bcdac8b15a2669de0cff344fdbdd096bcf14b4fc",
+        "size_in_bytes": 1238,
+        "sha256_in_prefix": "3013f31a72ffe09c7bf75515bcdac8b15a2669de0cff344fdbdd096bcf14b4fc"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "fd96d009f67e60045da9714e7c5878642b744ab8a13dc87707b0aaaa5abae2e3",
+        "size_in_bytes": 1133,
+        "sha256_in_prefix": "fd96d009f67e60045da9714e7c5878642b744ab8a13dc87707b0aaaa5abae2e3"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt/__pycache__/__wrapt__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "31b099ebc4fc421b4c849b1f82da66b5dc7d2b63eb44fd423b8914909cff6a53",
+        "size_in_bytes": 643,
+        "sha256_in_prefix": "31b099ebc4fc421b4c849b1f82da66b5dc7d2b63eb44fd423b8914909cff6a53"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt/__pycache__/arguments.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "27a8bd328e4f9e862833a2d4c6e2799fcaf9fc5d0d78949339a5d743d05ce32a",
+        "size_in_bytes": 2120,
+        "sha256_in_prefix": "27a8bd328e4f9e862833a2d4c6e2799fcaf9fc5d0d78949339a5d743d05ce32a"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt/__pycache__/decorators.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "dcee3fcc8dec0d507f334c66d50bd9eaa875f673209e048bc6005dbf614d6d0e",
+        "size_in_bytes": 13808,
+        "sha256_in_prefix": "dcee3fcc8dec0d507f334c66d50bd9eaa875f673209e048bc6005dbf614d6d0e"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt/__pycache__/importer.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "67f84e3aa14e0771f11e4fa690c83afb4d9390f74198322bb0407fe795abf61e",
+        "size_in_bytes": 9214,
+        "sha256_in_prefix": "67f84e3aa14e0771f11e4fa690c83afb4d9390f74198322bb0407fe795abf61e"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt/__pycache__/patches.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "925bc8e31a9c2e6e0745203d92a92230d364d8189e909650a3c3e9cc493d390a",
+        "size_in_bytes": 6189,
+        "sha256_in_prefix": "925bc8e31a9c2e6e0745203d92a92230d364d8189e909650a3c3e9cc493d390a"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt/__pycache__/weakrefs.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "7650a806fc9dbb0d475e5b2e862bacbe787fd371bfa3c7fd54d0698b0f0f1952",
+        "size_in_bytes": 2949,
+        "sha256_in_prefix": "7650a806fc9dbb0d475e5b2e862bacbe787fd371bfa3c7fd54d0698b0f0f1952"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt/__pycache__/wrappers.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "4d025b921997abe5ecbbaffe0b7110f01f3ba5c6b805837b7b6ca12d152b71a0",
+        "size_in_bytes": 31586,
+        "sha256_in_prefix": "4d025b921997abe5ecbbaffe0b7110f01f3ba5c6b805837b7b6ca12d152b71a0"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt/__wrapt__.py",
+        "path_type": "hardlink",
+        "sha256": "2a05d9758639708ceafe1ab31aeb9edfc20af923a8c9af0ac78ce402be99b6ea",
+        "size_in_bytes": 443,
+        "sha256_in_prefix": "2a05d9758639708ceafe1ab31aeb9edfc20af923a8c9af0ac78ce402be99b6ea"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt/_wrappers.cpython-313-darwin.so",
+        "path_type": "hardlink",
+        "sha256": "99b0b4356af789f69be75f8805c6a141515586c1445fce1e859cda808040e1e3",
+        "size_in_bytes": 47816,
+        "sha256_in_prefix": "99b0b4356af789f69be75f8805c6a141515586c1445fce1e859cda808040e1e3"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt/arguments.py",
+        "path_type": "hardlink",
+        "sha256": "445d274c474fccf21ec09fa39d2638da2e094b32b772d8cf001575489c4bca68",
+        "size_in_bytes": 1746,
+        "sha256_in_prefix": "445d274c474fccf21ec09fa39d2638da2e094b32b772d8cf001575489c4bca68"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt/decorators.py",
+        "path_type": "hardlink",
+        "sha256": "334a432c1f928a83932037336165f7529128ad93228e9eecd7b16fa477577f66",
+        "size_in_bytes": 21333,
+        "sha256_in_prefix": "334a432c1f928a83932037336165f7529128ad93228e9eecd7b16fa477577f66"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt/importer.py",
+        "path_type": "hardlink",
+        "sha256": "ab12b96df866e76ba161781d267dc0c1178e5dd584f60637d9fc25054c9bcfae",
+        "size_in_bytes": 10997,
+        "sha256_in_prefix": "ab12b96df866e76ba161781d267dc0c1178e5dd584f60637d9fc25054c9bcfae"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt/patches.py",
+        "path_type": "hardlink",
+        "sha256": "d3c82dfda540b8dbd7c8e567f28f3f0249140fd74f8741b9a14c67a01c1dd02b",
+        "size_in_bytes": 5204,
+        "sha256_in_prefix": "d3c82dfda540b8dbd7c8e567f28f3f0249140fd74f8741b9a14c67a01c1dd02b"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt/weakrefs.py",
+        "path_type": "hardlink",
+        "sha256": "80a59333046a0104d4863438168d0c931823784f30f9fcd368490175c04c6fa7",
+        "size_in_bytes": 3881,
+        "sha256_in_prefix": "80a59333046a0104d4863438168d0c931823784f30f9fcd368490175c04c6fa7"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/wrapt/wrappers.py",
+        "path_type": "hardlink",
+        "sha256": "210193056b3625fcdfb4743ae37addf842a90131fe38fdf537ef83e53daf4abd",
+        "size_in_bytes": 28687,
+        "sha256_in_prefix": "210193056b3625fcdfb4743ae37addf842a90131fe38fdf537ef83e53daf4abd"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/brainsimulation/Applications/fsl/pkgs/wrapt-1.17.3-py313h585f44e_1",
+    "type": 1
+  }
+}

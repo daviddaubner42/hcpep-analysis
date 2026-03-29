@@ -1,0 +1,11 @@
+prefix=/Users/brainsimulation/Desktop/hcpep-analysis/.snakemake/conda/dbde035f73f29d4902bb4ff9d7926cb9_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: XCB XInput
+Description: XCB XInput Extension (EXPERIMENTAL)
+Version: 1.17.0
+Requires.private: xcb xcb-xfixes
+Libs: -L${libdir} -lxcb-xinput
+Cflags: -I${includedir}

@@ -1,0 +1,33 @@
+{
+  "name": "libgfortran",
+  "version": "15.2.0",
+  "build": "h7e5c614_18",
+  "build_number": 18,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "subdir": "osx-64",
+  "fn": "libgfortran-15.2.0-h7e5c614_18.conda",
+  "md5": "34a9f67498721abcfef00178bcf4b190",
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/libgfortran-15.2.0-h7e5c614_18.conda",
+  "sha256": "fb06c2a2ef06716a0f2a6550f5d13cdd1d89365993068512b7ae3c34e6e665d9",
+  "depends": [
+    "libgfortran5 15.2.0 hd16e46c_18"
+  ],
+  "constrains": [
+    "libgfortran-ng ==15.2.0 *_18"
+  ],
+  "license": "GPL-3.0-only WITH GCC-exception-3.1",
+  "timestamp": 1771378423000,
+  "size": 139761,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/Users/brainsimulation/Applications/fsl/pkgs/libgfortran-15.2.0-h7e5c614_18",
+  "extracted_package_dir": "/Users/brainsimulation/Applications/fsl/pkgs/libgfortran-15.2.0-h7e5c614_18",
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "/Users/brainsimulation/Applications/fsl/pkgs/libgfortran-15.2.0-h7e5c614_18",
+    "type": 1
+  }
+}

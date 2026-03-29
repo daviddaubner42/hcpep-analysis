@@ -1,0 +1,34 @@
+{
+  "name": "matplotlib",
+  "version": "3.10.8",
+  "build": "py313habf4b1d_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "subdir": "osx-64",
+  "fn": "matplotlib-3.10.8-py313habf4b1d_0.conda",
+  "md5": "37dffad2937d7c8b7fc47003ddd31eac",
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/matplotlib-3.10.8-py313habf4b1d_0.conda",
+  "sha256": "cea48c750f812eaf7c8b1edaff9d4b30bdad99f28f4421f1ab49e24c74db360d",
+  "depends": [
+    "matplotlib-base >=3.10.8,<3.10.9.0a0",
+    "python >=3.13,<3.14.0a0",
+    "python_abi 3.13.* *_cp313",
+    "tornado >=5"
+  ],
+  "constrains": [],
+  "license": "PSF-2.0",
+  "timestamp": 1763055798000,
+  "size": 17433,
+  "requested_spec": "matplotlib",
+  "package_tarball_full_path": "/Users/brainsimulation/Applications/fsl/pkgs/matplotlib-3.10.8-py313habf4b1d_0",
+  "extracted_package_dir": "/Users/brainsimulation/Applications/fsl/pkgs/matplotlib-3.10.8-py313habf4b1d_0",
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "/Users/brainsimulation/Applications/fsl/pkgs/matplotlib-3.10.8-py313habf4b1d_0",
+    "type": 1
+  }
+}

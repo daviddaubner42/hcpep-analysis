@@ -1,0 +1,13 @@
+prefix=/Users/brainsimulation/Desktop/hcpep-analysis/.snakemake/conda/dbde035f73f29d4902bb4ff9d7926cb9_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+
+Name: libexslt
+Version: 0.8.24
+Description: EXSLT Extension library
+Requires: libxml-2.0, libxslt
+Cflags: -I${includedir} 
+Libs: -L${libdir} -lexslt
+Libs.private:   

@@ -1,0 +1,140 @@
+{
+  "name": "amply",
+  "version": "0.1.6",
+  "build": "py313hecd8cb5_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-64",
+  "subdir": "osx-64",
+  "fn": "amply-0.1.6-py313hecd8cb5_1.conda",
+  "md5": "885fc444732e8d29541fe130f4050b54",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-64/amply-0.1.6-py313hecd8cb5_1.conda",
+  "sha256": "1daa064e7054d38f3ab9afb15bd8b98e1eaed408cb9b7dee93c903103bea9885",
+  "depends": [
+    "pyparsing",
+    "python >=3.13,<3.14.0a0",
+    "python_abi 3.13.* *_cp313",
+    "docutils >=0.3"
+  ],
+  "constrains": [],
+  "license": "EPL-2.0",
+  "timestamp": 1728626944000,
+  "size": 34189,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/Users/brainsimulation/Applications/fsl/pkgs/amply-0.1.6-py313hecd8cb5_1",
+  "extracted_package_dir": "/Users/brainsimulation/Applications/fsl/pkgs/amply-0.1.6-py313hecd8cb5_1",
+  "files": [
+    "lib/python3.13/site-packages/amply-0.1.6.dist-info/AUTHORS",
+    "lib/python3.13/site-packages/amply-0.1.6.dist-info/INSTALLER",
+    "lib/python3.13/site-packages/amply-0.1.6.dist-info/LICENSE",
+    "lib/python3.13/site-packages/amply-0.1.6.dist-info/METADATA",
+    "lib/python3.13/site-packages/amply-0.1.6.dist-info/RECORD",
+    "lib/python3.13/site-packages/amply-0.1.6.dist-info/REQUESTED",
+    "lib/python3.13/site-packages/amply-0.1.6.dist-info/WHEEL",
+    "lib/python3.13/site-packages/amply-0.1.6.dist-info/direct_url.json",
+    "lib/python3.13/site-packages/amply-0.1.6.dist-info/top_level.txt",
+    "lib/python3.13/site-packages/amply/__init__.py",
+    "lib/python3.13/site-packages/amply/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/amply/__pycache__/amply.cpython-313.pyc",
+    "lib/python3.13/site-packages/amply/amply.py"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/python3.13/site-packages/amply-0.1.6.dist-info/AUTHORS",
+        "path_type": "hardlink",
+        "sha256": "bb9a80782df08e06f62c8530c039aa78ff9303ad6ab6a1184eda4621153dfb2c",
+        "size_in_bytes": 233,
+        "sha256_in_prefix": "bb9a80782df08e06f62c8530c039aa78ff9303ad6ab6a1184eda4621153dfb2c"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/amply-0.1.6.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5,
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/amply-0.1.6.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "0435570a20c5b24623b98cbcd0b4d0340d5550007388cda4c6b198b0cfa14a86",
+        "size_in_bytes": 11320,
+        "sha256_in_prefix": "0435570a20c5b24623b98cbcd0b4d0340d5550007388cda4c6b198b0cfa14a86"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/amply-0.1.6.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "9ceb65815d0ebe2dd809209b1b2fa04b641761bad780e66bd7b4ec4adfaf3396",
+        "size_in_bytes": 15670,
+        "sha256_in_prefix": "9ceb65815d0ebe2dd809209b1b2fa04b641761bad780e66bd7b4ec4adfaf3396"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/amply-0.1.6.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "3cb48d397706fb4850ac54f5f108ae8d5e9131ddd4adf692cdb59becd80bfb91",
+        "size_in_bytes": 969,
+        "sha256_in_prefix": "3cb48d397706fb4850ac54f5f108ae8d5e9131ddd4adf692cdb59becd80bfb91"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/amply-0.1.6.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/amply-0.1.6.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "195f5a3138703ffe28342b6f102d9e737a9462eb6059e033925ae8ff49b85894",
+        "size_in_bytes": 91,
+        "sha256_in_prefix": "195f5a3138703ffe28342b6f102d9e737a9462eb6059e033925ae8ff49b85894"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/amply-0.1.6.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "78dee4c0d743d6751c5d0b738e1474f50f6fc26ae4c97c8d53a4bc04fbcc4e23",
+        "size_in_bytes": 115,
+        "sha256_in_prefix": "78dee4c0d743d6751c5d0b738e1474f50f6fc26ae4c97c8d53a4bc04fbcc4e23"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/amply-0.1.6.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "6af168ea58794721622426c7ade8e9d3e1130184084ca49ac495a05477ca2fb6",
+        "size_in_bytes": 6,
+        "sha256_in_prefix": "6af168ea58794721622426c7ade8e9d3e1130184084ca49ac495a05477ca2fb6"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/amply/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "3a929ed9498ca9b501e940d14d50ec2ebe7da7a6ee5084e310fc17fff2ddacf5",
+        "size_in_bytes": 72,
+        "sha256_in_prefix": "3a929ed9498ca9b501e940d14d50ec2ebe7da7a6ee5084e310fc17fff2ddacf5"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/amply/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "dfbf55950e5ebec47bfd7579e1ac43ecd781ee3cea6c2e8a4bcf5b31e4c01553",
+        "size_in_bytes": 239,
+        "sha256_in_prefix": "dfbf55950e5ebec47bfd7579e1ac43ecd781ee3cea6c2e8a4bcf5b31e4c01553"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/amply/__pycache__/amply.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "760b3a1265a5b455b2ae653dabf9d02e6e0f3f7ea7bde00ec3e7e49e615b202f",
+        "size_in_bytes": 36179,
+        "sha256_in_prefix": "760b3a1265a5b455b2ae653dabf9d02e6e0f3f7ea7bde00ec3e7e49e615b202f"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/amply/amply.py",
+        "path_type": "hardlink",
+        "sha256": "cfb11db9f8e744c50c3f0b8e196b30f50b37400a2ea0a2b06ca9b891fd6560d0",
+        "size_in_bytes": 22357,
+        "sha256_in_prefix": "cfb11db9f8e744c50c3f0b8e196b30f50b37400a2ea0a2b06ca9b891fd6560d0"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/brainsimulation/Applications/fsl/pkgs/amply-0.1.6-py313hecd8cb5_1",
+    "type": 1
+  }
+}

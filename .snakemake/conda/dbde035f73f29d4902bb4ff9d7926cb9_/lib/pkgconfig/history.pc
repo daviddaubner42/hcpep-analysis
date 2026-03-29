@@ -1,0 +1,11 @@
+prefix=/Users/brainsimulation/Desktop/hcpep-analysis/.snakemake/conda/dbde035f73f29d4902bb4ff9d7926cb9_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: History
+Description: Gnu History library for managing previously-entered lines
+URL: http://tiswww.cwru.edu/php/chet/readline/rltop.html
+Version: 8.3
+Libs: -L${libdir} -lhistory
+Cflags: -I${includedir}

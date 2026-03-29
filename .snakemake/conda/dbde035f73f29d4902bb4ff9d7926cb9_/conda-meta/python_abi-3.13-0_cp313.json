@@ -1,0 +1,31 @@
+{
+  "name": "python_abi",
+  "version": "3.13",
+  "build": "0_cp313",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-64",
+  "subdir": "osx-64",
+  "fn": "python_abi-3.13-0_cp313.conda",
+  "md5": "e50f50a23e8892f84ce3f61e121790b5",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-64/python_abi-3.13-0_cp313.conda",
+  "sha256": "4a78f1cfe4b6ad26ae151d5f7619c5f1fb504daea498b6706c01610853337110",
+  "depends": [],
+  "constrains": [
+    "python 3.13.* *_cp313"
+  ],
+  "license": "BSD-3-Clause",
+  "timestamp": 1727769911000,
+  "size": 7131,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/Users/brainsimulation/Applications/fsl/pkgs/python_abi-3.13-0_cp313",
+  "extracted_package_dir": "/Users/brainsimulation/Applications/fsl/pkgs/python_abi-3.13-0_cp313",
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "/Users/brainsimulation/Applications/fsl/pkgs/python_abi-3.13-0_cp313",
+    "type": 1
+  }
+}

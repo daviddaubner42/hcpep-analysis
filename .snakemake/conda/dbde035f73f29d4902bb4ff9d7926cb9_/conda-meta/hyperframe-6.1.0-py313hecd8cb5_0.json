@@ -1,0 +1,170 @@
+{
+  "name": "hyperframe",
+  "version": "6.1.0",
+  "build": "py313hecd8cb5_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-64",
+  "subdir": "osx-64",
+  "fn": "hyperframe-6.1.0-py313hecd8cb5_0.conda",
+  "md5": "33dc776116ae84f0cc8027dfa396e3b8",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-64/hyperframe-6.1.0-py313hecd8cb5_0.conda",
+  "sha256": "22d228f1454331f9e684049f94c124a83af34099114592b013c63b0436b18133",
+  "depends": [
+    "python >=3.13,<3.14.0a0",
+    "python_abi 3.13.* *_cp313"
+  ],
+  "constrains": [],
+  "license": "MIT",
+  "timestamp": 1753195765000,
+  "size": 39235,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/Users/brainsimulation/Applications/fsl/pkgs/hyperframe-6.1.0-py313hecd8cb5_0",
+  "extracted_package_dir": "/Users/brainsimulation/Applications/fsl/pkgs/hyperframe-6.1.0-py313hecd8cb5_0",
+  "files": [
+    "lib/python3.13/site-packages/hyperframe-6.1.0.dist-info/INSTALLER",
+    "lib/python3.13/site-packages/hyperframe-6.1.0.dist-info/METADATA",
+    "lib/python3.13/site-packages/hyperframe-6.1.0.dist-info/RECORD",
+    "lib/python3.13/site-packages/hyperframe-6.1.0.dist-info/REQUESTED",
+    "lib/python3.13/site-packages/hyperframe-6.1.0.dist-info/WHEEL",
+    "lib/python3.13/site-packages/hyperframe-6.1.0.dist-info/direct_url.json",
+    "lib/python3.13/site-packages/hyperframe-6.1.0.dist-info/licenses/LICENSE",
+    "lib/python3.13/site-packages/hyperframe-6.1.0.dist-info/top_level.txt",
+    "lib/python3.13/site-packages/hyperframe/__init__.py",
+    "lib/python3.13/site-packages/hyperframe/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/hyperframe/__pycache__/exceptions.cpython-313.pyc",
+    "lib/python3.13/site-packages/hyperframe/__pycache__/flags.cpython-313.pyc",
+    "lib/python3.13/site-packages/hyperframe/__pycache__/frame.cpython-313.pyc",
+    "lib/python3.13/site-packages/hyperframe/exceptions.py",
+    "lib/python3.13/site-packages/hyperframe/flags.py",
+    "lib/python3.13/site-packages/hyperframe/frame.py",
+    "lib/python3.13/site-packages/hyperframe/py.typed"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/python3.13/site-packages/hyperframe-6.1.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5,
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/hyperframe-6.1.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "f53debf5bfe7fe5cd74b697fc47bcd3960123af5507a35fe1c2e7399e7d5854d",
+        "size_in_bytes": 4361,
+        "sha256_in_prefix": "f53debf5bfe7fe5cd74b697fc47bcd3960123af5507a35fe1c2e7399e7d5854d"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/hyperframe-6.1.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "5edf351d31d5e56dc0fb597fa2d094ac3735786c5481156bb6de9ba5b2aefb82",
+        "size_in_bytes": 1286,
+        "sha256_in_prefix": "5edf351d31d5e56dc0fb597fa2d094ac3735786c5481156bb6de9ba5b2aefb82"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/hyperframe-6.1.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/hyperframe-6.1.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "95353a07a7887d8a224094d935cf9fc9a47a0692fa7a14f3537c466319f69fc9",
+        "size_in_bytes": 91,
+        "sha256_in_prefix": "95353a07a7887d8a224094d935cf9fc9a47a0692fa7a14f3537c466319f69fc9"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/hyperframe-6.1.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "cf1fd67f4d40ab695ca4de661e36e5e2c14b1c918aa167b0b6bfe44b89d79278",
+        "size_in_bytes": 141,
+        "sha256_in_prefix": "cf1fd67f4d40ab695ca4de661e36e5e2c14b1c918aa167b0b6bfe44b89d79278"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/hyperframe-6.1.0.dist-info/licenses/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "763a9342a04df62046c9dc748a5287934eb0a5331c6863b3ca0aee20e18cb4ed",
+        "size_in_bytes": 1080,
+        "sha256_in_prefix": "763a9342a04df62046c9dc748a5287934eb0a5331c6863b3ca0aee20e18cb4ed"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/hyperframe-6.1.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "6885d6371cca17f8f013c972586e4f6aa9f944fecf0c161e82eada89afa81c91",
+        "size_in_bytes": 11,
+        "sha256_in_prefix": "6885d6371cca17f8f013c972586e4f6aa9f944fecf0c161e82eada89afa81c91"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/hyperframe/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "43f3017642040964cbbe4b0e5e0e67607517f2303c861a10b2e8fa394436e252",
+        "size_in_bytes": 111,
+        "sha256_in_prefix": "43f3017642040964cbbe4b0e5e0e67607517f2303c861a10b2e8fa394436e252"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/hyperframe/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "af71cd3f417dfbd022153b01adabdfc55404d78373691ffeef7479b6ecffe9f3",
+        "size_in_bytes": 294,
+        "sha256_in_prefix": "af71cd3f417dfbd022153b01adabdfc55404d78373691ffeef7479b6ecffe9f3"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/hyperframe/__pycache__/exceptions.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "39adf31e4a1ac3e82dbe9421410d16a510eed5c1e60b7766799e0f09bfd0fe83",
+        "size_in_bytes": 2468,
+        "sha256_in_prefix": "39adf31e4a1ac3e82dbe9421410d16a510eed5c1e60b7766799e0f09bfd0fe83"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/hyperframe/__pycache__/flags.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "2aae71695ea8ed50da805a277c5320cb299460fc32c1d090c65c52cb817a0085",
+        "size_in_bytes": 2940,
+        "sha256_in_prefix": "2aae71695ea8ed50da805a277c5320cb299460fc32c1d090c65c52cb817a0085"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/hyperframe/__pycache__/frame.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "858906da7ebbeaa22ce1d97c6046f16d873a1e20e2e2c47fddfc2bdea69e0afe",
+        "size_in_bytes": 40357,
+        "sha256_in_prefix": "858906da7ebbeaa22ce1d97c6046f16d873a1e20e2e2c47fddfc2bdea69e0afe"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/hyperframe/exceptions.py",
+        "path_type": "hardlink",
+        "sha256": "0d92eb670e72ecc2c13119310b1aea7f9121cfc0681369fb32955aa780f9bdc2",
+        "size_in_bytes": 1516,
+        "sha256_in_prefix": "0d92eb670e72ecc2c13119310b1aea7f9121cfc0681369fb32955aa780f9bdc2"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/hyperframe/flags.py",
+        "path_type": "hardlink",
+        "sha256": "f65be969e297adf61ebb18fc5deab6d440f8d0e0d38a9a376577835225f95992",
+        "size_in_bytes": 1294,
+        "sha256_in_prefix": "f65be969e297adf61ebb18fc5deab6d440f8d0e0d38a9a376577835225f95992"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/hyperframe/frame.py",
+        "path_type": "hardlink",
+        "sha256": "6ac62192190eaf5bd10777ee6581351c88532050f424d3965b067cbde7735b15",
+        "size_in_bytes": 31659,
+        "sha256_in_prefix": "6ac62192190eaf5bd10777ee6581351c88532050f424d3965b067cbde7735b15"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/hyperframe/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/brainsimulation/Applications/fsl/pkgs/hyperframe-6.1.0-py313hecd8cb5_0",
+    "type": 1
+  }
+}

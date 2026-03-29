@@ -1,0 +1,83 @@
+{
+  "name": "llvm-openmp",
+  "version": "22.1.0",
+  "build": "h0d3cbff_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "subdir": "osx-64",
+  "fn": "llvm-openmp-22.1.0-h0d3cbff_0.conda",
+  "md5": "3921780bab286f2439ba483c22b90345",
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/llvm-openmp-22.1.0-h0d3cbff_0.conda",
+  "sha256": "b63df4e592b3362e7d13e3d1cf8e55ce932ff4f17611c8514b5d36368ec2094c",
+  "depends": [
+    "__osx >=11.0"
+  ],
+  "constrains": [
+    "openmp 22.1.0|22.1.0.*",
+    "intel-openmp <0.0a0"
+  ],
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "timestamp": 1772024731000,
+  "size": 311938,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/Users/brainsimulation/Applications/fsl/pkgs/llvm-openmp-22.1.0-h0d3cbff_0",
+  "extracted_package_dir": "/Users/brainsimulation/Applications/fsl/pkgs/llvm-openmp-22.1.0-h0d3cbff_0",
+  "files": [
+    "include/omp-tools.h",
+    "include/omp.h",
+    "include/ompt.h",
+    "include/ompx.h",
+    "lib/libiomp5.dylib",
+    "lib/libomp.dylib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "include/omp-tools.h",
+        "path_type": "hardlink",
+        "sha256": "4876d0addcf2783953a6d0aeed8efc495ff0476b6a5784ca6e43bdd1c62df5be",
+        "size_in_bytes": 52077,
+        "sha256_in_prefix": "4876d0addcf2783953a6d0aeed8efc495ff0476b6a5784ca6e43bdd1c62df5be"
+      },
+      {
+        "_path": "include/omp.h",
+        "path_type": "hardlink",
+        "sha256": "5974470842520cea4bc50136e2329bbf4e36ba928d317e86f7def2ba1752d3d4",
+        "size_in_bytes": 26072,
+        "sha256_in_prefix": "5974470842520cea4bc50136e2329bbf4e36ba928d317e86f7def2ba1752d3d4"
+      },
+      {
+        "_path": "include/ompt.h",
+        "path_type": "hardlink",
+        "sha256": "4876d0addcf2783953a6d0aeed8efc495ff0476b6a5784ca6e43bdd1c62df5be",
+        "size_in_bytes": 52077,
+        "sha256_in_prefix": "4876d0addcf2783953a6d0aeed8efc495ff0476b6a5784ca6e43bdd1c62df5be"
+      },
+      {
+        "_path": "include/ompx.h",
+        "path_type": "hardlink",
+        "sha256": "a84d0460771cec5695ce16fc8698bddf3276a1908a372087b3f6aa60782acf88",
+        "size_in_bytes": 7720,
+        "sha256_in_prefix": "a84d0460771cec5695ce16fc8698bddf3276a1908a372087b3f6aa60782acf88"
+      },
+      {
+        "_path": "lib/libiomp5.dylib",
+        "path_type": "softlink",
+        "sha256": "bf4b8fc8c57b09793af4805a94e2770963e6cbafdfe60155b9bbfef00496700e",
+        "size_in_bytes": 852344
+      },
+      {
+        "_path": "lib/libomp.dylib",
+        "path_type": "hardlink",
+        "sha256": "bf4b8fc8c57b09793af4805a94e2770963e6cbafdfe60155b9bbfef00496700e",
+        "size_in_bytes": 852344,
+        "sha256_in_prefix": "bf4b8fc8c57b09793af4805a94e2770963e6cbafdfe60155b9bbfef00496700e"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/brainsimulation/Applications/fsl/pkgs/llvm-openmp-22.1.0-h0d3cbff_0",
+    "type": 1
+  }
+}

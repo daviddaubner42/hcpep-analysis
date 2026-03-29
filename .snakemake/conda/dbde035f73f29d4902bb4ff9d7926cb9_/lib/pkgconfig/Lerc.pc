@@ -1,0 +1,13 @@
+prefix=/Users/brainsimulation/Desktop/hcpep-analysis/.snakemake/conda/dbde035f73f29d4902bb4ff9d7926cb9_
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: Lerc
+Description: Limited Error Raster Compression
+URL: https://github.com/Esri/lerc
+Version: 4.1.0
+Cflags: -I${includedir}
+Cflags.private: -DLERC_STATIC
+Libs: -L${libdir} -lLerc
+Libs.private: -lstdc++
