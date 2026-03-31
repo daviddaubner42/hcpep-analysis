@@ -281,7 +281,6 @@ rule create_FCDs:
         mem='32G',
         mem_mib='32000',
         disk_mb='32000',
-        disk_mib='32000',
         mem_per_thread='32G',
         time='06:00:00'
     output:
