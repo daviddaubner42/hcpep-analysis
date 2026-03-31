@@ -277,6 +277,13 @@ rule create_FCDs:
         outdir = outdir,
         fcdir = os.path.join(outdir, "results", "dynamic"),
         subids=subids
+    resources:
+        mem='32G',
+        mem_mib='32000',
+        disk_mb='32000',
+        disk_mib='32000',
+        mem_per_thread='32G',
+        time='06:00:00'
     output:
         os.path.join(outdir, "results", "dynamic", "sub-{subid}", "sub-{subid}_FCD_{thread}.csv"),
         os.path.join(outdir, "results", "dynamic", "sub-{subid}", "sub-{subid}_FCD_hist_{thread}.csv")
