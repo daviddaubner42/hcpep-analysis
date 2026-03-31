@@ -129,6 +129,9 @@ rule regress_confounds:
         outdir = outdir,
         fcdir = os.path.join(outdir, "results", "static"),
         subids=subids
+    resources:
+        mem='32G',
+        time='06:00:00'
     output:
         expand(os.path.join(outdir, "results", "static", "sub-{subid}", "sub-{subid}_FC_{{thread}}_regr.csv"), subid=subids)
     conda:
@@ -145,6 +148,9 @@ rule pairwise_comparison:
         outdir = outdir,
         fcdir = os.path.join(outdir, "results", "static"),
         subids=subids
+    resources:
+        mem='32G',
+        time='06:00:00'
     output:
         os.path.join(outdir, "results", "static", "{thread}_avg_patient_fc.csv"),
         os.path.join(outdir, "results", "static", "{thread}_avg_hc_fc.csv"),
@@ -245,6 +251,9 @@ rule create_windowed_fcs:
         outdir = outdir,
         window_size = config["window_size"],
         step_size = config["step_size"]
+    resources:
+        mem='32G',
+        time='06:00:00'
     output:
         expand(os.path.join(outdir, "results", "dynamic", "sub-{{subid}}", "sub-{{subid}}_windowed_FCs_{thread}.pkl"), thread=threads)
     conda:
@@ -297,6 +306,9 @@ rule aggregate_FCDs:
         workflowdir = workflowdir,
         outdir = outdir,
         subids=subids
+    resources:
+        mem='32G',
+        time='06:00:00'
     output:
         os.path.join(outdir, "results", "dynamic", "FCDs_{thread}.pkl"),
         os.path.join(outdir, "results", "dynamic", "FCD_hists_{thread}.pkl"),
@@ -316,6 +328,9 @@ rule plot_FCDs:
         workflowdir = workflowdir,
         outdir = outdir,
         subids=subids
+    resources:
+        mem='32G',
+        time='06:00:00'
     output:
         os.path.join(outdir, "results", "dynamic", "images", "avg_FCD_comparison_{thread}.png"),
         os.path.join(outdir, "results", "dynamic", "images", "avg_FCD_hist_comparison_{thread}.png"),
@@ -342,6 +357,9 @@ rule calculate_avg_clustering:
         min_density = config["min_density"],
         max_density = config["max_density"],
         density_step = config["density_step"]
+    resources:
+        mem='16G',
+        time='02:00:00'
     output:
         os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_avg_clustering_{thread}.pkl")
     conda:
@@ -360,6 +378,9 @@ rule calculate_global_efficiency:
         min_density = config["min_density"],
         max_density = config["max_density"],
         density_step = config["density_step"]
+    resources:
+        mem='16G',
+        time='02:00:00'
     output:
         os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_global_efficiency_{thread}.pkl")
     conda:
@@ -378,6 +399,9 @@ rule calculate_assortativity:
         min_density = config["min_density"],
         max_density = config["max_density"],
         density_step = config["density_step"]
+    resources:
+        mem='16G',
+        time='02:00:00'
     output:
         os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_assortativity_{thread}.pkl")
     conda:
@@ -396,6 +420,9 @@ rule calculate_robustness_random:
         min_density = config["min_density"],
         max_density = config["max_density"],
         density_step = config["density_step"]
+    resources:
+        mem='32G',
+        time='04:00:00'
     output:
         os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_robustness_random_{thread}.pkl")
     conda:
@@ -414,6 +441,9 @@ rule calculate_robustness_targeted:
         min_density = config["min_density"],
         max_density = config["max_density"],
         density_step = config["density_step"]
+    resources:
+        mem='32G',
+        time='04:00:00'
     output:
         os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_robustness_targeted_{thread}.pkl")
     conda:
@@ -485,6 +515,9 @@ rule global_metric_comparison:
         workflowdir = workflowdir,
         outdir = outdir,
         subids=subids
+    resources:
+        mem='31G',
+        time='04:00:00'
     output:
         os.path.join(outdir, "results", "graph_theory", "global", "global_metric_ps_{thread}.pkl"),
         os.path.join(outdir, "results", "graph_theory", "global", "global_metric_stats_{thread}.pkl")
@@ -521,6 +554,9 @@ rule calculate_betweenness_centrality:
         min_density = config["min_density"],
         max_density = config["max_density"],
         density_step = config["density_step"]
+    resources:
+        mem='16G',
+        time='02:00:00'
     output:
         os.path.join(outdir, "results", "graph_theory", "local", "sub-{subid}", "sub-{subid}_betweenness_centrality_{thread}.pkl")
     conda:
@@ -539,6 +575,9 @@ rule calculate_degree_centrality:
         min_density = config["min_density"],
         max_density = config["max_density"],
         density_step = config["density_step"]
+    resources:
+        mem='16G',
+        time='02:00:00'
     output:
         os.path.join(outdir, "results", "graph_theory", "local", "sub-{subid}", "sub-{subid}_degree_centrality_{thread}.pkl")
     conda:
@@ -557,6 +596,9 @@ rule calculate_clustering_coefficient:
         min_density = config["min_density"],
         max_density = config["max_density"],
         density_step = config["density_step"]
+    resources:
+        mem='16G',
+        time='02:00:00'
     output:
         os.path.join(outdir, "results", "graph_theory", "local", "sub-{subid}", "sub-{subid}_clustering_coefficient_{thread}.pkl")
     conda:
@@ -575,6 +617,9 @@ rule calculate_avg_shortest_path_length:
         min_density = config["min_density"],
         max_density = config["max_density"],
         density_step = config["density_step"]
+    resources:
+        mem='16G',
+        time='02:00:00'
     output:
         os.path.join(outdir, "results", "graph_theory", "local", "sub-{subid}", "sub-{subid}_avg_shortest_path_length_{thread}.pkl")
     conda:
@@ -593,6 +638,9 @@ rule aggregate_local_metrics:
         workflowdir = workflowdir,
         outdir = outdir,
         subids = subids
+    resources:
+        mem='16G',
+        time='02:00:00'
     output:
         os.path.join(outdir, "results", "graph_theory", "local", "betweenness_centrality_aggregated_{thread}.csv"),
         os.path.join(outdir, "results", "graph_theory", "local", "degree_centrality_aggregated_{thread}.csv"),
@@ -610,6 +658,9 @@ rule local_metric_comparison:
     params:
         workflowdir = workflowdir,
         outdir = outdir
+    resources:
+        mem='32G',
+        time='06:00:00'
     output:
         os.path.join(outdir, "results", "graph_theory", "local", "{metric}_ps_stats_{thread}.csv")
     conda:
