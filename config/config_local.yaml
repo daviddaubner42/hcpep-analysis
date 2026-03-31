@@ -2,14 +2,6 @@ datadir:  "/Users/brainsimulation/Desktop/hcpep-derivatives"
 rootdir: "/Users/brainsimulation/Desktop/hcpep-analysis/"
 outdir: "/Users/brainsimulation/Desktop/hcpep-analysis/out"
 
-excluded_participants:
-  - RSGK017
-  - LENMDA001
-  - LENMDA006
-  - LENMDA172
-  - LENMDA187
-  - LENMDA191
-
 window_size: 30
 step_size: 1
 

@@ -1,14 +1,6 @@
 datadir:  "/data/cephfs-2/unmirrored/groups/ritter/MR_processing/HCP-EP/derivatives_2026/"
 rootdir: "/data/cephfs-1/work/groups/ritter/users/dada15_c/hcpep-analysis"
-outdir: "/data/cephfs-2/unmirrored/groups/ritter/MR_processing/HCP-EP/analysis"
-
-excluded_participants:
-  - RSGK017
-  - LENMDA001
-  - LENMDA006
-  - LENMDA172
-  - LENMDA187
-  - LENMDA191
+outdir: "/data/cephfs-1/scratch/groups/ritter/HCP-EP_analysis"
 
 window_size: 30
 step_size: 1
