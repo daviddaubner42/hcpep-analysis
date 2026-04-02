@@ -11,7 +11,7 @@ parser.add_argument("--thread", type=str)
 args = parser.parse_args()
 
 # Get ROIs
-with open(f"out/results/graph_theory/local/sub-{args.subids[0]}/sub-{args.subids[0]}_degree_centrality_{args.thread}.pkl", "rb") as file:
+with open(f"{args.results_dir}/sub-{args.subids[0]}/sub-{args.subids[0]}_degree_centrality_{args.thread}.pkl", "rb") as file:
     temp = pickle.load(file)
 rois = list(temp[list(temp.keys())[0]].keys())
 
