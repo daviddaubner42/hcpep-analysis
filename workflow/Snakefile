@@ -35,7 +35,7 @@ endfiles = [
 
 # Define the subject IDs to be processed
 subids = [subid[4:] for subid in os.listdir(os.path.join(rawdir, "xcp_d")) if os.path.exists(os.path.join(rawdir, "xcp_d", f"{subid}", "ses-1", "func", f"{subid}_ses-1_task-rest_dir-AP_space-fsLR_seg-Glasser_den-91k_stat-mean_timeseries.ptseries.nii"))]
-subids = [subid for subid in subids if not subid in [2028, 4066]]
+subids = [subid for subid in subids if not int(subid) in [2028, 4066]]
 
 local_metrics = ["betweenness_centrality", "degree_centrality", "clustering_coefficient", "avg_shortest_path_length"]
 threads = ["mean", "ses-1_mean", "ses-2_mean", "ses-1_dir-AP", "ses-1_dir-PA", "ses-2_dir-AP", "ses-2_dir-PA"]
