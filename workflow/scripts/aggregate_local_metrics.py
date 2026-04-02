@@ -22,7 +22,7 @@ for metric in metrics:
     for roi in rois:
         metric_vals[roi] = {}
     for subid in args.subids:
-        with open(f"out/results/graph_theory/local/sub-{subid}/sub-{subid}_{metric}_{args.thread}.pkl", "rb") as file:
+        with open(f"{args.results_dir}/sub-{subid}/sub-{subid}_{metric}_{args.thread}.pkl", "rb") as file:
             sub_metrics = pickle.load(file)
         for roi in rois:
             roi_metrics = []
@@ -30,4 +30,4 @@ for metric in metrics:
                 roi_metrics.append(m[roi])
             metric_vals[roi][subid] = np.mean(roi_metrics)
     df = pd.DataFrame(metric_vals).T
-    df.to_csv(f"out/results/graph_theory/local/{metric}_aggregated_{args.thread}.csv")
+    df.to_csv(f"{args.results_dir}/{metric}_aggregated_{args.thread}.csv")
