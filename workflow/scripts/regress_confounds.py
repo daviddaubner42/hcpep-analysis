@@ -37,6 +37,9 @@ for i in range(fcs.shape[1]):
     for j in range(fcs.shape[2]):
         if i < j:
             target = fcs[:, i, j]
+            print("------------------")
+            print(i, j, target)
+            print("------------------")
             reg = LinearRegression().fit(confounds, target)
             
             for sub in range(len(confounds)):
