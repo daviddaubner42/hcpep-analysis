@@ -32,13 +32,18 @@ for fc in fcs:
     np.fill_diagonal(fc, 1)
 
 # For each FC value, train a regression model, and then use it to regress out the effect of confounds
+# TODO: Rewrite so that only upper triangular is used
 for i in range(fcs.shape[1]):
     for j in range(fcs.shape[2]):
-        target = fcs[:, i, j]
-        reg = LinearRegression().fit(confounds, target)
-        
-        for sub in range(len(confounds)):
-            fcs[sub, i, j] -= confounds[sub, 1]*reg.coef_[1] + confounds[sub, 2]*reg.coef_[2]
+        if i < j:
+            target = fcs[:, i, j]
+            reg = LinearRegression().fit(confounds, target)
+            
+            for sub in range(len(confounds)):
+                fcs[sub, i, j] -= confounds[sub, 1]*reg.coef_[1] + confounds[sub, 2]*reg.coef_[2]
+        elif j < i:
+            for sub in range(len(confounds)):
+                fcs[sub, i, j] = fcs[sub, j, i]
 
 fcs = np.tanh(fcs)
 
