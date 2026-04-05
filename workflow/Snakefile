@@ -792,4 +792,4 @@ rule plot_nsp_coeffs:
         os.path.join(environmentdir, "environment.yaml")
     shell:
         "mkdir -p {params.outdir}/results/nsp/images && "
-        "python {params.workflowdir}/scripts/plot_nsp_coeffs.py --inp_dir {params.outdir}/results/nsp --out_dir {params.outdir}/results/nsp/images --thread {wildcards.thread}"
+        "python {params.workflowdir}/scripts/plot_nsp_coeffs.py --inp_dir {params.outdir}/results/nsp --thread {wildcards.thread}"
