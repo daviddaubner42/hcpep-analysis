@@ -715,7 +715,7 @@ rule calculate_dynamic_nsp_coeffs:
     conda:
         os.path.join(environmentdir, "environment.yaml")
     shell:
-        "python {params.workflowdir}/scripts/calculate_dynamic_nsp_coeffs.py --input {input} --out_dir {params.outdir}/results/nsp/sub-{subid} --subid {wildcards.subid} --thread {wildcards.thread}"
+        "python {params.workflowdir}/scripts/calculate_dynamic_nsp_coeffs.py --input {input} --out_dir {params.outdir}/results/nsp/sub-{wildcards.subid} --subid {wildcards.subid} --thread {wildcards.thread}"
 
 rule calculate_nsp_coeffs:
     input:
