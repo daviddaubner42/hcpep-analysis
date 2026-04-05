@@ -7,7 +7,7 @@ import pickle
 parser = argparse.ArgumentParser(description="Use NSP to calculate a integration and segregation coeffs")
 parser.add_argument("--inp_dir", type=str, help="The path to the directory with NSP coeffs")
 parser.add_argument("--out_dir", type=str, help="The path to dir where the output files will be saved")
-parser.add_argument("--subids", type=str)
+parser.add_argument("--subids", nargs="+", type=str)
 parser.add_argument("--thread", type=str)
 parser.add_argument("--demo_data_path", type=str, help="Path to the demographic data")
 args = parser.parse_args()
