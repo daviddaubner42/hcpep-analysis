@@ -23,10 +23,7 @@ endfiles = [
     os.path.join(outdir, "results", "dynamic", "images", "avg_FCD_hist_comparison_regr_{thread}.png"),
     os.path.join(outdir, "results", "graph_theory", "global", "images", "global_metric_comparison_{thread}.png"),
     os.path.join(outdir, "results", "graph_theory", "local", "{metric}_ps_stats_{thread}.csv"),
-    os.path.join(outdir, "results", "nsp", "sub-{subid}", "sub-{subid}_H_In_{thread}.pkl"),
-    os.path.join(outdir, "results", "nsp", "sub-{subid}", "sub-{subid}_H_Se_{thread}.pkl"),
-    os.path.join(outdir, "results", "nsp", "sub-{subid}", "sub-{subid}_F_In_{thread}.pkl"),
-    os.path.join(outdir, "results", "nsp", "sub-{subid}", "sub-{subid}_F_Se_{thread}.pkl")
+    os.path.join(outdir, "results", "nsp", "images", "nsp_coeffs_comparison_{thread}.png")
 ]
 
 # Define the subject IDs to be processed
@@ -735,28 +732,63 @@ rule calculate_nsp_coeffs:
     conda:
         os.path.join(environmentdir, "environment.yaml")
     shell:
-        "python {params.workflowdir}/scripts/calculate_nsp_coeffs.py --input_dir {params.outdir}/results/nsp/sub-{wildcards.subid} --out_dir {params.outdir}/results/nsp/sub-{subid} --subid {wildcards.subid} --thread {wildcards.thread}"
+        "python {params.workflowdir}/scripts/calculate_nsp_coeffs.py --input_dir {params.outdir}/results/nsp/sub-{wildcards.subid} --out_dir {params.outdir}/results/nsp/sub-{wildcards.subid} --subid {wildcards.subid} --thread {wildcards.thread}"
 
-# rule nsp_coeffs_comparison:
-#     input:
-#         expand([
-#             os.path.join(outdir, "results", "nsp", "sub-{subid}", "sub-{subid}_H_In_{{thread}}.pkl"),
-#             os.path.join(outdir, "results", "nsp", "sub-{subid}", "sub-{subid}_H_Se_{{thread}}.pkl"),
-#             os.path.join(outdir, "results", "nsp", "sub-{subid}", "sub-{subid}_F_In_{{thread}}.pkl"),
-#             os.path.join(outdir, "results", "nsp", "sub-{subid}", "sub-{subid}_F_Se_{{thread}}.pkl")
-#         ], subid=subids)
-#     params:
-#         workflowdir=workflowdir,
-#         outdir=outdir
-#     resources:
-#         mem="8G",
-#         time="02:00:00"
-#     output:
-#         os.path.join(outdir, "results", "nsp", "images", "H_In_{thread}_comparison.png"),
-#         os.path.join(outdir, "results", "nsp", "images", "H_Se_{thread}_comparison.png"),
-#         os.path.join(outdir, "results", "nsp", "images", "F_In_{thread}_comparison.png"),
-#         os.path.join(outdir, "results", "nsp", "images", "F_Se_{thread}_comparison.png"),
-#         os.path.join(outdir, "results", "nsp", "coeffs_comparison.csv")
-#     shell:
-#         "mkdir -p {params.outdir}/results/nsp/images && "
-#         "python {params.workflowdir}/scripts/nsp_coeffs_comparison.py --inp_dir"
+rule aggregate_nsp_coeffs:
+    input:
+        expand([
+            os.path.join(outdir, "results", "nsp", "sub-{subid}", "sub-{subid}_H_In_{{thread}}.pkl"),
+            os.path.join(outdir, "results", "nsp", "sub-{subid}", "sub-{subid}_H_Se_{{thread}}.pkl"),
+            os.path.join(outdir, "results", "nsp", "sub-{subid}", "sub-{subid}_F_In_{{thread}}.pkl"),
+            os.path.join(outdir, "results", "nsp", "sub-{subid}", "sub-{subid}_F_Se_{{thread}}.pkl")
+        ], subid=subids),
+        demo=os.path.join(resourcedir, "ndar_subject01.txt")
+    params:
+        workflowdir=workflowdir,
+        outdir=outdir
+    resources:
+        mem="8G",
+        time="02:00:00"
+    output:
+        os.path.join(outdir, "results", "nsp", "nsp_coeffs_{thread}.csv")
+    conda:
+        os.path.join(environmentdir, "environment.yaml")
+    shell:
+        "mkdir -p {params.outdir}/results/nsp/images && "
+        "python {params.workflowdir}/scripts/aggregate_nsp_coeffs.py --inp_dir {wildcards.outdir}/results/nsp/sub-{wildcards.subid} --out_dir {params.outdir}/results/nsp/ --subids {params.subids} --thread {wildcards.thread} --demo_data_path {input.demo}"
+
+rule nsp_coeffs_comparison:
+    input:
+        os.path.join(outdir, "results", "nsp", "nsp_coeffs_{thread}.csv")
+    params:
+        workflowdir=workflowdir,
+        outdir=outdir
+    resources:
+        mem="8G",
+        time="02:00:00"
+    output:
+        os.path.join(outdir, "results", "nsp", "nsp_coeffs_stats_{thread}.pkl"),
+        os.path.join(outdir, "results", "nsp", "nsp_coeffs_ps_{thread}.pkl")
+    conda:
+        os.path.join(environmentdir, "environment.yaml")
+    shell:
+        "python {params.workflowdir}/scripts/nsp_coeffs_comparison.py --input_path {input} --out_dir {params.outdir}/results/nsp --thread {wildcards.thread}"
+
+rule plot_nsp_coeffs:
+    input:
+        os.path.join(outdir, "results", "nsp", "nsp_coeffs_{thread}.csv"),
+        os.path.join(outdir, "results", "nsp", "nsp_coeffs_stats_{thread}.pkl"),
+        os.path.join(outdir, "results", "nsp", "nsp_coeffs_ps_{thread}.pkl")
+    params:
+        workflowdir=workflowdir,
+        outdir=outdir
+    resources:
+        mem="8G",
+        time="02:00:00"
+    output:
+        os.path.join(outdir, "results", "nsp", "images", "nsp_coeffs_comparison_{thread}.png")
+    conda:
+        os.path.join(environmentdir, "environment.yaml")
+    shell:
+        "mkdir -p {params.outdir}/results/nsp/images && "
+        "python {params.workflowdir}/scripts/plot_nsp_coeffs.py --inp_dir {params.outdir}/results/nsp --out_dir {params.outdir}/results/nsp/images --thread {wildcards.thread}"
