@@ -746,7 +746,7 @@ rule aggregate_nsp_coeffs:
     params:
         workflowdir=workflowdir,
         outdir=outdir,
-        subifds=subids
+        subids=subids
     resources:
         mem="8G",
         time="02:00:00"
