@@ -173,4 +173,4 @@ if ps[metric] < 0.05 / 100:
     ax[1][1].text(1.5, ymax + y_offset + 0.3, '*', fontsize=16, ha='center')
 
 plt.tight_layout()
-plt.savefig(os.path.join(args.inp_dir, f"nsp_coeffs_comparison_{args.thread}.png"), bbox_inches='tight')
+plt.savefig(os.path.join(args.inp_dir, "images", f"nsp_coeffs_comparison_{args.thread}.png"), bbox_inches='tight')
