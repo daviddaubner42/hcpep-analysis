@@ -17,13 +17,13 @@ demo_data = pd.read_table(args.demo_data_path)
 
 nsp_coeffs = {}
 for subid in args.subids:
-    with open(os.path.join(args.inp_dir, f"sub-{subid}_H_In_{{thread}}.pkl"), "rb") as f:
+    with open(os.path.join(args.inp_dir, f"sub-{subid}", f"sub-{subid}_H_In_{{thread}}.pkl"), "rb") as f:
         H_In = pickle.load(f)
-    with open(os.path.join(args.inp_dir, f"sub-{subid}_H_Se_{{thread}}.pkl"), "rb") as f:
+    with open(os.path.join(args.inp_dir, f"sub-{subid}", f"sub-{subid}_H_Se_{{thread}}.pkl"), "rb") as f:
         H_Se = pickle.load(f)
-    with open(os.path.join(args.inp_dir, f"sub-{subid}_F_In_{{thread}}.pkl"), "rb") as f:
+    with open(os.path.join(args.inp_dir, f"sub-{subid}", f"sub-{subid}_F_In_{{thread}}.pkl"), "rb") as f:
         F_In = pickle.load(f)
-    with open(os.path.join(args.inp_dir, f"sub-{subid}_F_Se_{{thread}}.pkl"), "rb") as f:
+    with open(os.path.join(args.inp_dir, f"sub-{subid}", f"sub-{subid}_F_Se_{{thread}}.pkl"), "rb") as f:
         F_Se = pickle.load(f)
     
     nsp_coeffs[subid] = {

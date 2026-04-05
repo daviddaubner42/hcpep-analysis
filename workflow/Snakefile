@@ -755,7 +755,7 @@ rule aggregate_nsp_coeffs:
         os.path.join(environmentdir, "environment.yaml")
     shell:
         "mkdir -p {params.outdir}/results/nsp/images && "
-        "python {params.workflowdir}/scripts/aggregate_nsp_coeffs.py --inp_dir {params.outdir}/results/nsp/sub-{wildcards.subid} --out_dir {params.outdir}/results/nsp/ --subids {params.subids} --thread {wildcards.thread} --demo_data_path {input.demo}"
+        "python {params.workflowdir}/scripts/aggregate_nsp_coeffs.py --inp_dir {params.outdir}/results/nsp/ --out_dir {params.outdir}/results/nsp/ --subids {params.subids} --thread {wildcards.thread} --demo_data_path {input.demo}"
 
 rule nsp_coeffs_comparison:
     input:
