@@ -745,7 +745,8 @@ rule aggregate_nsp_coeffs:
         demo=os.path.join(resourcedir, "ndar_subject01.txt")
     params:
         workflowdir=workflowdir,
-        outdir=outdir
+        outdir=outdir,
+        subifds=subids
     resources:
         mem="8G",
         time="02:00:00"
