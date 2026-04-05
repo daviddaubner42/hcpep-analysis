@@ -702,7 +702,7 @@ rule local_metric_comparison:
 
 rule calculate_dynamic_nsp_coeffs:
     input:
-        os.path.join(outdir, "results", "dynamic", "sub-{subid}", "sub-{subid}_windowed_FCs_{thread}.csv")
+        os.path.join(outdir, "results", "dynamic", "sub-{subid}", "sub-{subid}_windowed_FCs_{thread}.pkl")
     params:
         workflowdir=workflowdir,
         outdir=outdir
