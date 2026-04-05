@@ -704,8 +704,8 @@ rule calculate_dynamic_nsp_coeffs:
         workflowdir=workflowdir,
         outdir=outdir
     resources:
-        mem="32G",
-        time="06:00:00"
+        mem="8G",
+        time="00:30:00"
     output:
         os.path.join(outdir, "results", "nsp", "sub-{subid}", "sub-{subid}_windowed_H_In_{thread}.pkl"),
         os.path.join(outdir, "results", "nsp", "sub-{subid}", "sub-{subid}_windowed_H_Se_{thread}.pkl")
@@ -722,8 +722,8 @@ rule calculate_nsp_coeffs:
         workflowdir=workflowdir,
         outdir=outdir
     resources:
-        mem="8G",
-        time="02:00:00"
+        mem="2G",
+        time="00:10:00"
     output:
         os.path.join(outdir, "results", "nsp", "sub-{subid}", "sub-{subid}_H_In_{thread}.pkl"),
         os.path.join(outdir, "results", "nsp", "sub-{subid}", "sub-{subid}_H_Se_{thread}.pkl"),
@@ -755,7 +755,7 @@ rule aggregate_nsp_coeffs:
         os.path.join(environmentdir, "environment.yaml")
     shell:
         "mkdir -p {params.outdir}/results/nsp/images && "
-        "python {params.workflowdir}/scripts/aggregate_nsp_coeffs.py --inp_dir {wildcards.outdir}/results/nsp/sub-{wildcards.subid} --out_dir {params.outdir}/results/nsp/ --subids {params.subids} --thread {wildcards.thread} --demo_data_path {input.demo}"
+        "python {params.workflowdir}/scripts/aggregate_nsp_coeffs.py --inp_dir {params.outdir}/results/nsp/sub-{wildcards.subid} --out_dir {params.outdir}/results/nsp/ --subids {params.subids} --thread {wildcards.thread} --demo_data_path {input.demo}"
 
 rule nsp_coeffs_comparison:
     input:
@@ -764,7 +764,7 @@ rule nsp_coeffs_comparison:
         workflowdir=workflowdir,
         outdir=outdir
     resources:
-        mem="8G",
+        mem="32G",
         time="02:00:00"
     output:
         os.path.join(outdir, "results", "nsp", "nsp_coeffs_stats_{thread}.pkl"),
@@ -784,7 +784,7 @@ rule plot_nsp_coeffs:
         outdir=outdir
     resources:
         mem="8G",
-        time="02:00:00"
+        time="01:00:00"
     output:
         os.path.join(outdir, "results", "nsp", "images", "nsp_coeffs_comparison_{thread}.png")
     conda:
