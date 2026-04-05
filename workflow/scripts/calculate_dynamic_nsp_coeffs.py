@@ -68,7 +68,7 @@ for fc in fcs:
     H_Ses.append(H_Se)
 
 # Save the integration and segregation coeffs
-with open(os.path.join(args.out_dir, f"sub-{args.subid}_dynamic_H_In_{args.thread}.pkl"), "wb") as f:
+with open(os.path.join(args.out_dir, f"sub-{args.subid}_windowed_H_In_{args.thread}.pkl"), "wb") as f:
     pickle.dump(H_Ins, f)
-with open(os.path.join(args.out_dir, f"sub-{args.subid}_dynamic_H_Se_{args.thread}.pkl"), "wb") as f:
+with open(os.path.join(args.out_dir, f"sub-{args.subid}_windowed_H_Se_{args.thread}.pkl"), "wb") as f:
     pickle.dump(H_Ses, f)
