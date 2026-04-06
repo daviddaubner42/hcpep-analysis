@@ -29,7 +29,7 @@ with open(os.path.join(args.inp_dir, f"nsp_coeffs_ps_{args.thread}.pkl"), "rb") 
 with open(os.path.join(args.inp_dir, f"nsp_coeffs_stats_{args.thread}.pkl"), "rb") as f:
     stats = pickle.load(f)
 
-fig, ax = plt.subplots(4, 2, figsize=(14.5*cm, 14.5*cm), dpi=600)
+fig, ax = plt.subplots(2, 2, figsize=(14.5*cm, 14.5*cm), dpi=600)
 
 patients = []
 hcs = []

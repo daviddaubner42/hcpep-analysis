@@ -20,7 +20,7 @@ with open(args.network_path, "rb") as f:
     network_idxs = pickle.load(f)
 
 network_ordering = []
-for net, idxs in network_idxs:
+for net, idxs in network_idxs.items():
     for i in idxs:
         network_ordering.append(i)
 idx_transform = {}
