@@ -38,6 +38,7 @@ H_Ses = []
 for fc in fcs:
     # Set negative connectivity to 0
     fc[fc < 0] = 0
+    np.fill_diagonal(fc, 1)
 
     eigenvalues, eigenvectors = eigh(fc)
 
