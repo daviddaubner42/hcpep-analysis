@@ -25,10 +25,10 @@ with open(os.path.join(args.out_dir, "to_delete.pkl"), "wb") as f:
 
 # Load atlas label table
 atlas_desc = pd.read_table(args.seg_file)
-atlas_desc['index'] = np.arange(0, len(atlas_desc))
 
 # Delete corrupted ROIs
 atlas_desc = atlas_desc.drop(to_delete, axis=0)
+atlas_desc['index'] = np.arange(0, len(atlas_desc))
 
 # Save labels
 atlas_labels = list(atlas_desc['label'])
