@@ -178,7 +178,7 @@ rule reorder_to_networks:
     conda:
         os.path.join(environmentdir, "environment.yaml")
     shell:
-        "python {params.workflowdir}/scripts/reorder_to_networks.py --results_dir {params.fcdir} --network_path {input.networks} --thread {wildcards.thread}"
+        "python {params.workflowdir}/scripts/reorder_to_networks.py --results_dir {params.fcdir} --network_dir {input.networks} --thread {wildcards.thread}"
 
 rule plot_pairwise_comparison:
     input:
@@ -704,7 +704,7 @@ rule calculate_dynamic_nsp_coeffs:
         workflowdir=workflowdir,
         outdir=outdir
     resources:
-        mem="8G",
+        mem="16G",
         time="00:30:00"
     output:
         os.path.join(outdir, "results", "nsp", "sub-{subid}", "sub-{subid}_windowed_H_In_{thread}.pkl"),

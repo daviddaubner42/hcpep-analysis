@@ -6,7 +6,7 @@ import pickle
 
 parser = argparse.ArgumentParser(description="Reorder the average FCs, p-values and statistics to be organized by network")
 parser.add_argument("--results_dir", type=str, help="The path to the results directory for the pairwise FC comparison")
-parser.add_argument("--network_path", type=str)
+parser.add_argument("--network_dir", type=str)
 parser.add_argument("--thread", type=str)
 args = parser.parse_args()
 
