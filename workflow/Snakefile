@@ -18,12 +18,12 @@ endfiles = [
     os.path.join(outdir, "results", "static", "images", "{thread}_avg_fc_comparison.png"),
     os.path.join(outdir, "results", "static", "images", "{thread}_p_vals_uncorrected.png"),
     os.path.join(outdir, "results", "static", "images", "{thread}_p_vals_fdr.png"),
-    os.path.join(outdir, "results", "dynamic", "images", "avg_FCD_comparison_{thread}.png"),
-    os.path.join(outdir, "results", "dynamic", "images", "avg_FCD_hist_comparison_{thread}.png"),
-    os.path.join(outdir, "results", "dynamic", "images", "avg_FCD_hist_comparison_regr_{thread}.png"),
-    os.path.join(outdir, "results", "graph_theory", "global", "images", "global_metric_comparison_{thread}.png"),
-    os.path.join(outdir, "results", "graph_theory", "local", "{metric}_ps_stats_{thread}.csv"),
-    os.path.join(outdir, "results", "nsp", "images", "nsp_coeffs_comparison_{thread}.png")
+    # os.path.join(outdir, "results", "dynamic", "images", "avg_FCD_comparison_{thread}.png"),
+    # os.path.join(outdir, "results", "dynamic", "images", "avg_FCD_hist_comparison_{thread}.png"),
+    # os.path.join(outdir, "results", "dynamic", "images", "avg_FCD_hist_comparison_regr_{thread}.png"),
+    # os.path.join(outdir, "results", "graph_theory", "global", "images", "global_metric_comparison_{thread}.png"),
+    # os.path.join(outdir, "results", "graph_theory", "local", "{metric}_ps_stats_{thread}.csv"),
+    # os.path.join(outdir, "results", "nsp", "images", "nsp_coeffs_comparison_{thread}.png")
 ]
 
 # Define the subject IDs to be processed
