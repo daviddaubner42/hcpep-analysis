@@ -178,7 +178,7 @@ rule reorder_to_networks:
     conda:
         os.path.join(environmentdir, "environment.yaml")
     shell:
-        "python {params.workflowdir}/scripts/reorder_to_networks.py --results_dir {params.fcdir} --network_dir {input.networks} --thread {wildcards.thread}"
+        "python {params.workflowdir}/scripts/reorder_to_networks.py --results_dir {params.fcdir} --network_path {input.networks} --thread {wildcards.thread}"
 
 rule plot_pairwise_comparison:
     input:
