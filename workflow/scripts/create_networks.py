@@ -29,6 +29,7 @@ atlas_desc = pd.read_table(args.seg_file)
 # Delete corrupted ROIs
 atlas_desc = atlas_desc.drop(to_delete, axis=0)
 atlas_desc['index'] = np.arange(0, len(atlas_desc))
+atlas_desc.set_index('index', inplace=True)
 
 # Save labels
 atlas_labels = list(atlas_desc['label'])
