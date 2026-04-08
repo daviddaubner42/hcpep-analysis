@@ -56,7 +56,7 @@ ax[0][0].set_ylabel("Abs. mean connectivity $u_c$", fontsize=9)
 if ps[metric] < 0.05:
     ymax = max(np.max(patients), np.max(hcs))
     y_offset = ymax / 10
-    ax[0][0].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
+    # ax[0][0].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
     ax[0][0].set_facecolor("#eeebeb")
     ax[0][0].text(1.5, ymax + y_offset + 0.1, '*', fontsize=16, ha='center')
 if ps[metric] < 0.05 / 10:
@@ -93,7 +93,7 @@ ax[0][1].set_ylabel("Avg. clustering coefficient $C$", fontsize=9)
 if ps[metric] < 0.05:
     ymax = max(np.max(patients), np.max(hcs))
     y_offset = ymax / 10
-    ax[0][1].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
+    # ax[0][1].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
     ax[0][1].set_facecolor("#eeebeb")
     ax[0][1].text(1.5, ymax + y_offset + ymax/50, '*', fontsize=16, ha='center')
 if ps[metric] < 0.05 / 10:
@@ -133,7 +133,7 @@ ymax = max(np.max(patients), np.max(hcs))
 if ps[metric] < 0.05:
     ymax = max(np.max(patients), np.max(hcs))
     y_offset = ymax / 10
-    ax[1][0].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
+    # ax[1][0].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
     ax[1][0].set_facecolor("#eeebeb")
     ax[1][0].text(1.5, ymax + y_offset + ymax/50, '*', fontsize=16, ha='center')
 if ps[metric] < 0.05 / 10:
@@ -171,7 +171,7 @@ ax[1][1].set_ylabel("Global efficiency $E$", fontsize=9)
 if ps[metric] < 0.05:
     ymax = max(np.max(patients), np.max(hcs))
     y_offset = ymax / 10
-    ax[1][1].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
+    # ax[1][1].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
     ax[1][1].set_facecolor("#eeebeb")
     ax[1][1].text(1.5, ymax + y_offset + ymax/50, '*', fontsize=16, ha='center')
 if ps[metric] < 0.05 / 10:
@@ -208,7 +208,7 @@ ax[3][0].set_ylabel("Assortativity $r$", fontsize=9)
 if ps[metric] < 0.05:
     ymax = max(np.max(patients), np.max(hcs))
     y_offset = ymax / 10
-    ax[3][0].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
+    # ax[3][0].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
     ax[3][0].set_facecolor("#eeebeb")
     ax[3][0].text(1.5, ymax + y_offset + ymax/50, '*', fontsize=16, ha='center')
 if ps[metric] < 0.05 / 10:
@@ -286,7 +286,7 @@ ax[2][1].set_ylim(170, 180)
 if ps[metric] < 0.05:
     ymax = max(np.max(patients), np.max(hcs))
     y_offset = ymax / 10
-    ax[2][1].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
+    # ax[2][1].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
     ax[2][1].set_facecolor("#eeebeb")
     ax[2][1].text(1.5, ymax + y_offset + ymax/50, '*', fontsize=16, ha='center')
 if ps[metric] < 0.05 / 10:
