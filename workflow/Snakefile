@@ -23,7 +23,7 @@ endfiles = [
     # os.path.join(outdir, "results", "dynamic", "images", "avg_FCD_hist_comparison_regr_{thread}.png"),
     os.path.join(outdir, "results", "graph_theory", "global", "images", "global_metric_comparison_{thread}.png"),
     # os.path.join(outdir, "results", "graph_theory", "local", "{metric}_ps_stats_{thread}.csv"),
-    # os.path.join(outdir, "results", "nsp", "images", "nsp_coeffs_comparison_{thread}.png")
+    os.path.join(outdir, "results", "nsp", "images", "nsp_coeffs_comparison_{thread}.png")
 ]
 
 # Define the subject IDs to be processed
