@@ -247,7 +247,7 @@ ax[2][0].set_ylim(170, 180)
 if ps[metric] < 0.05:
     ymax = max(np.max(patients), np.max(hcs))
     y_offset = ymax / 10
-    ax[2][0].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
+    # ax[2][0].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
     ax[2][0].set_facecolor("#eeebeb")
     ax[2][0].text(1.5, ymax + y_offset + ymax/50, '*', fontsize=16, ha='center')
 if ps[metric] < 0.05 / 10:
