@@ -21,7 +21,7 @@ endfiles = [
     # os.path.join(outdir, "results", "dynamic", "images", "avg_FCD_comparison_{thread}.png"),
     # os.path.join(outdir, "results", "dynamic", "images", "avg_FCD_hist_comparison_{thread}.png"),
     # os.path.join(outdir, "results", "dynamic", "images", "avg_FCD_hist_comparison_regr_{thread}.png"),
-    # os.path.join(outdir, "results", "graph_theory", "global", "images", "global_metric_comparison_{thread}.png"),
+    os.path.join(outdir, "results", "graph_theory", "global", "images", "global_metric_comparison_{thread}.png"),
     # os.path.join(outdir, "results", "graph_theory", "local", "{metric}_ps_stats_{thread}.csv"),
     # os.path.join(outdir, "results", "nsp", "images", "nsp_coeffs_comparison_{thread}.png")
 ]
@@ -342,184 +342,184 @@ rule plot_FCDs:
 
 """ Global metrics """
 
-rule calculate_avg_clustering:
-    input:
-        os.path.join(outdir, "results", "static", "sub-{subid}", "sub-{subid}_FC_{thread}_raw.csv"),
-        os.path.join(outdir, "intermediaries", "labels.pkl")
-    params:
-        workflowdir = workflowdir,
-        outdir = outdir,
-        min_density = config["min_density"],
-        max_density = config["max_density"],
-        density_step = config["density_step"]
-    resources:
-        mem='16G',
-        time='02:00:00'
-    output:
-        os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_avg_clustering_{thread}.pkl")
-    conda:
-        os.path.join(environmentdir, "environment.yaml")
-    shell:
-        "mkdir -p {params.outdir}/results/graph_theory/global/sub-{wildcards.subid} && "
-        "python {params.workflowdir}/scripts/calculate_avg_clustering.py --input_path {input[0]} --out_path {output} --min_density {params.min_density} --max_density {params.max_density} --density_step {params.density_step} --labels_path {input[1]}"
+# rule calculate_avg_clustering:
+#     input:
+#         os.path.join(outdir, "results", "static", "sub-{subid}", "sub-{subid}_FC_{thread}_raw.csv"),
+#         os.path.join(outdir, "intermediaries", "labels.pkl")
+#     params:
+#         workflowdir = workflowdir,
+#         outdir = outdir,
+#         min_density = config["min_density"],
+#         max_density = config["max_density"],
+#         density_step = config["density_step"]
+#     resources:
+#         mem='16G',
+#         time='02:00:00'
+#     output:
+#         os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_avg_clustering_{thread}.pkl")
+#     conda:
+#         os.path.join(environmentdir, "environment.yaml")
+#     shell:
+#         "mkdir -p {params.outdir}/results/graph_theory/global/sub-{wildcards.subid} && "
+#         "python {params.workflowdir}/scripts/calculate_avg_clustering.py --input_path {input[0]} --out_path {output} --min_density {params.min_density} --max_density {params.max_density} --density_step {params.density_step} --labels_path {input[1]}"
 
-rule calculate_global_efficiency:
-    input:
-        os.path.join(outdir, "results", "static", "sub-{subid}", "sub-{subid}_FC_{thread}_raw.csv"),
-        os.path.join(outdir, "intermediaries", "labels.pkl")
-    params:
-        workflowdir = workflowdir,
-        outdir = outdir,
-        min_density = config["min_density"],
-        max_density = config["max_density"],
-        density_step = config["density_step"]
-    resources:
-        mem='16G',
-        time='02:00:00'
-    output:
-        os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_global_efficiency_{thread}.pkl")
-    conda:
-        os.path.join(environmentdir, "environment.yaml")
-    shell:
-        "mkdir -p {params.outdir}/results/graph_theory/global/sub-{wildcards.subid} && "
-        "python {params.workflowdir}/scripts/calculate_global_efficiency.py --input_path {input[0]} --out_path {output} --min_density {params.min_density} --max_density {params.max_density} --density_step {params.density_step} --labels_path {input[1]}"
+# rule calculate_global_efficiency:
+#     input:
+#         os.path.join(outdir, "results", "static", "sub-{subid}", "sub-{subid}_FC_{thread}_raw.csv"),
+#         os.path.join(outdir, "intermediaries", "labels.pkl")
+#     params:
+#         workflowdir = workflowdir,
+#         outdir = outdir,
+#         min_density = config["min_density"],
+#         max_density = config["max_density"],
+#         density_step = config["density_step"]
+#     resources:
+#         mem='16G',
+#         time='02:00:00'
+#     output:
+#         os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_global_efficiency_{thread}.pkl")
+#     conda:
+#         os.path.join(environmentdir, "environment.yaml")
+#     shell:
+#         "mkdir -p {params.outdir}/results/graph_theory/global/sub-{wildcards.subid} && "
+#         "python {params.workflowdir}/scripts/calculate_global_efficiency.py --input_path {input[0]} --out_path {output} --min_density {params.min_density} --max_density {params.max_density} --density_step {params.density_step} --labels_path {input[1]}"
 
-rule calculate_assortativity:
-    input:
-        os.path.join(outdir, "results", "static", "sub-{subid}", "sub-{subid}_FC_{thread}_raw.csv"),
-        os.path.join(outdir, "intermediaries", "labels.pkl")
-    params:
-        workflowdir = workflowdir,
-        outdir = outdir,
-        min_density = config["min_density"],
-        max_density = config["max_density"],
-        density_step = config["density_step"]
-    resources:
-        mem='16G',
-        time='02:00:00'
-    output:
-        os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_assortativity_{thread}.pkl")
-    conda:
-        os.path.join(environmentdir, "environment.yaml")
-    shell:
-        "mkdir -p {params.outdir}/results/graph_theory/global/sub-{wildcards.subid} && "
-        "python {params.workflowdir}/scripts/calculate_assortativity.py --input_path {input[0]} --out_path {output} --min_density {params.min_density} --max_density {params.max_density} --density_step {params.density_step} --labels_path {input[1]}"
+# rule calculate_assortativity:
+#     input:
+#         os.path.join(outdir, "results", "static", "sub-{subid}", "sub-{subid}_FC_{thread}_raw.csv"),
+#         os.path.join(outdir, "intermediaries", "labels.pkl")
+#     params:
+#         workflowdir = workflowdir,
+#         outdir = outdir,
+#         min_density = config["min_density"],
+#         max_density = config["max_density"],
+#         density_step = config["density_step"]
+#     resources:
+#         mem='16G',
+#         time='02:00:00'
+#     output:
+#         os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_assortativity_{thread}.pkl")
+#     conda:
+#         os.path.join(environmentdir, "environment.yaml")
+#     shell:
+#         "mkdir -p {params.outdir}/results/graph_theory/global/sub-{wildcards.subid} && "
+#         "python {params.workflowdir}/scripts/calculate_assortativity.py --input_path {input[0]} --out_path {output} --min_density {params.min_density} --max_density {params.max_density} --density_step {params.density_step} --labels_path {input[1]}"
 
-rule calculate_robustness_random:
-    input:
-        os.path.join(outdir, "results", "static", "sub-{subid}", "sub-{subid}_FC_{thread}_raw.csv"),
-        os.path.join(outdir, "intermediaries", "labels.pkl")
-    params:
-        workflowdir = workflowdir,
-        outdir = outdir,
-        min_density = config["min_density"],
-        max_density = config["max_density"],
-        density_step = config["density_step"]
-    resources:
-        mem='32G',
-        time='04:00:00'
-    output:
-        os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_robustness_random_{thread}.pkl")
-    conda:
-        os.path.join(environmentdir, "environment.yaml")
-    shell:
-        "mkdir -p {params.outdir}/results/graph_theory/global/sub-{wildcards.subid} && "
-        "python {params.workflowdir}/scripts/calculate_robustness_random.py --input_path {input[0]} --out_path {output} --min_density {params.min_density} --max_density {params.max_density} --density_step {params.density_step} --labels_path {input[1]}"
+# rule calculate_robustness_random:
+#     input:
+#         os.path.join(outdir, "results", "static", "sub-{subid}", "sub-{subid}_FC_{thread}_raw.csv"),
+#         os.path.join(outdir, "intermediaries", "labels.pkl")
+#     params:
+#         workflowdir = workflowdir,
+#         outdir = outdir,
+#         min_density = config["min_density"],
+#         max_density = config["max_density"],
+#         density_step = config["density_step"]
+#     resources:
+#         mem='32G',
+#         time='04:00:00'
+#     output:
+#         os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_robustness_random_{thread}.pkl")
+#     conda:
+#         os.path.join(environmentdir, "environment.yaml")
+#     shell:
+#         "mkdir -p {params.outdir}/results/graph_theory/global/sub-{wildcards.subid} && "
+#         "python {params.workflowdir}/scripts/calculate_robustness_random.py --input_path {input[0]} --out_path {output} --min_density {params.min_density} --max_density {params.max_density} --density_step {params.density_step} --labels_path {input[1]}"
 
-rule calculate_robustness_targeted:
-    input:
-        os.path.join(outdir, "results", "static", "sub-{subid}", "sub-{subid}_FC_{thread}_raw.csv"),
-        os.path.join(outdir, "intermediaries", "labels.pkl")
-    params:
-        workflowdir = workflowdir,
-        outdir = outdir,
-        min_density = config["min_density"],
-        max_density = config["max_density"],
-        density_step = config["density_step"]
-    resources:
-        mem='32G',
-        time='04:00:00'
-    output:
-        os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_robustness_targeted_{thread}.pkl")
-    conda:
-        os.path.join(environmentdir, "environment.yaml")
-    shell:
-        "mkdir -p {params.outdir}/results/graph_theory/global/sub-{wildcards.subid} && "
-        "python {params.workflowdir}/scripts/calculate_robustness_targeted.py --input_path {input[0]} --out_path {output} --min_density {params.min_density} --max_density {params.max_density} --density_step {params.density_step} --labels_path {input[1]}"
+# rule calculate_robustness_targeted:
+#     input:
+#         os.path.join(outdir, "results", "static", "sub-{subid}", "sub-{subid}_FC_{thread}_raw.csv"),
+#         os.path.join(outdir, "intermediaries", "labels.pkl")
+#     params:
+#         workflowdir = workflowdir,
+#         outdir = outdir,
+#         min_density = config["min_density"],
+#         max_density = config["max_density"],
+#         density_step = config["density_step"]
+#     resources:
+#         mem='32G',
+#         time='04:00:00'
+#     output:
+#         os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_robustness_targeted_{thread}.pkl")
+#     conda:
+#         os.path.join(environmentdir, "environment.yaml")
+#     shell:
+#         "mkdir -p {params.outdir}/results/graph_theory/global/sub-{wildcards.subid} && "
+#         "python {params.workflowdir}/scripts/calculate_robustness_targeted.py --input_path {input[0]} --out_path {output} --min_density {params.min_density} --max_density {params.max_density} --density_step {params.density_step} --labels_path {input[1]}"
 
-rule calculate_modularity:
-    input:
-        os.path.join(outdir, "results", "static", "sub-{subid}", "sub-{subid}_FC_{thread}_raw.csv"),
-        os.path.join(outdir, "intermediaries", "partition.pkl"),
-        os.path.join(outdir, "intermediaries", "labels.pkl")
-    params:
-        workflowdir = workflowdir,
-        outdir = outdir,
-        min_density = config["min_density"],
-        max_density = config["max_density"],
-        density_step = config["density_step"],
-        networkdir = os.path.join(outdir, "intermediaries")
-    output:
-        os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_modularity_{thread}.pkl")
-    conda:
-        os.path.join(environmentdir, "environment.yaml")
-    shell:
-        "mkdir -p {params.outdir}/results/graph_theory/global/sub-{wildcards.subid} && "
-        "python {params.workflowdir}/scripts/calculate_modularity.py --input_path {input[0]} --out_path {output} --min_density {params.min_density} --max_density {params.max_density} --density_step {params.density_step} --network_dir {params.networkdir}"
+# rule calculate_modularity:
+#     input:
+#         os.path.join(outdir, "results", "static", "sub-{subid}", "sub-{subid}_FC_{thread}_raw.csv"),
+#         os.path.join(outdir, "intermediaries", "partition.pkl"),
+#         os.path.join(outdir, "intermediaries", "labels.pkl")
+#     params:
+#         workflowdir = workflowdir,
+#         outdir = outdir,
+#         min_density = config["min_density"],
+#         max_density = config["max_density"],
+#         density_step = config["density_step"],
+#         networkdir = os.path.join(outdir, "intermediaries")
+#     output:
+#         os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_modularity_{thread}.pkl")
+#     conda:
+#         os.path.join(environmentdir, "environment.yaml")
+#     shell:
+#         "mkdir -p {params.outdir}/results/graph_theory/global/sub-{wildcards.subid} && "
+#         "python {params.workflowdir}/scripts/calculate_modularity.py --input_path {input[0]} --out_path {output} --min_density {params.min_density} --max_density {params.max_density} --density_step {params.density_step} --network_dir {params.networkdir}"
 
-rule calculate_abs_mean_connectivity:
-    input:
-        os.path.join(outdir, "results", "static", "sub-{subid}", "sub-{subid}_FC_{thread}_raw.csv")
-    params:
-        workflowdir = workflowdir,
-        outdir = outdir
-    output:
-        os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_abs_mean_connectivity_{thread}.pkl")
-    conda:
-        os.path.join(environmentdir, "environment.yaml")
-    shell:
-        "mkdir -p {params.outdir}/results/graph_theory/global/sub-{wildcards.subid} && "
-        "python {params.workflowdir}/scripts/calculate_abs_mean_connectivity.py --input_path {input} --out_path {output}"
+# rule calculate_abs_mean_connectivity:
+#     input:
+#         os.path.join(outdir, "results", "static", "sub-{subid}", "sub-{subid}_FC_{thread}_raw.csv")
+#     params:
+#         workflowdir = workflowdir,
+#         outdir = outdir
+#     output:
+#         os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_abs_mean_connectivity_{thread}.pkl")
+#     conda:
+#         os.path.join(environmentdir, "environment.yaml")
+#     shell:
+#         "mkdir -p {params.outdir}/results/graph_theory/global/sub-{wildcards.subid} && "
+#         "python {params.workflowdir}/scripts/calculate_abs_mean_connectivity.py --input_path {input} --out_path {output}"
 
-rule aggregate_global_metrics:
-    input:
-        expand(os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_avg_clustering_{{thread}}.pkl"), subid=subids),
-        expand(os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_global_efficiency_{{thread}}.pkl"), subid=subids),
-        expand(os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_assortativity_{{thread}}.pkl"), subid=subids),
-        expand(os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_robustness_random_{{thread}}.pkl"), subid=subids),
-        expand(os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_robustness_targeted_{{thread}}.pkl"), subid=subids),
-        expand(os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_modularity_{{thread}}.pkl"), subid=subids),
-        expand(os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_abs_mean_connectivity_{{thread}}.pkl"), subid=subids),
-        demo=os.path.join(resourcedir, "ndar_subject01.txt")
-    params:
-        workflowdir = workflowdir,
-        outdir = outdir,
-        subids=subids
-    output:
-        os.path.join(outdir, "results", "graph_theory", "global", "global_metrics_{thread}.csv")
-    conda:
-        os.path.join(environmentdir, "environment.yaml")
-    shell:
-        "python {params.workflowdir}/scripts/aggregate_global_metrics.py --global_metrics_dir {params.outdir}/results/graph_theory/global/ --thread {wildcards.thread} --demo_data_path {input.demo} --out_path {output} --subids {params.subids}"
+# rule aggregate_global_metrics:
+#     input:
+#         expand(os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_avg_clustering_{{thread}}.pkl"), subid=subids),
+#         expand(os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_global_efficiency_{{thread}}.pkl"), subid=subids),
+#         expand(os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_assortativity_{{thread}}.pkl"), subid=subids),
+#         expand(os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_robustness_random_{{thread}}.pkl"), subid=subids),
+#         expand(os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_robustness_targeted_{{thread}}.pkl"), subid=subids),
+#         expand(os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_modularity_{{thread}}.pkl"), subid=subids),
+#         expand(os.path.join(outdir, "results", "graph_theory", "global", "sub-{subid}", "sub-{subid}_abs_mean_connectivity_{{thread}}.pkl"), subid=subids),
+#         demo=os.path.join(resourcedir, "ndar_subject01.txt")
+#     params:
+#         workflowdir = workflowdir,
+#         outdir = outdir,
+#         subids=subids
+#     output:
+#         os.path.join(outdir, "results", "graph_theory", "global", "global_metrics_{thread}.csv")
+#     conda:
+#         os.path.join(environmentdir, "environment.yaml")
+#     shell:
+#         "python {params.workflowdir}/scripts/aggregate_global_metrics.py --global_metrics_dir {params.outdir}/results/graph_theory/global/ --thread {wildcards.thread} --demo_data_path {input.demo} --out_path {output} --subids {params.subids}"
 
-rule global_metric_comparison:
-    input:
-        os.path.join(outdir, "results", "graph_theory", "global", "global_metrics_{thread}.csv"),
-        demo=os.path.join(resourcedir, "ndar_subject01.txt")
-    params:
-        workflowdir = workflowdir,
-        outdir = outdir,
-        subids=subids
-    resources:
-        mem='31G',
-        time='04:00:00'
-    output:
-        os.path.join(outdir, "results", "graph_theory", "global", "global_metric_ps_{thread}.pkl"),
-        os.path.join(outdir, "results", "graph_theory", "global", "global_metric_stats_{thread}.pkl")
-    conda:
-        os.path.join(environmentdir, "environment.yaml")
-    shell:
-        "python {params.workflowdir}/scripts/global_metric_comparison.py --metric_path {input[0]} --thread {wildcards.thread} --out_dir {params.outdir}/results/graph_theory/global/ --demo_data_path {input.demo} --subids {params.subids}"
+# rule global_metric_comparison:
+#     input:
+#         os.path.join(outdir, "results", "graph_theory", "global", "global_metrics_{thread}.csv"),
+#         demo=os.path.join(resourcedir, "ndar_subject01.txt")
+#     params:
+#         workflowdir = workflowdir,
+#         outdir = outdir,
+#         subids=subids
+#     resources:
+#         mem='31G',
+#         time='04:00:00'
+#     output:
+#         os.path.join(outdir, "results", "graph_theory", "global", "global_metric_ps_{thread}.pkl"),
+#         os.path.join(outdir, "results", "graph_theory", "global", "global_metric_stats_{thread}.pkl")
+#     conda:
+#         os.path.join(environmentdir, "environment.yaml")
+#     shell:
+#         "python {params.workflowdir}/scripts/global_metric_comparison.py --metric_path {input[0]} --thread {wildcards.thread} --out_dir {params.outdir}/results/graph_theory/global/ --demo_data_path {input.demo} --subids {params.subids}"
 
 rule plot_global_metrics:
     input:
