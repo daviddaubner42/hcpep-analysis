@@ -48,7 +48,7 @@ end = 0
 region_centers = []
 for net, labels in networks.items():
     end += len(labels)
-    if end < 84:
+    if end < n:
         ax[0].hlines(end-0.5, 0, n-0.5, colors="white", linewidth=0.15)
         ax[0].vlines(end-0.5, 0, n-0.5, colors="white", linewidth=0.15)
         ax[1].hlines(end-0.5, 0, n-0.5, colors="white", linewidth=0.15)
@@ -96,7 +96,7 @@ end = 0
 region_centers = []
 for net, labels in networks.items():
     end += len(labels)
-    if end < 84:
+    if end < n:
         ax[0].hlines(end-0.5, 0, n-0.5, colors="white", linewidth=0.15)
         ax[0].vlines(end-0.5, 0, n-0.5, colors="white", linewidth=0.15)
         ax[1].hlines(end-0.5, 0, n-0.5, colors="white", linewidth=0.15)
@@ -147,7 +147,7 @@ end = 0
 region_centers = []
 for net, labels in networks.items():
     end += len(labels)
-    if end < 84:
+    if end < n:
         ax[0].hlines(end-0.5, 0, n-0.5, colors="white", linewidth=0.15)
         ax[0].vlines(end-0.5, 0, n-0.5, colors="white", linewidth=0.15)
         ax[1].hlines(end-0.5, 0, n-0.5, colors="white", linewidth=0.15)
