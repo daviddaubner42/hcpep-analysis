@@ -55,13 +55,15 @@ ax[0][0].set_ylabel("Integration strength $H_In$", fontsize=9)
 if ps[metric] < 0.05:
     ymax = max(np.max(patients), np.max(hcs))
     y_offset = ymax / 10
-    ax[0][0].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
+    # ax[0][0].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
     ax[0][0].set_facecolor("#eeebeb")
-    ax[0][0].text(1.5, ymax + y_offset + 0.1, '*', fontsize=16, ha='center')
+    # ax[0][0].text(1.5, ymax + y_offset + 0.1, '*', fontsize=16, ha='center')
 if ps[metric] < 0.05 / 10:
-    ax[0][0].text(1.5, ymax + y_offset + 0.2, '*', fontsize=16, ha='center')
+    ax[0][0].set_facecolor("#bcbaba")
+    # ax[0][0].text(1.5, ymax + y_offset + 0.2, '*', fontsize=16, ha='center')
 if ps[metric] < 0.05 / 100:
-    ax[0][0].text(1.5, ymax + y_offset + 0.3, '*', fontsize=16, ha='center')
+    ax[0][0].set_facecolor("#8c8c8c")
+    # ax[0][0].text(1.5, ymax + y_offset + 0.3, '*', fontsize=16, ha='center')
 
 # ----------------------------------------------------------------------------
 # ----------------------------------------------------------------------------
@@ -91,13 +93,15 @@ ax[0][1].set_ylabel("Segregation strength $H_Se$", fontsize=9)
 if ps[metric] < 0.05:
     ymax = max(np.max(patients), np.max(hcs))
     y_offset = ymax / 10
-    ax[0][1].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
+    # ax[0][0].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
     ax[0][1].set_facecolor("#eeebeb")
-    ax[0][1].text(1.5, ymax + y_offset + 0.1, '*', fontsize=16, ha='center')
+    # ax[0][0].text(1.5, ymax + y_offset + 0.1, '*', fontsize=16, ha='center')
 if ps[metric] < 0.05 / 10:
-    ax[0][1].text(1.5, ymax + y_offset + 0.2, '*', fontsize=16, ha='center')
+    ax[0][1].set_facecolor("#bcbaba")
+    # ax[0][0].text(1.5, ymax + y_offset + 0.2, '*', fontsize=16, ha='center')
 if ps[metric] < 0.05 / 100:
-    ax[0][1].text(1.5, ymax + y_offset + 0.3, '*', fontsize=16, ha='center')
+    ax[0][1].set_facecolor("#8c8c8c")
+    # ax[0][0].text(1.5, ymax + y_offset + 0.3, '*', fontsize=16, ha='center')
 
 # ----------------------------------------------------------------------------
 # ----------------------------------------------------------------------------
@@ -127,13 +131,15 @@ ax[1][0].set_ylabel("Integration strength $F_In$", fontsize=9)
 if ps[metric] < 0.05:
     ymax = max(np.max(patients), np.max(hcs))
     y_offset = ymax / 10
-    ax[1][0].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
+    # ax[0][0].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
     ax[1][0].set_facecolor("#eeebeb")
-    ax[1][0].text(1.5, ymax + y_offset + 0.1, '*', fontsize=16, ha='center')
+    # ax[0][0].text(1.5, ymax + y_offset + 0.1, '*', fontsize=16, ha='center')
 if ps[metric] < 0.05 / 10:
-    ax[1][0].text(1.5, ymax + y_offset + 0.2, '*', fontsize=16, ha='center')
+    ax[1][0].set_facecolor("#bcbaba")
+    # ax[0][0].text(1.5, ymax + y_offset + 0.2, '*', fontsize=16, ha='center')
 if ps[metric] < 0.05 / 100:
-    ax[1][0].text(1.5, ymax + y_offset + 0.3, '*', fontsize=16, ha='center')
+    ax[1][0].set_facecolor("#8c8c8c")
+    # ax[0][0].text(1.5, ymax + y_offset + 0.3, '*', fontsize=16, ha='center')
 
 # ----------------------------------------------------------------------------
 # ----------------------------------------------------------------------------
@@ -164,13 +170,15 @@ ax[1][1].set_ylabel("Segregation strength $F_Se$", fontsize=9)
 if ps[metric] < 0.05:
     ymax = max(np.max(patients), np.max(hcs))
     y_offset = ymax / 10
-    ax[1][1].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
+    # ax[0][0].plot([1, 1, 2, 2], [ymax, ymax + y_offset, ymax + y_offset, ymax], color='black')
     ax[1][1].set_facecolor("#eeebeb")
-    ax[1][1].text(1.5, ymax + y_offset + 0.1, '*', fontsize=16, ha='center')
+    # ax[0][0].text(1.5, ymax + y_offset + 0.1, '*', fontsize=16, ha='center')
 if ps[metric] < 0.05 / 10:
-    ax[1][1].text(1.5, ymax + y_offset + 0.2, '*', fontsize=16, ha='center')
+    ax[1][1].set_facecolor("#bcbaba")
+    # ax[0][0].text(1.5, ymax + y_offset + 0.2, '*', fontsize=16, ha='center')
 if ps[metric] < 0.05 / 100:
-    ax[1][1].text(1.5, ymax + y_offset + 0.3, '*', fontsize=16, ha='center')
+    ax[1][1].set_facecolor("#8c8c8c")
+    # ax[0][0].text(1.5, ymax + y_offset + 0.3, '*', fontsize=16, ha='center')
 
 plt.tight_layout()
 plt.savefig(os.path.join(args.inp_dir, "images", f"nsp_coeffs_comparison_{args.thread}.png"), bbox_inches='tight')
