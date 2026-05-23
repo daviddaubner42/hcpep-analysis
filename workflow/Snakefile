@@ -18,18 +18,28 @@ endfiles = [
     os.path.join(outdir, "results", "static", "images", "{thread}_avg_fc_comparison.png"),
     os.path.join(outdir, "results", "static", "images", "{thread}_p_vals_uncorrected.png"),
     os.path.join(outdir, "results", "static", "images", "{thread}_p_vals_fdr.png"),
-    # os.path.join(outdir, "results", "dynamic", "images", "avg_FCD_comparison_{thread}.png"),
-    # os.path.join(outdir, "results", "dynamic", "images", "avg_FCD_hist_comparison_{thread}.png"),
-    # os.path.join(outdir, "results", "dynamic", "images", "avg_FCD_hist_comparison_regr_{thread}.png"),
+    os.path.join(outdir, "results", "dynamic", "images", "avg_FCD_comparison_{thread}.png"),
+    os.path.join(outdir, "results", "dynamic", "images", "avg_FCD_hist_comparison_{thread}.png"),
+    os.path.join(outdir, "results", "dynamic", "images", "avg_FCD_hist_comparison_regr_{thread}.png"),
     os.path.join(outdir, "results", "graph_theory", "global", "images", "global_metric_comparison_{thread}.png"),
-    # os.path.join(outdir, "results", "graph_theory", "local", "{metric}_ps_stats_{thread}.csv"),
-    os.path.join(outdir, "results", "nsp", "images", "nsp_coeffs_comparison_{thread}.png")
+    os.path.join(outdir, "results", "graph_theory", "local", "{metric}_ps_stats_{thread}.csv"),
+    os.path.join(outdir, "results", "nsp", "images", "nsp_coeffs_comparison_{thread}.png"),
+
+    # QA outputs
+    os.path.join(outdir, "derivatives", "quality_control", "desc-metadataCheck_log.txt"),
+    os.path.join(outdir, "derivatives", "quality_control", "figures", "task-rest_desc-maxFramewiseDisplacementScatter_figure.png"),
+    os.path.join(outdir, "derivatives", "quality_control", "task-rest_desc-framewiseDisplacement_log.txt"),
+    os.path.join(outdir, "derivatives", "quality_control", "sub-{subid}", "figures", "sub-{subid}_task-rest_desc-rawVsClean_figure.png"),
+    os.path.join(outdir, "derivatives", "quality_control", "task-rest_desc-denoisingVerification_log.txt"),
+    os.path.join(outdir, "derivatives", "quality_control", "figures", "task-rest_desc-qcFcCorrelationHistograms_figure.png"),
+    os.path.join(outdir, "derivatives", "quality_control", "figures", "task-rest_desc-qcFcDistanceCorrelation_figure.png"),
+    os.path.join(outdir, "derivatives", "quality_control", "task-rest_desc-qcFc_log.txt"),
 ]
 
 # Define the subject IDs to be processed
-excluded = [2028, 4066, 1040, 4038, 2004, 1048, 4088, 1064, 2040, 1070, 4030, 2065, 4069, 1067]
+# excluded = [2028, 4066, 1040, 4038, 2004, 1048, 4088, 1064, 2040, 1070, 4030, 2065, 4069, 1067]
 subids = [subid[4:] for subid in os.listdir(os.path.join(rawdir, "xcp_d")) if os.path.exists(os.path.join(rawdir, "xcp_d", f"{subid}", "ses-1", "func", f"{subid}_ses-1_task-rest_dir-AP_space-fsLR_seg-Glasser_den-91k_stat-mean_timeseries.ptseries.nii"))]
-subids = [subid for subid in subids if not int(subid) in excluded]
+# subids = [subid for subid in subids if not int(subid) in excluded]
 
 local_metrics = ["betweenness_centrality", "degree_centrality", "clustering_coefficient", "avg_shortest_path_length"]
 threads = ["mean", "ses-1_mean", "ses-2_mean", "ses-1_dir-AP", "ses-1_dir-PA", "ses-2_dir-AP", "ses-2_dir-PA"]
@@ -45,6 +55,7 @@ rule all:
 """ ---------------- The rules ---------------- """
 """ ------------------------------------------- """
 
+include: "quality_control.smk"
 # Prep
 
 # rule get_neat_demo_data:
