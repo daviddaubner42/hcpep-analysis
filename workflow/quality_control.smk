@@ -102,17 +102,35 @@ rule qc_fc:
         os.path.join(resourcedir, "atlas-desikankilliany.csv"),
         os.path.join(resourcedir, "atlas-desikankilliany.nii.gz"),
         os.path.join(outdir, "intermediaries", "networks", "network_labels.pkl"),
-        expand(os.path.join(outdir, "derivatives", "static", "sub-{subid}", "sub-{subid}_FC_{{thread}}_raw.csv"), subid=subids)
+        expand(os.path.join(outdir, "derivatives", "static", "sub-{subid}", "sub-{subid}_FC_{thread}_raw.csv"), subid=subids, thread=threads)
     params:
         outdir=outdir,
         workflowdir=workflowdir
     output:
-        os.path.join(outdir, "derivatives", "quality_control", "figures", "task-rest_desc-qcFcCorrelationHistograms_figure.png"),
-        os.path.join(outdir, "derivatives", "quality_control", "figures", "task-rest_desc-qcFcCorrelationHistograms_figure.json"),
-        os.path.join(outdir, "derivatives", "quality_control", "figures", "task-rest_desc-qcFcDistanceCorrelation_figure.png"),
-        os.path.join(outdir, "derivatives", "quality_control", "figures", "task-rest_desc-qcFcDistanceCorrelation_figure.json"),
-        os.path.join(outdir, "derivatives", "quality_control", "task-rest_desc-qcFc_log.txt"),
-        os.path.join(outdir, "derivatives", "quality_control", "task-rest_desc-qcFc_log.json")
+        os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-1_task-rest_dir-AP_desc-qcFcCorrelationHistograms_figure.png"),
+        os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-2_task-rest_dir-AP_desc-qcFcCorrelationHistograms_figure.png"),
+        os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-1_task-rest_dir-PA_desc-qcFcCorrelationHistograms_figure.png"),
+        os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-2_task-rest_dir-PA_desc-qcFcCorrelationHistograms_figure.png"),
+        # os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-1_task-rest_dir-AP_desc-qcFcCorrelationHistograms_figure.json"),
+        # os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-2_task-rest_dir-AP_desc-qcFcCorrelationHistograms_figure.json"),
+        # os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-1_task-rest_dir-PA_desc-qcFcCorrelationHistograms_figure.json"),
+        # os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-2_task-rest_dir-PA_desc-qcFcCorrelationHistograms_figure.json"),
+        os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-1_task-rest_dir-AP_desc-qcFcDistanceCorrelation_figure.png"),
+        os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-2_task-rest_dir-AP_desc-qcFcDistanceCorrelation_figure.png"),
+        os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-1_task-rest_dir-PA_desc-qcFcDistanceCorrelation_figure.png"),
+        os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-2_task-rest_dir-PA_desc-qcFcDistanceCorrelation_figure.png"),
+        # os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-1_task-rest_dir-AP_desc-qcFcDistanceCorrelation_figure.json"),
+        # os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-2_task-rest_dir-AP_desc-qcFcDistanceCorrelation_figure.json"),
+        # os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-1_task-rest_dir-PA_desc-qcFcDistanceCorrelation_figure.json"),
+        # os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-2_task-rest_dir-PA_desc-qcFcDistanceCorrelation_figure.json"),
+        os.path.join(outdir, "derivatives", "quality_control", "ses-1_task-rest_dir-AP_desc-qcFc_log.txt"),
+        os.path.join(outdir, "derivatives", "quality_control", "ses-2_task-rest_dir-AP_desc-qcFc_log.txt"),
+        os.path.join(outdir, "derivatives", "quality_control", "ses-1_task-rest_dir-PA_desc-qcFc_log.txt"),
+        os.path.join(outdir, "derivatives", "quality_control", "ses-2_task-rest_dir-PA_desc-qcFc_log.txt"),
+        # os.path.join(outdir, "derivatives", "quality_control", "ses-1_task-rest_dir-AP_desc-qcFc_log.json"),
+        # os.path.join(outdir, "derivatives", "quality_control", "ses-2_task-rest_dir-AP_desc-qcFc_log.json"),
+        # os.path.join(outdir, "derivatives", "quality_control", "ses-1_task-rest_dir-PA_desc-qcFc_log.json"),
+        # os.path.join(outdir, "derivatives", "quality_control", "ses-2_task-rest_dir-PA_desc-qcFc_log.json")
     conda:
         os.path.join(environmentdir, "environment.yaml")
     shell:
