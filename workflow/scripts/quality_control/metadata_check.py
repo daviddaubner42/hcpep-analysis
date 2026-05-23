@@ -1,7 +1,6 @@
 import nibabel as nib
 import os
 import json
-import pydicom
 from os.path import join
 import pickle
 import argparse
