@@ -58,11 +58,11 @@ rule framewise_displacement:
         outdir=outdir,
         workflowdir=workflowdir
     output:
-        expand([os.path.join(outdir, "derivatives", "quality_control", "sub-{subid}", "figures", "sub-{subid}_task-rest_desc-framewiseDisplacement_figure.png"),
+        expand([os.path.join(outdir, "derivatives", "quality_control", "sub-{subid}", "figures", "sub-{subid}_ses-1_task-rest_dir-AP_desc-framewiseDisplacement_figure.png"),
         # os.path.join(outdir, "derivatives", "quality_control", "sub-{subid}", "figures", "sub-{subid}_task-rest_desc-framewiseDisplacement_figure.json"),
-        os.path.join(outdir, "derivatives", "quality_control", "sub-{subid}", "sub-{subid}_task-rest_desc-framewiseDisplacementTranslational_timeseries.tsv"),
+        os.path.join(outdir, "derivatives", "quality_control", "sub-{subid}", "sub-{subid}_ses-1_task-rest_dir-AP_desc-framewiseDisplacementTranslational_timeseries.tsv"),
         # os.path.join(outdir, "derivatives", "quality_control", "sub-{subid}", "sub-{subid}_task-rest_desc-framewiseDisplacementTranslational_timeseries.json"),
-        os.path.join(outdir, "derivatives", "quality_control", "sub-{subid}", "sub-{subid}_task-rest_desc-framewiseDisplacementRotational_timeseries.tsv")], subid=subids),
+        os.path.join(outdir, "derivatives", "quality_control", "sub-{subid}", "sub-{subid}_ses-1_task-rest_dir-AP_desc-framewiseDisplacementRotational_timeseries.tsv")], subid=subids),
         # os.path.join(outdir, "derivatives", "quality_control", "sub-{subid}", "sub-{subid}_task-rest_desc-framewiseDisplacementRotational_timeseries.json")], subid=subids),
         os.path.join(outdir, "derivatives", "quality_control", "task-rest_desc-framewiseDisplacement_summary.tsv"),
         # os.path.join(outdir, "derivatives", "quality_control", "task-rest_desc-framewiseDisplacement_summary.json"),
@@ -123,14 +123,7 @@ rule qc_fc:
         # os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-2_task-rest_dir-AP_desc-qcFcDistanceCorrelation_figure.json"),
         # os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-1_task-rest_dir-PA_desc-qcFcDistanceCorrelation_figure.json"),
         # os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-2_task-rest_dir-PA_desc-qcFcDistanceCorrelation_figure.json"),
-        os.path.join(outdir, "derivatives", "quality_control", "ses-1_task-rest_dir-AP_desc-qcFc_log.txt"),
-        os.path.join(outdir, "derivatives", "quality_control", "ses-2_task-rest_dir-AP_desc-qcFc_log.txt"),
-        os.path.join(outdir, "derivatives", "quality_control", "ses-1_task-rest_dir-PA_desc-qcFc_log.txt"),
-        os.path.join(outdir, "derivatives", "quality_control", "ses-2_task-rest_dir-PA_desc-qcFc_log.txt"),
-        # os.path.join(outdir, "derivatives", "quality_control", "ses-1_task-rest_dir-AP_desc-qcFc_log.json"),
-        # os.path.join(outdir, "derivatives", "quality_control", "ses-2_task-rest_dir-AP_desc-qcFc_log.json"),
-        # os.path.join(outdir, "derivatives", "quality_control", "ses-1_task-rest_dir-PA_desc-qcFc_log.json"),
-        # os.path.join(outdir, "derivatives", "quality_control", "ses-2_task-rest_dir-PA_desc-qcFc_log.json")
+        os.path.join(outdir, "derivatives", "quality_control", "task-rest_desc-qcFc_log.txt"),
     conda:
         os.path.join(environmentdir, "environment.yaml")
     shell:
