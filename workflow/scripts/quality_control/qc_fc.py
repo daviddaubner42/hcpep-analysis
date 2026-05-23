@@ -24,8 +24,8 @@ cm = 1/2.54
 
 parser = argparse.ArgumentParser(description="QC-FC correlation")
 parser.add_argument("--motion_summary", type=str, help="Path to the motion summary CSV file"),
-parser.add_argument("--atlas_csv", type=str, help="Path to the atlas CSV file containing ROI labels"),
-parser.add_argument("--atlas_img", type=str, help="Path to the atlas image file"),
+parser.add_argument("--atlas_tsv", type=str, help="Path to the atlas CSV file containing ROI labels"),
+parser.add_argument("--region_coords", type=str, help="Path to the file with region centroid coordinates"),
 parser.add_argument("--network_labels", type=str, help="Path to the pickle file containing network labels"),
 parser.add_argument("--fc_dir", type=str, help="Path to the FC directory containing participant FC matrices"),
 parser.add_argument("--output_dir", type=str, help="Path to the output directory")
@@ -113,10 +113,10 @@ for ses in [1, 2]:
         """ QC-FC distance dependency """
 
         # Transform region labels to format compatible with atlas containing ROI centroid coordinates
-        atlas = pd.read_csv("resources/glasser_region_coords.csv")
+        atlas = pd.read_csv(args.region_coords, sep="\t")
         atlas
 
-        og_labels = pd.read_csv("resources/atlas-Glasser_dseg.tsv", sep="\t")["cifti_label"]
+        og_labels = pd.read_csv(args.atlas_tsv, sep="\t")["cifti_label"]
         labels = []
         for l in list(og_labels):
             hemi, region, _ = l.split("_")

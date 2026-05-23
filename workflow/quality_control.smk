@@ -99,8 +99,8 @@ rule framewise_displacement:
 rule qc_fc:
     input:
         os.path.join(outdir, "derivatives", "quality_control", "task-rest_desc-framewiseDisplacement_summary.tsv"),
-        os.path.join(resourcedir, "atlas-desikankilliany.csv"),
-        os.path.join(resourcedir, "atlas-desikankilliany.nii.gz"),
+        os.path.join(resourcedir, "atlas-Glasser_dseg.tsv"),
+        os.path.join(resourcedir, "glasser_region_coords.csv"),
         os.path.join(outdir, "intermediaries", "networks", "network_labels.pkl"),
         expand(os.path.join(outdir, "derivatives", "static", "sub-{subid}", "sub-{subid}_FC_{thread}_raw.csv"), subid=subids, thread=threads)
     params:
@@ -127,4 +127,4 @@ rule qc_fc:
     conda:
         os.path.join(environmentdir, "environment.yaml")
     shell:
-        "python {params.workflowdir}/scripts/quality_control/qc_fc.py --motion_summary {input[0]} --atlas_csv {input[1]} --atlas_img {input[2]} --network_labels {input[3]} --fc_dir {params.outdir}/derivatives/static/ --output_dir {params.outdir}/derivatives/quality_control > {params.outdir}/derivatives/quality_control/task-rest_desc-qcFc_log.txt"
+        "python {params.workflowdir}/scripts/quality_control/qc_fc.py --motion_summary {input[0]} --atlas_tsv {input[1]} --region_coords {input[2]} --fc_dir {params.outdir}/derivatives/static/ --output_dir {params.outdir}/derivatives/quality_control > {params.outdir}/derivatives/quality_control/task-rest_desc-qcFc_log.txt"
