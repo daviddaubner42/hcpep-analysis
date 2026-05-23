@@ -101,7 +101,6 @@ rule qc_fc:
         os.path.join(outdir, "derivatives", "quality_control", "task-rest_desc-framewiseDisplacement_summary.tsv"),
         os.path.join(resourcedir, "atlas-Glasser_dseg.tsv"),
         os.path.join(resourcedir, "glasser_region_coords.csv"),
-        os.path.join(outdir, "intermediaries", "networks", "network_labels.pkl"),
         expand(os.path.join(outdir, "derivatives", "static", "sub-{subid}", "sub-{subid}_FC_{thread}_raw.csv"), subid=subids, thread=threads)
     params:
         outdir=outdir,
