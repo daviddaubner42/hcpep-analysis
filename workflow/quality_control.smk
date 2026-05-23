@@ -43,7 +43,7 @@ rule metadata_check:
     output:
         os.path.join(outdir, "derivatives", "quality_control", "desc-metadataCheck_log.txt"),
         # os.path.join(outdir, "derivatives", "quality_control", "desc-metadataCheck_log.json"),
-        os.path.join(outdir, "derivatives", "quality_control", "desc-qualityControl_summary.tsv"),
+        # os.path.join(outdir, "derivatives", "quality_control", "desc-qualityControl_summary.tsv"),
         # os.path.join(outdir, "derivatives", "quality_control", "desc-qualityControl_summary.json")
     conda:
         os.path.join(environmentdir, "environment.yaml")
