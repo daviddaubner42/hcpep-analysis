@@ -53,7 +53,7 @@ rule metadata_check:
 rule framewise_displacement:
     input:
         expand(os.path.join(outdir, "derivatives", "fmriprep", "sub-{subid}", "ses-1", "func", "sub-{subid}_ses-1_task-rest_dir-AP_desc-confounds_timeseries.tsv"), subid=subids),
-        os.path.join(outdir, "derivatives", "quality_control", "desc-qualityControl_summary.tsv")
+        # os.path.join(outdir, "derivatives", "quality_control", "desc-qualityControl_summary.tsv")
     params:
         outdir=outdir,
         workflowdir=workflowdir
