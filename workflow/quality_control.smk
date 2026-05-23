@@ -35,7 +35,7 @@
 rule metadata_check:
     input:
         # os.path.join(outdir, "derivatives", "quality_control", "desc-dicomMetadata_summary.pkl"),
-        expand(os.path.join(rawdir, "sub-{subid}", "func", "sub-{subid}_task-rest_bold.nii.gz"), subid=subids)
+        expand(os.path.join(rawdir, "BIDS", "sub-{subid}", "ses-1", "func", "sub-{subid}_ses-1_task-rest_dir-AP_bold.nii.gz"), subid=subids)
     params:
         outdir=outdir,
         workflowdir=workflowdir,
@@ -48,7 +48,7 @@ rule metadata_check:
     conda:
         os.path.join(environmentdir, "environment.yaml")
     shell:
-        "python {params.workflowdir}/scripts/quality_control/metadata_check.py --dicom_meta {input[0]} --bids_dir {params.rawdir} --output_dir {params.outdir}/derivatives/quality_control > {output[0]}"
+        "python {params.workflowdir}/scripts/quality_control/metadata_check.py --bids_dir {params.rawdir} --output_dir {params.outdir}/derivatives/quality_control > {output[0]}"
 
 rule framewise_displacement:
     input:
