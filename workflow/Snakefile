@@ -126,28 +126,28 @@ rule create_raw_fc:
         "mkdir -p {params.outdir}/derivatives/static/sub-{wildcards.subid} && "
         "python {params.workflowdir}/scripts/create_raw_fc.py --ts_dir {params.rawdir}/xcp_d/sub-{wildcards.subid} --subid {wildcards.subid} --excluded_rois_path {input[0]} --out_dir {params.outdir}/derivatives/static/sub-{wildcards.subid}"
 
-rule regress_confounds:
-    input:
-        expand(os.path.join(outdir, "derivatives", "static", "sub-{subid}", "sub-{subid}_FC_{{thread}}_raw.csv"), subid=subids),
-        demo=os.path.join(resourcedir, "ndar_subject01.txt")
-    params:
-        workflowdir = workflowdir,
-        outdir = outdir,
-        fcdir = os.path.join(outdir, "derivatives", "static"),
-        subids=subids
-    resources:
-        mem='32G',
-        time='06:00:00'
-    output:
-        expand(os.path.join(outdir, "derivatives", "static", "sub-{subid}", "sub-{subid}_FC_{{thread}}_regr.csv"), subid=subids)
-    conda:
-        os.path.join(environmentdir, "environment.yaml")
-    shell:
-        "python {params.workflowdir}/scripts/regress_confounds.py --fc_dir {params.fcdir} --thread {wildcards.thread} --subids {params.subids} --demo_data_path {input.demo}"
+# rule regress_confounds:
+#     input:
+#         expand(os.path.join(outdir, "derivatives", "static", "sub-{subid}", "sub-{subid}_FC_{{thread}}_raw.csv"), subid=subids),
+#         demo=os.path.join(resourcedir, "ndar_subject01.txt")
+#     params:
+#         workflowdir = workflowdir,
+#         outdir = outdir,
+#         fcdir = os.path.join(outdir, "derivatives", "static"),
+#         subids=subids
+#     resources:
+#         mem='32G',
+#         time='06:00:00'
+#     output:
+#         expand(os.path.join(outdir, "derivatives", "static", "sub-{subid}", "sub-{subid}_FC_{{thread}}_regr.csv"), subid=subids)
+#     conda:
+#         os.path.join(environmentdir, "environment.yaml")
+#     shell:
+#         "python {params.workflowdir}/scripts/regress_confounds.py --fc_dir {params.fcdir} --thread {wildcards.thread} --subids {params.subids} --demo_data_path {input.demo}"
 
 rule pairwise_comparison:
     input:
-        expand(os.path.join(outdir, "derivatives", "static", "sub-{subid}", "sub-{subid}_FC_{{thread}}_regr.csv"), subid=subids),
+        expand(os.path.join(outdir, "derivatives", "static", "sub-{subid}", "sub-{subid}_FC_{{thread}}_raw.csv"), subid=subids),
         demo=os.path.join(resourcedir, "ndar_subject01.txt")
     params:
         workflowdir = workflowdir,
