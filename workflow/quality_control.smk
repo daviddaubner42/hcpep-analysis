@@ -56,7 +56,8 @@ rule framewise_displacement:
         # os.path.join(outdir, "derivatives", "quality_control", "desc-qualityControl_summary.tsv")
     params:
         outdir=outdir,
-        workflowdir=workflowdir
+        workflowdir=workflowdir,
+        subids=subids
     output:
         expand([os.path.join(outdir, "derivatives", "quality_control", "sub-{subid}", "figures", "sub-{subid}_ses-1_task-rest_dir-AP_desc-framewiseDisplacement_figure.png"),
         # os.path.join(outdir, "derivatives", "quality_control", "sub-{subid}", "figures", "sub-{subid}_task-rest_desc-framewiseDisplacement_figure.json"),
@@ -74,7 +75,7 @@ rule framewise_displacement:
         os.path.join(environmentdir, "environment.yaml")
     shell:
         "mkdir -p {params.outdir}/derivatives/quality_control/figures && "
-        "python {params.workflowdir}/scripts/quality_control/framewise_displacement.py --derivatives_dir {params.outdir}/derivatives --output_dir {params.outdir}/derivatives/quality_control > {params.outdir}/derivatives/quality_control/task-rest_desc-framewiseDisplacement_log.txt"
+        "python {params.workflowdir}/scripts/quality_control/framewise_displacement.py --derivatives_dir {params.outdir}/derivatives --output_dir {params.outdir}/derivatives/quality_control --subids {params.subids} > {params.outdir}/derivatives/quality_control/task-rest_desc-framewiseDisplacement_log.txt"
 
 # rule denoising_verification:
 #     input:

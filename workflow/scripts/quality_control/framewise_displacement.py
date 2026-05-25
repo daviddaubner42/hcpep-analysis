@@ -24,13 +24,15 @@ cm = 1/2.54
 parser = argparse.ArgumentParser(description='Calculate framewise displacement from fmriprep confounds')
 parser.add_argument('--derivatives_dir', type=str, required=True, help='Path to the derivatives directory')
 parser.add_argument('--output_dir', type=str, required=True, help='Path to the output directory where results will be saved')
+parser.add_argument('--subids', type=str, nargs='+', required=True, help='List of subject IDs to process')
 args = parser.parse_args()
 
 """ Framewise displacement """
 
 derivatives_dir = args.derivatives_dir
 
-subids = [i[4:] for i in os.listdir(os.path.join(derivatives_dir, "fmriprep", "sourcedata", "freesurfer")) if i.startswith("sub-")]
+# subids = [i[4:] for i in os.listdir(os.path.join(derivatives_dir, "fmriprep", "sourcedata", "freesurfer")) if i.startswith("sub-")]
+subids = args.subids
 
 # assert len(subids) == 81
 
