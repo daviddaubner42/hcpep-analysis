@@ -34,8 +34,8 @@ subids = [i[4:] for i in os.listdir(os.path.join(derivatives_dir, "fmriprep", "s
 
 # assert len(subids) == 81
 
-table = pd.read_csv(os.path.join(args.output_dir, "desc-qualityControl_summary.tsv"), sep='\t')
-table["Framewise displacement"] = ["Pass" for subid in table["Subject"]]
+# table = pd.read_csv(os.path.join(args.output_dir, "desc-qualityControl_summary.tsv"), sep='\t')
+# table["Framewise displacement"] = ["Pass" for subid in table["Subject"]]
 
 max_fds_trans = {}
 mean_fds_trans = {}
@@ -165,11 +165,11 @@ for subid in subids:
             elif np.max(fd_rot) >= 1.5:
                 print(f"sub-{subid} rotational framewise displacement {np.max(fd_rot):.2f} crossed the 1.5 degree treshold and should be inspected.")
 
-            if len(warnings) > 0:
-                print(subid)
-                table.loc[table["Subject"] == subid, "Framewise displacement"] = "Warning: " + "; ".join(warnings)
+            # if len(warnings) > 0:
+            #     print(subid)
+            #     table.loc[table["Subject"] == subid, "Framewise displacement"] = "Warning: " + "; ".join(warnings)
         
-table.to_csv(os.path.join(args.output_dir, "desc-qualityControl_summary.tsv"), index=False, sep='\t')
+# table.to_csv(os.path.join(args.output_dir, "desc-qualityControl_summary.tsv"), index=False, sep='\t')
 
 df = pd.DataFrame()
 
