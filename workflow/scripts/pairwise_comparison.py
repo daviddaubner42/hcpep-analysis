@@ -17,7 +17,7 @@ demo_data = pd.read_table(args.demo_data_path)
 patient_fcs_regr = []
 hc_fcs_regr = []
 for subid in args.subids:
-    fc = np.loadtxt(os.path.join(args.fc_dir, f"sub-{subid}", f"sub-{subid}_FC_{args.thread}_regr.csv"), delimiter=',')
+    fc = np.loadtxt(os.path.join(args.fc_dir, f"sub-{subid}", f"sub-{subid}_FC_{args.thread}_raw.csv"), delimiter=',')
     if demo_data[demo_data["src_subject_id"] == subid].phenotype.item() == "Patient":
         patient_fcs_regr.append(fc)
     else:
