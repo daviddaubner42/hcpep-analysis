@@ -115,8 +115,7 @@ for ses in [1, 2]:
         """ QC-FC distance dependency """
 
         # Transform region labels to format compatible with atlas containing ROI centroid coordinates
-        atlas = pd.read_csv(args.region_coords, sep="\t")
-        atlas
+        atlas = pd.read_csv(args.region_coords)
 
         og_labels = pd.read_csv(args.atlas_tsv, sep="\t")["cifti_label"]
         labels = []
