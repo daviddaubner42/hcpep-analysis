@@ -199,7 +199,7 @@ motion = df
 
 for ses in [1, 2]:
     for dir in ['AP', 'PA']:
-        ax.scatter([motion[(motion['subid'] == int(subid)) & (motion['ses'] == ses) & (motion['dir'] == dir)].max_fd_trans.item() for subid in subids], [motion[(motion['subid'] == int(subid)) & (motion['ses'] == ses) & (motion['dir'] == dir)].max_fd_rot.item() for subid in subids], s=1, label=f"ses-{ses}_dir-{dir}")
+        ax.scatter([motion[(motion['subid'] == str(subid)) & (motion['ses'] == ses) & (motion['dir'] == dir)].max_fd_trans.item() for subid in subids], [motion[(motion['subid'] == str(subid)) & (motion['ses'] == ses) & (motion['dir'] == dir)].max_fd_rot.item() for subid in subids], s=1, label=f"ses-{ses}_dir-{dir}")
         # ax.scatter([max_fds_trans[subid][ses][dir] for subid in subids], [max_fds_trans[subid][ses][dir] for subid in subids], s=1, label=f"ses-{ses}_dir-{dir}")
 ax.set_xlim(0, 3.5)
 ax.set_xlabel("Max. translation FD (mm)", fontsize=7)
