@@ -114,44 +114,44 @@ for subid in subids:
             #     json.dump(sidecar, f)
 
 
-            if max_fds_trans[subid] is None:
+            if not subid in max_fds_trans:
                 max_fds_trans[subid] = {}
-            if max_fds_trans[subid][ses] is None:
+            if not ses in max_fds_trans[subid]:
                 max_fds_trans[subid][ses] = {}
             max_fds_trans[subid][ses][dir] = np.max(fd_trans)
-            if mean_fds_trans[subid] is None:
+            if not subid in mean_fds_trans:
                 mean_fds_trans[subid] = {}
-            if mean_fds_trans[subid][ses] is None:
+            if not ses in mean_fds_trans[subid]:
                 mean_fds_trans[subid][ses] = {}
             mean_fds_trans[subid][ses][dir] = np.mean(fd_trans)
-            if pct_over_soft_trans[subid] is None:
+            if not subid in pct_over_soft_trans:
                 pct_over_soft_trans[subid] = {}
-            if pct_over_soft_trans[subid][ses] is None:
+            if not ses in pct_over_soft_trans[subid]:
                 pct_over_soft_trans[subid][ses] = {}
             pct_over_soft_trans[subid][ses][dir] = len(np.where(fd_trans > 1.5)) / len(fd_trans)
-            if pct_over_hard_trans[subid] is None:
+            if not subid in pct_over_hard_trans:
                 pct_over_hard_trans[subid] = {}
-            if pct_over_hard_trans[subid][ses] is None:
+            if not ses in pct_over_hard_trans[subid]:
                 pct_over_hard_trans[subid][ses] = {}
             pct_over_hard_trans[subid][ses][dir] = len(np.where(fd_trans > 3)) / len(fd_trans)
-            if max_fds_rot[subid] is None:
+            if not subid in max_fds_rot:
                 max_fds_rot[subid] = {}
-            if max_fds_rot[subid][ses] is None:
+            if not ses in max_fds_rot[subid]:
                 max_fds_rot[subid][ses] = {}
             max_fds_rot[subid][ses][dir] = np.max(fd_rot)
-            if mean_fds_rot[subid] is None:
+            if not subid in mean_fds_rot:
                 mean_fds_rot[subid] = {}
-            if mean_fds_rot[subid][ses] is None:
+            if not ses in mean_fds_rot[subid]:
                 mean_fds_rot[subid][ses] = {}
             mean_fds_rot[subid][ses][dir] = np.mean(fd_rot)
-            if pct_over_soft_rot[subid] is None:
+            if not subid in pct_over_soft_rot:
                 pct_over_soft_rot[subid] = {}
-            if pct_over_soft_rot[subid][ses] is None:
+            if not ses in pct_over_soft_rot[subid]:
                 pct_over_soft_rot[subid][ses] = {}
             pct_over_soft_rot[subid][ses][dir] = len(np.where(fd_rot > 1.5)) / len(fd_rot)
-            if pct_over_hard_rot[subid] is None:
+            if not subid in pct_over_hard_rot:
                 pct_over_hard_rot[subid] = {}
-            if pct_over_hard_rot[subid][ses] is None:
+            if not ses in pct_over_hard_rot[subid]:
                 pct_over_hard_rot[subid][ses] = {}
             pct_over_hard_rot[subid][ses][dir] = len(np.where(fd_rot > 3)) / len(fd_rot)
 
