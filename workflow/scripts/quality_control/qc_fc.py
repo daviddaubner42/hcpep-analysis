@@ -121,12 +121,13 @@ for ses in [1, 2]:
         labels = []
         for l in list(og_labels):
             hemi, region, _ = l.split("_")
+            if region == "7PL":
+                region = "7Pl"
             labels.append(f"{region}_{hemi}")
 
         # Get centroid coordinates for each ROI
         coords = []
         for label in labels:
-            print(label)
             coords.append(atlas[atlas["regionName"] == label][["x-cog", "y-cog", "z-cog"]].values[0])
 
 
