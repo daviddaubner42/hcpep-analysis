@@ -105,7 +105,8 @@ rule qc_fc:
         expand(os.path.join(outdir, "derivatives", "static", "sub-{subid}", "sub-{subid}_FC_{thread}_raw.csv"), subid=subids, thread=threads)
     params:
         outdir=outdir,
-        workflowdir=workflowdir
+        workflowdir=workflowdir,
+        subids=subids
     output:
         os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-1_task-rest_dir-AP_desc-qcFcCorrelationHistograms_figure.png"),
         os.path.join(outdir, "derivatives", "quality_control", "figures", "ses-2_task-rest_dir-AP_desc-qcFcCorrelationHistograms_figure.png"),
@@ -127,4 +128,4 @@ rule qc_fc:
     conda:
         os.path.join(environmentdir, "environment.yaml")
     shell:
-        "python {params.workflowdir}/scripts/quality_control/qc_fc.py --motion_summary {input[0]} --atlas_tsv {input[1]} --region_coords {input[2]} --fc_dir {params.outdir}/derivatives/static/ --output_dir {params.outdir}/derivatives/quality_control > {params.outdir}/derivatives/quality_control/task-rest_desc-qcFc_log.txt"
+        "python {params.workflowdir}/scripts/quality_control/qc_fc.py --motion_summary {input[0]} --atlas_tsv {input[1]} --region_coords {input[2]} --fc_dir {params.outdir}/derivatives/static/ --output_dir {params.outdir}/derivatives/quality_control --subids {params.subids} > {params.outdir}/derivatives/quality_control/task-rest_desc-qcFc_log.txt"

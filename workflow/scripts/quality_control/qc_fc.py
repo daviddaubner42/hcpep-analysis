@@ -29,6 +29,7 @@ parser.add_argument("--region_coords", type=str, help="Path to the file with reg
 parser.add_argument("--network_labels", type=str, help="Path to the pickle file containing network labels"),
 parser.add_argument("--fc_dir", type=str, help="Path to the FC directory containing participant FC matrices"),
 parser.add_argument("--output_dir", type=str, help="Path to the output directory")
+parser.add_argument("--subids", type=str, nargs="+", help="All the subids to be included")
 args = parser.parse_args()
 
 """ QC-FC correlation """
@@ -36,7 +37,8 @@ args = parser.parse_args()
 output_dir = args.output_dir
 fc_dir = args.fc_dir
 
-subids = [i[4:] for i in os.listdir(fc_dir) if i.startswith("sub-")]
+# subids = [i[4:] for i in os.listdir(fc_dir) if i.startswith("sub-")]
+subids = args.subids
 
 motion = pd.read_csv(args.motion_summary, sep='\t')
 fds_df_trans = motion[["subid", "ses", "dir", "mean_fd_trans"]]
