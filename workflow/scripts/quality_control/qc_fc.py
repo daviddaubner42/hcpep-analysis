@@ -51,7 +51,7 @@ for ses in [1, 2]:
 
         # Get all participant FC matrices
         for subid in subids:
-            fc = np.loadtxt(os.path.join(args.fc_dir, f"sub-{subid}", f"sub-{subid}_FC_ses-{ses}_dir={dir}_raw.csv"), delimiter=',')
+            fc = np.loadtxt(os.path.join(args.fc_dir, f"sub-{subid}", f"sub-{subid}_FC_ses-{ses}_dir-{dir}_raw.csv"), delimiter=',')
             all_fcs.append(fc)
             subid_order.append(subid)
         all_fcs = np.array(all_fcs)
