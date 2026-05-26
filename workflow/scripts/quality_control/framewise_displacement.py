@@ -173,13 +173,12 @@ for subid in subids:
         
 # table.to_csv(os.path.join(args.output_dir, "desc-qualityControl_summary.tsv"), index=False, sep='\t')
 
-df = pd.DataFrame()
-
+rows = []
 subids = list(mean_fds_trans.keys())
 for subid in subids:
     for ses in [1, 2]:
         for dir in ['AP', 'PA']:
-            df = df._append({
+            rows.append({
                 "subid": subid,
                 "ses": ses,
                 "dir": dir,
@@ -192,6 +191,7 @@ for subid in subids:
                 "pct_over_soft_rot": pct_over_soft_rot[subid][ses][dir],
                 "pct_over_hard_rot": pct_over_hard_rot[subid][ses][dir]
             })
+df = pd.concat([pd.DataFrame(rows)], ignore_index=True)
 df.to_csv(f"{args.output_dir}/task-rest_desc-framewiseDisplacement_summary.tsv", index=False, sep='\t')
 
 fig, ax = plt.subplots(1, 1, figsize=(7.25*cm, 5*cm))
