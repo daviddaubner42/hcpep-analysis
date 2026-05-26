@@ -60,8 +60,8 @@ for ses in [1, 2]:
         fds_trans = []
         fds_rot = []
         for subid in subid_order:
-            fds_trans.append(fds_df_trans[fds_df_trans['subid'] == subid and fds_df_trans['ses'] == ses and fds_df_trans['dir'] == dir].mean_fd_trans.item())
-            fds_rot.append(fds_df_rot[fds_df_rot['subid'] == subid and fds_df_rot['ses'] == ses and fds_df_rot['dir'] == dir].mean_fd_rot.item())
+            fds_trans.append(fds_df_trans[fds_df_trans['subid'] == subid & fds_df_trans['ses'] == ses & fds_df_trans['dir'] == dir].mean_fd_trans.item())
+            fds_rot.append(fds_df_rot[fds_df_rot['subid'] == subid & fds_df_rot['ses'] == ses & fds_df_rot['dir'] == dir].mean_fd_rot.item())
 
         # Calculate FD-FC correlations for each pair of ROIs
         corrs_trans = np.zeros_like(all_fcs[0])
