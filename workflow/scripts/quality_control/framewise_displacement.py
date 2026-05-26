@@ -174,7 +174,6 @@ for subid in subids:
 # table.to_csv(os.path.join(args.output_dir, "desc-qualityControl_summary.tsv"), index=False, sep='\t')
 
 rows = []
-subids = list(mean_fds_trans.keys())
 for subid in subids:
     for ses in [1, 2]:
         for dir in ['AP', 'PA']:
