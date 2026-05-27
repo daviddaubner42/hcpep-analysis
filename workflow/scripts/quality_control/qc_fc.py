@@ -30,6 +30,7 @@ parser.add_argument("--network_labels", type=str, help="Path to the pickle file 
 parser.add_argument("--fc_dir", type=str, help="Path to the FC directory containing participant FC matrices"),
 parser.add_argument("--output_dir", type=str, help="Path to the output directory")
 parser.add_argument("--subids", type=str, nargs="+", help="All the subids to be included")
+parser.add_argument("--excluded_rois_path", type=str, help="Path to file with regions not to be excluded")
 args = parser.parse_args()
 
 """ QC-FC correlation """
@@ -138,6 +139,11 @@ for ses in [1, 2]:
             for j in range(i+1, N):
                 dists[i, j] = np.linalg.norm(coords[i] - coords[j])
 
+        with open(args.excluded_rois_path, "rb") as f:
+            to_delete = pickle.load(f)
+        dists = np.delete(dists, to_delete, axis=0)
+        dists = np.delete(dists, to_delete, axis=1)
+        
         from scipy.stats import pearsonr
 
         res = pearsonr(
