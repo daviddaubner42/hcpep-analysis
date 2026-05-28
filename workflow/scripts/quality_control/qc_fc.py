@@ -131,6 +131,9 @@ for ses in [1, 2]:
         for label in labels:
             coords.append(atlas[atlas["regionName"] == label][["x-cog", "y-cog", "z-cog"]].values[0])
 
+        print("\n\n\n--------- COORDS -----------")
+        print(coords)
+        print("\n\n\n")
 
         # Calculate correlations between QC-FC values and distance between ROIs
         dists = np.zeros((len(coords), len(coords)))
@@ -143,8 +146,14 @@ for ses in [1, 2]:
             to_delete = pickle.load(f)
         dists = np.delete(dists, to_delete, axis=0)
         dists = np.delete(dists, to_delete, axis=1)
-        
+
         from scipy.stats import pearsonr
+
+        print("\n\n\n--------- DISTANCES -----------")
+        print(dists)
+        print("\n ---------- CORRS --------- ")
+        print(corrs_trans)
+        print("\n\n\n")
 
         res = pearsonr(
             dists[np.triu_indices_from(dists, k=1)], 
