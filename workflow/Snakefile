@@ -75,8 +75,8 @@ include: "quality_control.smk"
 
 rule create_networks:
     input:
-        seg=os.path.join(rawdir, "xcp_d/atlases/atlas-Glasser/atlas-Glasser_dseg.tsv"),
-        expand(os.path.join(rawdir, "xcp_d", "sub-{subid}", "ses-1", "func", "sub-{subid}_ses-1_task-rest_dir-AP_space-fsLR_seg-Glasser_den-91k_stat-mean_timeseries.ptseries.nii"), subid=subids)
+        expand(os.path.join(rawdir, "xcp_d", "sub-{subid}", "ses-1", "func", "sub-{subid}_ses-1_task-rest_dir-AP_space-fsLR_seg-Glasser_den-91k_stat-mean_timeseries.ptseries.nii"), subid=subids),
+        seg=os.path.join(rawdir, "xcp_d/atlases/atlas-Glasser/atlas-Glasser_dseg.tsv")
     params:
         resourcedir = resourcedir,
         workflowdir = workflowdir,
