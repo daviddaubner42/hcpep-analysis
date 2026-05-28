@@ -10,6 +10,7 @@ parser.add_argument("--input_path", type=str)
 parser.add_argument("--output_path", type=str)
 parser.add_argument("--metric", type=str, help="The metric to be analysed")
 parser.add_argument("--demo_data_path", type=str, help="Path to the demographical data")
+parser.add_argument("--motion_summary", type=str)
 args = parser.parse_args()
 
 # Load demo data
@@ -20,6 +21,26 @@ metrics = pd.read_csv(args.input_path)
 metrics.rename(columns={"Unnamed: 0": "ROI"}, inplace=True)
 subids = metrics.columns.drop("ROI")
 rois = list(metrics["ROI"])
+
+# Find excluded participants for this thread
+motion = pd.read_csv(args.motion_summary, sep="\t")
+
+excluded = []
+
+thread_ses = args.thread.split("_")[0].split("-")[1]
+thread_dir = args.thread.split("_")[1].split("-")[1]
+for i in range(len(motion)):
+    subid = motion.loc[i, "subid"]
+    ses = motion.loc[i, "ses"]
+    dir = motion.loc[i, "dir"]
+    max_fds_trans = motion.loc[i, "max_fd_trans"]
+    max_fds_rot = motion.loc[i, "max_fd_rot"]
+    if max_fds_trans > 3 or max_fds_rot > 3:
+        if ses == thread_ses:
+            if dir == thread_dir:
+                excluded.append(int(subid))
+
+subids = [subid for subid in subids if subid not in excluded]
 
 def statistic(x, y, axis):
     return np.mean(x, axis=axis) - np.mean(y, axis=axis)

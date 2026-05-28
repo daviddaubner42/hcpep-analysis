@@ -94,20 +94,6 @@ rule create_networks:
         "mkdir -p {params.outdir}/intermediaries && "
         "python {params.workflowdir}/scripts/create_networks.py --seg_file {input.seg} --ts {input.ts} --out_dir {params.outdir}/intermediaries --community 'yeo'"
 
-# rule find_corrupted_rois:
-#     input:
-#         os.path.join(rawdir, "xcp_d", f"sub-{subids[0]}", "ses-1", "func", f"sub-{subids[0]}_ses-1_task-rest_dir-AP_space-fsLR_seg-Glasser_den-91k_stat-mean_timeseries.ptseries.nii")
-#     params:
-#         workflowdir = workflowdir,
-#         outdir = outdir
-#     output:
-#         os.path.join(outdir, "intermediaries", "to_delete.pkl")
-#     conda:
-#         os.path.join(environmentdir, "environment.yaml")
-#     shell:
-#         "mkdir -p {params.outdir}/intermediaries && "
-#         "python {params.workflowdir}/scripts/find_corrupted_rois.py --ts {input} --out_path {output}"
-
 rule create_raw_fc:
     input:
         os.path.join(outdir, "intermediaries", "to_delete.pkl"),
@@ -127,28 +113,29 @@ rule create_raw_fc:
         "mkdir -p {params.outdir}/derivatives/static/sub-{wildcards.subid} && "
         "python {params.workflowdir}/scripts/create_raw_fc.py --ts_dir {params.rawdir}/xcp_d/sub-{wildcards.subid} --subid {wildcards.subid} --excluded_rois_path {input[0]} --out_dir {params.outdir}/derivatives/static/sub-{wildcards.subid}"
 
-# rule regress_confounds:
-#     input:
-#         expand(os.path.join(outdir, "derivatives", "static", "sub-{subid}", "sub-{subid}_FC_{{thread}}_raw.csv"), subid=subids),
-#         demo=os.path.join(resourcedir, "ndar_subject01.txt")
-#     params:
-#         workflowdir = workflowdir,
-#         outdir = outdir,
-#         fcdir = os.path.join(outdir, "derivatives", "static"),
-#         subids=subids
-#     resources:
-#         mem='32G',
-#         time='06:00:00'
-#     output:
-#         expand(os.path.join(outdir, "derivatives", "static", "sub-{subid}", "sub-{subid}_FC_{{thread}}_regr.csv"), subid=subids)
-#     conda:
-#         os.path.join(environmentdir, "environment.yaml")
-#     shell:
-#         "python {params.workflowdir}/scripts/regress_confounds.py --fc_dir {params.fcdir} --thread {wildcards.thread} --subids {params.subids} --demo_data_path {input.demo}"
+rule regress_confounds:
+    input:
+        expand(os.path.join(outdir, "derivatives", "static", "sub-{subid}", "sub-{subid}_FC_{{thread}}_raw.csv"), subid=subids),
+        demo=os.path.join(resourcedir, "ndar_subject01.txt")
+    params:
+        workflowdir = workflowdir,
+        outdir = outdir,
+        fcdir = os.path.join(outdir, "derivatives", "static"),
+        subids=subids
+    resources:
+        mem='32G',
+        time='06:00:00'
+    output:
+        expand(os.path.join(outdir, "derivatives", "static", "sub-{subid}", "sub-{subid}_FC_{{thread}}_regr.csv"), subid=subids)
+    conda:
+        os.path.join(environmentdir, "environment.yaml")
+    shell:
+        "python {params.workflowdir}/scripts/regress_confounds.py --fc_dir {params.fcdir} --thread {wildcards.thread} --subids {params.subids} --demo_data_path {input.demo}"
 
 rule pairwise_comparison:
     input:
-        expand(os.path.join(outdir, "derivatives", "static", "sub-{subid}", "sub-{subid}_FC_{{thread}}_raw.csv"), subid=subids),
+        os.path.join(outdir, "derivatives", "quality_control", "task-rest_desc-framewiseDisplacement_summary.tsv"),
+        expand(os.path.join(outdir, "derivatives", "static", "sub-{subid}", "sub-{subid}_FC_{{thread}}_regr.csv"), subid=subids),
         demo=os.path.join(resourcedir, "ndar_subject01.txt")
     params:
         workflowdir = workflowdir,
@@ -167,7 +154,7 @@ rule pairwise_comparison:
     conda:
         os.path.join(environmentdir, "environment.yaml")
     shell:
-        "python {params.workflowdir}/scripts/pairwise_comparison.py --fc_dir {params.fcdir} --thread {wildcards.thread} --subids {params.subids} --demo_data_path {input.demo}"
+        "python {params.workflowdir}/scripts/pairwise_comparison.py --fc_dir {params.fcdir} --thread {wildcards.thread} --subids {params.subids} --demo_data_path {input.demo} --motion_summary {input[0]}"
 
 rule reorder_to_networks:
     input:
@@ -306,6 +293,7 @@ rule create_FCDs:
 
 rule aggregate_FCDs:
     input:
+        os.path.join(outdir, "derivatives", "quality_control", "task-rest_desc-framewiseDisplacement_summary.tsv"),
         expand(os.path.join(outdir, "derivatives", "dynamic", "sub-{subid}", "sub-{subid}_FCD_{{thread}}.csv"), subid=subids),
         expand(os.path.join(outdir, "derivatives", "dynamic", "sub-{subid}", "sub-{subid}_FCD_hist_{{thread}}.csv"), subid=subids),
         demo=os.path.join(resourcedir, "ndar_subject01.txt")
@@ -328,6 +316,7 @@ rule aggregate_FCDs:
 rule plot_FCDs:
     input:
         os.path.join(resourcedir, "ndar_subject01.txt"),
+        os.path.join(outdir, "derivatives", "quality_control", "task-rest_desc-framewiseDisplacement_summary.tsv"),
         os.path.join(outdir, "derivatives", "dynamic", "FCDs_{thread}.pkl"),
         os.path.join(outdir, "derivatives", "dynamic", "FCD_hists_{thread}.pkl"),
         os.path.join(outdir, "derivatives", "dynamic", "FCD_hists_regr_{thread}.pkl")
@@ -346,7 +335,7 @@ rule plot_FCDs:
         os.path.join(environmentdir, "environment.yaml")
     shell:
         "mkdir -p {params.outdir}/derivatives/dynamic/images && "
-        "python {params.workflowdir}/scripts/plot_FCDs.py --fcds_path {params.outdir}/derivatives/dynamic/ --thread {wildcards.thread} --subids {params.subids} --demo_data_path {input[0]}"
+        "python {params.workflowdir}/scripts/plot_FCDs.py --fcds_path {params.outdir}/derivatives/dynamic/ --thread {wildcards.thread} --subids {params.subids} --demo_data_path {input[0]} --motion_summary {input[1]}"
 
 """ ------------------------------------------- """
 """ ------ Graph theory analysis rules -------- """
@@ -537,7 +526,8 @@ rule plot_global_metrics:
     input:
         os.path.join(outdir, "derivatives", "graph_theory", "global", "global_metrics_{thread}.csv"),
         os.path.join(outdir, "derivatives", "graph_theory", "global", "global_metric_ps_{thread}.pkl"),
-        os.path.join(outdir, "derivatives", "graph_theory", "global", "global_metric_stats_{thread}.pkl")
+        os.path.join(outdir, "derivatives", "graph_theory", "global", "global_metric_stats_{thread}.pkl"),
+        os.path.join(outdir, "derivatives", "quality_control", "task-rest_desc-framewiseDisplacement_summary.tsv"),
     params:
         workflowdir = workflowdir,
         outdir = outdir
@@ -547,7 +537,7 @@ rule plot_global_metrics:
         os.path.join(environmentdir, "environment.yaml")
     shell:
         "mkdir -p {params.outdir}/derivatives/graph_theory/images && "
-        "python {params.workflowdir}/scripts/plot_global_metrics.py --global_metrics_dir {outdir}/derivatives/graph_theory/global/ --thread {wildcards.thread}"
+        "python {params.workflowdir}/scripts/plot_global_metrics.py --global_metrics_dir {outdir}/derivatives/graph_theory/global/ --thread {wildcards.thread} --motion_summary {input[3]}"
 
 """ Local metrics """
 
@@ -661,6 +651,7 @@ rule aggregate_local_metrics:
 rule local_metric_comparison:
     input:
         os.path.join(outdir, "derivatives", "graph_theory", "local", "{metric}_aggregated_{thread}.csv"),
+        os.path.join(outdir, "derivatives", "quality_control", "task-rest_desc-framewiseDisplacement_summary.tsv"),
         demo=os.path.join(resourcedir, "ndar_subject01.txt")
     params:
         workflowdir = workflowdir,
@@ -673,7 +664,7 @@ rule local_metric_comparison:
     conda:
         os.path.join(environmentdir, "environment.yaml")
     shell:
-        "python {params.workflowdir}/scripts/local_metric_comparison.py --input_path {input[0]} --output_path {output} --metric {wildcards.metric} --demo_data_path {input[1]}"
+        "python {params.workflowdir}/scripts/local_metric_comparison.py --input_path {input[0]} --output_path {output} --metric {wildcards.metric} --demo_data_path {input.demo} --motion_summary {input[1]}"
 
 # rule local_metric_plotting:
 #     input:
@@ -772,7 +763,9 @@ rule aggregate_nsp_coeffs:
 
 rule nsp_coeffs_comparison:
     input:
-        os.path.join(outdir, "derivatives", "nsp", "nsp_coeffs_{thread}.csv")
+        os.path.join(outdir, "derivatives", "nsp", "nsp_coeffs_{thread}.csv"),
+        os.path.join(outdir, "derivatives", "quality_control", "task-rest_desc-framewiseDisplacement_summary.tsv"),
+        os.path.join(resourcedir, "ndar_subject01.txt")
     params:
         workflowdir=workflowdir,
         outdir=outdir
@@ -785,7 +778,7 @@ rule nsp_coeffs_comparison:
     conda:
         os.path.join(environmentdir, "environment.yaml")
     shell:
-        "python {params.workflowdir}/scripts/nsp_coeffs_comparison.py --input_path {input} --out_dir {params.outdir}/derivatives/nsp --thread {wildcards.thread}"
+        "python {params.workflowdir}/scripts/nsp_coeffs_comparison.py --input_path {input} --out_dir {params.outdir}/derivatives/nsp --thread {wildcards.thread} --motion_summary {input[1]} --demo_data {input[2]}"
 
 rule plot_nsp_coeffs:
     input:

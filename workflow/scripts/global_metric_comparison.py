@@ -12,14 +12,35 @@ parser.add_argument("--thread", type=str)
 parser.add_argument("--out_dir", type=str, help="The directory where the output files will be saved")
 parser.add_argument("--demo_data_path", type=str, help="Path to the demographic data")
 parser.add_argument("--subids", type=str, nargs="+", help="All the subids to be included")
+parser.add_argument("--motion_summary", type=str)
 args = parser.parse_args()
 
 demo_data = pd.read_table(args.demo_data_path)
 
+# Find excluded participants for this thread
+motion = pd.read_csv(args.motion_summary, sep="\t")
+
+excluded = []
+
+thread_ses = args.thread.split("_")[0].split("-")[1]
+thread_dir = args.thread.split("_")[1].split("-")[1]
+for i in range(len(motion)):
+    subid = motion.loc[i, "subid"]
+    ses = motion.loc[i, "ses"]
+    dir = motion.loc[i, "dir"]
+    max_fds_trans = motion.loc[i, "max_fd_trans"]
+    max_fds_rot = motion.loc[i, "max_fd_rot"]
+    if max_fds_trans > 3 or max_fds_rot > 3:
+        if ses == thread_ses:
+            if dir == thread_dir:
+                excluded.append(int(subid))
+
+subids = [subid for subid in args.subids if subid not in excluded]
+
 confounds = []
 
 # Create the confounds matrix
-for subid in args.subids:
+for subid in subids:
     cur_sub = demo_data[demo_data["src_subject_id"] == subid]
     confounds.append([int(cur_sub.phenotype.item() == "Patient"), int(cur_sub.interview_age.item()), int(cur_sub.sex.item() == 'F')])
 confounds = np.array(confounds)
@@ -38,11 +59,11 @@ def statistic(x, y, axis):
 for metric in metric_names:
     # Regress confounds out
     target = []
-    for subid in args.subids:
+    for subid in subids:
         target.append(props[props["subid"] == int(subid)][metric].values)
     reg = LinearRegression().fit(confounds, target)
 
-    for i, subid in enumerate(args.subids):
+    for i, subid in enumerate(subids):
         props.loc[props["subid"] == subid, metric] -= confounds[i, 1]*reg.coef_[0][1] + confounds[i, 2]*reg.coef_[0][2]
 
     # Compare groups
