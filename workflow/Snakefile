@@ -311,7 +311,7 @@ rule aggregate_FCDs:
     conda:
         os.path.join(environmentdir, "environment.yaml")
     shell:
-        "python {params.workflowdir}/scripts/aggregate_FCDs.py --fcds_path {params.outdir}/derivatives/dynamic/ --subids {params.subids} --thread {wildcards.thread} --demo_data_path {input.demo}"
+        "python {params.workflowdir}/scripts/aggregate_FCDs.py --fcds_path {params.outdir}/derivatives/dynamic/ --subids {params.subids} --thread {wildcards.thread} --demo_data_path {input.demo} --motion_summary {input[0]}"
 
 rule plot_FCDs:
     input:
