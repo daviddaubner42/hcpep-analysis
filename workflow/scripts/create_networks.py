@@ -9,7 +9,7 @@ parser = argparse.ArgumentParser(description="Create the files describing ROIs a
 parser.add_argument("--seg_file", type=str, help="The path to the atlas segmentation file")
 parser.add_argument("--ts_dir", type=str, help="The path to the timeseries directory")
 parser.add_argument("--subids", type=str, nargs="+")
-paraser.add_argument("--motion_summary", type=str)
+parser.add_argument("--motion_summary", type=str)
 parser.add_argument("--out_dir", type=str, help="Path to directory where results should be stored")
 parser.add_argument("--community", type=str)
 args = parser.parse_args()
