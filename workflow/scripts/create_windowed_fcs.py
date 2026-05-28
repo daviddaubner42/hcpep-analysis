@@ -27,7 +27,7 @@ with open(args.excluded_rois_path, "rb") as f:
 """ AP """
 # Load the parcellated time series and delete the excluded regions
 ts_AP = np.array(nib.load(os.path.join(args.ts_dir, "ses-1", "func", f"sub-{args.subid}_ses-1_task-rest_dir-AP_space-fsLR_seg-Glasser_den-91k_stat-mean_timeseries.ptseries.nii")).dataobj)
-ts_AP = np.delete(ts_AP, to_delete, 1)
+ts_AP = np.delete(ts_AP, to_delete["ses-1_dir-AP"], 1)
 
 # Calculate the windowed FC matrices
 n_windows = len(range(0, ts_AP.shape[0] - args.window_size, args.step_size))
@@ -46,7 +46,7 @@ with open(os.path.join(args.out_dir, f"sub-{args.subid}_windowed_FCs_ses-1_dir-A
 
 # Load the parcellated time series and delete the excluded regions
 ts_PA = np.array(nib.load(os.path.join(args.ts_dir, "ses-1", "func", f"sub-{args.subid}_ses-1_task-rest_dir-PA_space-fsLR_seg-Glasser_den-91k_stat-mean_timeseries.ptseries.nii")).dataobj)
-ts_PA = np.delete(ts_PA, to_delete, 1)
+ts_PA = np.delete(ts_PA, to_delete["ses-1_dir-PA"], 1)
 
 # Calculate the windowed FC matrices
 n_windows = len(range(0, ts_PA.shape[0] - args.window_size, args.step_size))
@@ -84,7 +84,7 @@ with open(os.path.join(args.out_dir, f"sub-{args.subid}_windowed_FCs_ses-1_mean.
 """ AP """
 # Load the parcellated time series and delete the excluded regions
 ts_AP = np.array(nib.load(os.path.join(args.ts_dir, "ses-2", "func", f"sub-{args.subid}_ses-2_task-rest_dir-AP_space-fsLR_seg-Glasser_den-91k_stat-mean_timeseries.ptseries.nii")).dataobj)
-ts_AP = np.delete(ts_AP, to_delete, 1)
+ts_AP = np.delete(ts_AP, to_delete["ses-2_dir-AP"], 1)
 
 # Calculate the windowed FC matrices
 n_windows = len(range(0, ts_AP.shape[0] - args.window_size, args.step_size))
@@ -103,7 +103,7 @@ with open(os.path.join(args.out_dir, f"sub-{args.subid}_windowed_FCs_ses-2_dir-A
 
 # Load the parcellated time series and delete the excluded regions
 ts_PA = np.array(nib.load(os.path.join(args.ts_dir, "ses-2", "func", f"sub-{args.subid}_ses-2_task-rest_dir-PA_space-fsLR_seg-Glasser_den-91k_stat-mean_timeseries.ptseries.nii")).dataobj)
-ts_PA = np.delete(ts_PA, to_delete, 1)
+ts_PA = np.delete(ts_PA, to_delete["ses-2_dir-PA"], 1)
 
 # Calculate the windowed FC matrices
 n_windows = len(range(0, ts_PA.shape[0] - args.window_size, args.step_size))
