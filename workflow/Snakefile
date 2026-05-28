@@ -94,7 +94,7 @@ rule create_networks:
         os.path.join(environmentdir, "environment.yaml")
     shell:
         "mkdir -p {params.outdir}/intermediaries && "
-        "python {params.workflowdir}/scripts/create_networks.py --seg_file {input.seg} --ts_dir {params.outdir}/xcp_d/ --subids {params.subids} --motion_summary {input[0]} --out_dir {params.outdir}/intermediaries --community 'yeo'"
+        "python {params.workflowdir}/scripts/create_networks.py --seg_file {input.seg} --ts_dir {params.outdir}/derivatives/xcp_d/ --subids {params.subids} --motion_summary {input[0]} --out_dir {params.outdir}/intermediaries --community 'yeo'"
 
 rule create_raw_fc:
     input:
