@@ -144,8 +144,8 @@ for ses in [1, 2]:
 
         with open(args.excluded_rois_path, "rb") as f:
             to_delete = pickle.load(f)
-        dists = np.delete(dists, to_delete, axis=0)
-        dists = np.delete(dists, to_delete, axis=1)
+        dists = np.delete(dists, to_delete[f"ses-{ses}_dir-{dir}"], axis=0)
+        dists = np.delete(dists, to_delete[f"ses-{ses}_dir-{dir}"], axis=1)
 
         from scipy.stats import pearsonr
 
