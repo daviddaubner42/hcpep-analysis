@@ -52,10 +52,7 @@ confounds = []
 
 # Create the confounds matrix
 for subid in subids:
-    print()
-    print(subid)
-    cur_sub = demo_data[demo_data["src_subject_id"] == subid]
-    confounds.append([int(cur_sub.phenotype.item() == "Patient"), int(cur_sub.interview_age.item()), int(cur_sub.sex.item() == 'F')])
+    confounds.append([int(demo_data[demo_data["src_subject_id"] == subid].phenotype.item() == "Patient"), int(demo_data[demo_data["src_subject_id"] == subid].interview_age.item()), int(demo_data[demo_data["src_subject_id"] == subid].sex.item() == 'F')])
 confounds = np.array(confounds)
 
 ps = {}
