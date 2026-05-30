@@ -15,7 +15,7 @@ parser.add_argument("--demo_data", type=str)
 args = parser.parse_args()
 
 nsp_coeffs = pd.read_csv(args.input_path)
-demo_data = args.demo_data
+demo_data = pd.read_csv(args.demo_data)
 
 # Find excluded participants for this thread
 motion = pd.read_csv(args.motion_summary, sep="\t")
