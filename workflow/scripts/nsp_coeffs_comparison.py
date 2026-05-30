@@ -22,8 +22,14 @@ motion = pd.read_csv(args.motion_summary, sep="\t")
 
 excluded = []
 
-thread_ses = args.thread.split("_")[0].split("-")[1]
-thread_dir = args.thread.split("_")[1].split("-")[1]
+thread_ses = False
+thread_dir = False
+if "mean" in args.thread:
+    if "ses" in args.thread:
+        thread_ses = args.thread.split("_")[0].split("-")[1]
+else:
+    thread_ses = args.thread.split("_")[0].split("-")[1]
+    thread_dir = args.thread.split("_")[1].split("-")[1]
 for i in range(len(motion)):
     subid = motion.loc[i, "subid"]
     ses = motion.loc[i, "ses"]
@@ -31,8 +37,12 @@ for i in range(len(motion)):
     max_fds_trans = motion.loc[i, "max_fd_trans"]
     max_fds_rot = motion.loc[i, "max_fd_rot"]
     if max_fds_trans > 3 or max_fds_rot > 3:
-        if ses == thread_ses:
-            if dir == thread_dir:
+        if not ses:
+            excluded.append(int(subid))
+        elif ses == thread_ses:
+            if not dir:
+                excluded.append(int(subid))
+            elif dir == thread_dir:
                 excluded.append(int(subid))
 
 subids = nsp_coeffs["subid"]
