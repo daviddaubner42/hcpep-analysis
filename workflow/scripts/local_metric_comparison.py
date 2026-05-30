@@ -11,6 +11,7 @@ parser.add_argument("--output_path", type=str)
 parser.add_argument("--metric", type=str, help="The metric to be analysed")
 parser.add_argument("--demo_data_path", type=str, help="Path to the demographical data")
 parser.add_argument("--motion_summary", type=str)
+parser.add_argument("--thread", type=str)
 args = parser.parse_args()
 
 # Load demo data
