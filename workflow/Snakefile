@@ -38,7 +38,9 @@ endfiles = [
 
 # Define the subject IDs to be processed
 # excluded = [2028, 4066, 1040, 4038, 2004, 1048, 4088, 1064, 2040, 1070, 4030, 2065, 4069, 1067]
-excluded = [2028, 4066] # these we don't seem to have demo data on
+excluded_uncomplete = [2028, 4066] # these we don't seem to have demo data on
+excluded_qa = [] # did not satisfy QA criteria
+excluded = excluded_uncomplete + excluded_qa
 subids = [subid[4:] for subid in os.listdir(os.path.join(rawdir, "xcp_d")) if os.path.exists(os.path.join(rawdir, "xcp_d", f"{subid}", "ses-1", "func", f"{subid}_ses-1_task-rest_dir-AP_space-fsLR_seg-Glasser_den-91k_stat-mean_timeseries.ptseries.nii"))]
 subids = [subid for subid in subids if not int(subid) in excluded]
 
