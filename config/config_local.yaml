@@ -1,6 +1,6 @@
 datadir:  "/Users/brainsimulation/Desktop/hcpep-derivatives"
 rootdir: "/Users/brainsimulation/Desktop/hcpep-analysis/"
-outdir: "/Users/brainsimulation/Desktop/hcpep-analysis/out"
+outdir: "/Users/brainsimulation/Desktop/hcpep-derivatives"
 
 window_size: 30
 step_size: 1
