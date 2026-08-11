@@ -94,7 +94,7 @@ include: "quality_control.smk"
 rule exclude:
     input:
         demo=os.path.join(resourcedir, "ndar_subject01.txt"),
-        motion=os.path.join(outdir, "quality_control", "task-rest_desc-framewiseDisplacement_summary.tsv")
+        motion=os.path.join(outdir, "quality_control", "task-rest_desc-framewiseDisplacement_summary.tsv"),
         qc=os.path.join(resourcedir, "qc_summary.csv")
     params:
         workflowdir = workflowdir,
@@ -125,7 +125,7 @@ rule create_networks:
         os.path.join(outdir, "intermediaries", "partition.pkl"),
         os.path.join(outdir, "intermediaries", "partition_idxs.pkl"),
         os.path.join(outdir, "intermediaries", "to_delete.pkl"),
-        os.path.join(outdir, "intermediaries", "labels.pkl"),
+        os.path.join(outdir, "intermediaries", "labels.pkl")
     conda:
         os.path.join(environmentdir, "environment.yaml")
     shell:
