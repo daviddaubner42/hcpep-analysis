@@ -107,7 +107,7 @@ rule exclude:
         os.path.join(environmentdir, "environment.yaml")
     shell:
         "mkdir -p {params.outdir}/intermediaries && "
-        "python {params.workflowdir}/scripts/exclusion.py --demo_data_path {input.demo} --motion_summary {input.motion} --qc_summary {input.qc} --output {output}"
+        "python {params.workflowdir}/scripts/exclusion.py --demo_data_path {input.demo} --motion_summary {input.motion} --qc_summary {input.qc} --output {output} --derivatives_dir {params.outdir}"
 
 rule create_networks:
     input:
