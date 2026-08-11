@@ -39,6 +39,7 @@ for ses in [1, 2]:
                         excluded.append(int(subid))
 
         subids = [subid for subid in args.subids if subid not in excluded]
+        # subids = [subid for subid in args.subids]
         
         to_delete = []
         for subid in subids:

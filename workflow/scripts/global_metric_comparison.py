@@ -13,39 +13,15 @@ parser.add_argument("--out_dir", type=str, help="The directory where the output 
 parser.add_argument("--demo_data_path", type=str, help="Path to the demographic data")
 parser.add_argument("--subids", type=str, nargs="+", help="All the subids to be included")
 parser.add_argument("--motion_summary", type=str)
+parser.add_argument("--exclusion_dict", type=str, help="Path to the exclusion dictionary")
 args = parser.parse_args()
 
 demo_data = pd.read_table(args.demo_data_path)
 
-# Find excluded participants for this thread
-motion = pd.read_csv(args.motion_summary, sep="\t")
+with open(args.exclusion_dict, "rb") as f:
+    exclusion_dict = pickle.load(f)
 
-excluded = []
-
-thread_ses = False
-thread_dir = False
-if "mean" in args.thread:
-    if "ses" in args.thread:
-        thread_ses = args.thread.split("_")[0].split("-")[1]
-else:
-    thread_ses = args.thread.split("_")[0].split("-")[1]
-    thread_dir = args.thread.split("_")[1].split("-")[1]
-for i in range(len(motion)):
-    subid = motion.loc[i, "subid"]
-    ses = motion.loc[i, "ses"]
-    dir = motion.loc[i, "dir"]
-    max_fds_trans = motion.loc[i, "max_fd_trans"]
-    max_fds_rot = motion.loc[i, "max_fd_rot"]
-    if max_fds_trans > 3 or max_fds_rot > 3:
-        if not ses:
-            excluded.append(int(subid))
-        elif ses == thread_ses:
-            if not dir:
-                excluded.append(int(subid))
-            elif dir == thread_dir:
-                excluded.append(int(subid))
-
-subids = [subid for subid in args.subids if subid not in excluded]
+subids = exclusion_dict["FC"]
 
 confounds = []
 

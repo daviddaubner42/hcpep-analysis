@@ -13,6 +13,7 @@ parser.add_argument("--thread", type=str)
 parser.add_argument("--subids", type=str, nargs="+", help="All the subids to be included")
 parser.add_argument("--demo_data_path", type=str, help="Path to the demographic data")
 parser.add_argument("--motion_summary", type=str)
+parser.add_argument("--exclusion_dict", type=str, help="Path to the exclusion dictionary")
 args = parser.parse_args()
 
 # Plotting settings
@@ -28,35 +29,10 @@ cm = 1/2.54
 # Load demographic data
 demo_data = pd.read_table(args.demo_data_path)
 
-# Find excluded participants for this thread
-motion = pd.read_csv(args.motion_summary, sep="\t")
+with open(args.exclusion_dict, "rb") as f:
+    exclusion_dict = pickle.load(f)
 
-excluded = []
-
-thread_ses = False
-thread_dir = False
-if "mean" in args.thread:
-    if "ses" in args.thread:
-        thread_ses = args.thread.split("_")[0].split("-")[1]
-else:
-    thread_ses = args.thread.split("_")[0].split("-")[1]
-    thread_dir = args.thread.split("_")[1].split("-")[1]
-for i in range(len(motion)):
-    subid = motion.loc[i, "subid"]
-    ses = motion.loc[i, "ses"]
-    dir = motion.loc[i, "dir"]
-    max_fds_trans = motion.loc[i, "max_fd_trans"]
-    max_fds_rot = motion.loc[i, "max_fd_rot"]
-    if max_fds_trans > 3 or max_fds_rot > 3:
-        if not ses:
-            excluded.append(int(subid))
-        elif ses == thread_ses:
-            if not dir:
-                excluded.append(int(subid))
-            elif dir == thread_dir:
-                excluded.append(int(subid))
-
-subids = [subid for subid in args.subids if subid not in excluded]
+subids = exclusion_dict["FC"]
 
 # Load FCD results
 with open(os.path.join(args.fcds_path, f"FCDs_{args.thread}.pkl"), "rb") as f:
@@ -154,3 +130,12 @@ ax.fill_between(np.arange(100), avg_patient_hist_regr-patient_stds, avg_patient_
 plt.legend(fontsize=11)
 
 fig.savefig(f"{args.fcds_path}/images/avg_FCD_hist_comparison_regr_{args.thread}.png", bbox_inches="tight")
+
+# Delete windowed FC matrices to save space
+os.remove(os.path.join(args.fcds_path, f"sub-{args.subid}_windowed_FCs_ses-1_dir-AP.pkl"))
+os.remove(os.path.join(args.fcds_path, f"sub-{args.subid}_windowed_FCs_ses-1_dir-PA.pkl"))
+os.remove(os.path.join(args.fcds_path, f"sub-{args.subid}_windowed_FCs_ses-2_dir-AP.pkl"))
+os.remove(os.path.join(args.fcds_path, f"sub-{args.subid}_windowed_FCs_ses-2_dir-PA.pkl"))
+os.remove(os.path.join(args.fcds_path, f"sub-{args.subid}_windowed_FCs_ses-1_mean.pkl"))
+os.remove(os.path.join(args.fcds_path, f"sub-{args.subid}_windowed_FCs_ses-2_mean.pkl"))
+os.remove(os.path.join(args.fcds_path, f"sub-{args.subid}_windowed_FCs_mean.pkl"))

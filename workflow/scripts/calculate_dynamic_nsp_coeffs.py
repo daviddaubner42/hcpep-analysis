@@ -35,6 +35,8 @@ with open(args.input, "rb") as f:
 H_Ins = []
 H_Ses = []
 
+global_regional_H_Ins, global_regional_H_Ses = [], []
+
 for fc in fcs:
     # Set negative connectivity to 0
     fc[fc < 0] = 0
@@ -62,14 +64,31 @@ for fc in fcs:
     module_map = module_map[:n_levels+1, :]
 
     N = module_map.shape[1]
-    H_In = H_i(0, module_map, eigenvalues) / N
+    H_1 = H_i(0, module_map, eigenvalues)
+    H_In = H_1 / N
     H_Se = np.sum([ H_i(i, module_map, eigenvalues) for i in range(1, len(module_map)) ]) / N
+
+    regional_H_Ins, regional_H_Ses = [], []
+    for j in range(len(fc)):
+        H_In_j = H_1 * eigenvectors[0, j]**2
+        H_Se_j = np.sum([H_i(i, module_map, eigenvalues) * eigenvectors[i, j]**2 for i in range(1, len(module_map))])
+
+        regional_H_Ins.append(H_In_j)
+        regional_H_Ses.append(H_Se_j)
 
     H_Ins.append(H_In)
     H_Ses.append(H_Se)
+
+    global_regional_H_Ins.append(regional_H_Ins)
+    global_regional_H_Ses.append(regional_H_Ses)
 
 # Save the integration and segregation coeffs
 with open(os.path.join(args.out_dir, f"sub-{args.subid}_windowed_H_In_{args.thread}.pkl"), "wb") as f:
     pickle.dump(H_Ins, f)
 with open(os.path.join(args.out_dir, f"sub-{args.subid}_windowed_H_Se_{args.thread}.pkl"), "wb") as f:
     pickle.dump(H_Ses, f)
+
+with open(os.path.join(args.out_dir, f"sub-{args.subid}_windowed_regional_H_In_{args.thread}.pkl"), "wb") as f:
+    pickle.dump(global_regional_H_Ins, f)
+with open(os.path.join(args.out_dir, f"sub-{args.subid}_windowed_regional_H_Se_{args.thread}.pkl"), "wb") as f:
+    pickle.dump(global_regional_H_Ses, f)   

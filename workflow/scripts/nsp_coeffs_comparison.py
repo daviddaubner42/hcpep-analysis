@@ -37,10 +37,10 @@ for i in range(len(motion)):
     max_fds_trans = motion.loc[i, "max_fd_trans"]
     max_fds_rot = motion.loc[i, "max_fd_rot"]
     if max_fds_trans > 3 or max_fds_rot > 3:
-        if not ses:
+        if not thread_ses:
             excluded.append(int(subid))
         elif ses == thread_ses:
-            if not dir:
+            if not thread_dir:
                 excluded.append(int(subid))
             elif dir == thread_dir:
                 excluded.append(int(subid))
