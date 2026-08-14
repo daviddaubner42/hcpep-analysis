@@ -35,7 +35,7 @@ excluded_coverage = []
 for ses in ["1", "2"]:
     for dir in ["AP", "PA"]:
         for subid in xcpd_subids:
-            ts = np.array(nib.load(os.path.join(args.derivatives_dir, "xcp_d", f"sub-{subid}", f"ses-{ses}", "func", f"sub-{subid}_ses-{ses}_task-rest_dir-{dir}_space-fsLR_seg-Glasser_den-91k_stat-mean_timeseries.ptseries.nii")).dataobj)
+            ts = np.array(nib.load(os.path.join(args.derivatives_dir, "xcp_d", f"sub-{subid}", f"ses-{ses}", "func", f"sub-{subid}_ses-{ses}_task-rest_dir-{dir}_space-fsLR_atlas-Glasser_den-91k_stat-mean_timeseries.ptseries.nii")).dataobj)
             for i in range(ts.shape[1]):
                 if np.all(np.isnan(ts[:, i])):
                     if not i in [119, 299, 118, 298]:

@@ -43,7 +43,7 @@ for ses in [1, 2]:
         
         to_delete = []
         for subid in subids:
-            ts = np.array(nib.load(os.path.join(args.ts_dir, f"sub-{subid}", f"ses-{ses}", "func", f"sub-{subid}_ses-{ses}_task-rest_dir-{dir}_space-fsLR_seg-Glasser_den-91k_stat-mean_timeseries.ptseries.nii")).dataobj)
+            ts = np.array(nib.load(os.path.join(args.ts_dir, f"sub-{subid}", f"ses-{ses}", "func", f"sub-{subid}_ses-{ses}_task-rest_dir-{dir}_space-fsLR_atlas-Glasser_den-91k_stat-mean_timeseries.ptseries.nii")).dataobj)
 
             for i in range(ts.shape[1]):
                 if np.all(np.isnan(ts[:, i])):
