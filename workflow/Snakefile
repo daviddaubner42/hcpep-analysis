@@ -113,7 +113,7 @@ rule create_networks:
     input:
         os.path.join(outdir, "quality_control", "task-rest_desc-framewiseDisplacement_summary.tsv"),
         expand(os.path.join(rawdir, "xcp_d", "sub-{subid}", "ses-1", "func", "sub-{subid}_ses-1_task-rest_dir-AP_space-fsLR_atlas-Glasser_den-91k_stat-mean_timeseries.ptseries.nii"), subid=subids),
-        seg=os.path.join(rawdir, "xcp_d/atlases/atlas-Glasser/atlas-Glasser_dseg.tsv")
+        seg=os.path.join(rawdir, "xcp_d/sourcedata/atlases/tpl-fsLR/tpl-fsLR_atlas-Glasser_den-91k_dseg.tsv")
     params:
         resourcedir = resourcedir,
         workflowdir = workflowdir,
