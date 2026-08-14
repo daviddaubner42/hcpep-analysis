@@ -63,7 +63,7 @@ atlas_desc['index'] = np.arange(0, len(atlas_desc))
 atlas_desc.set_index('index', inplace=True)
 
 # Save labels
-atlas_labels = list(atlas_desc['label'])
+atlas_labels = list(atlas_desc['name'])
 with open(os.path.join(args.out_dir, 'labels.pkl'), "wb") as f:
     pickle.dump(atlas_labels, f)
 
@@ -71,7 +71,7 @@ with open(os.path.join(args.out_dir, 'labels.pkl'), "wb") as f:
 networks = {}
 network_idxs = {}
 for network in np.unique(atlas_desc[f'community_{args.community}']):
-    networks[network] = list(atlas_desc[atlas_desc[f'community_{args.community}'] == network].label)
+    networks[network] = list(atlas_desc[atlas_desc[f'community_{args.community}'] == network].name)
     network_idxs[network] = list(atlas_desc[atlas_desc[f'community_{args.community}'] == network].index)
 
 # Create a partition to be used for modularity and participation coefficient calculation
