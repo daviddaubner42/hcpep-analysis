@@ -79,7 +79,7 @@ rule framewise_displacement:
 
 # rule denoising_verification:
 #     input:
-#         expand(os.path.join(outdir, "xcp_d", "sub-{subid}", "func", "sub-{subid}_task-rest_space-fsLR_seg-DesikanKilliany_den-91k_stat-mean_timeseries.ptseries.nii"), subid=subids),
+#         expand(os.path.join(outdir, "xcp_d", "sub-{subid}", "func", "sub-{subid}_task-rest_space-fsLR_atlas-DesikanKilliany_den-91k_stat-mean_timeseries.ptseries.nii"), subid=subids),
 #         expand(os.path.join(outdir, "quality_control", "sub-{subid}", "sub-{subid}_task-rest_desc-framewiseDisplacementTranslational_timeseries.tsv"), subid=subids),
 #         expand(os.path.join(outdir, "atlases", "sub-{subid}", "atlas-DesikanKilliany", "atlas-DesikanKilliany_space-fsLR_den-32k_dseg.dlabel.nii"), subid=subids)
 #     params:
