@@ -2,7 +2,7 @@ datadir:  "/data/cephfs-1/scratch/groups/ritter/users/dada15_c/HCP-EP/derivative
 rootdir: "/data/cephfs-1/work/groups/ritter/users/dada15_c/hcpep-analysis"
 outdir: "/data/cephfs-1/scratch/groups/ritter/users/dada15_c/HCP-EP/derivatives_07_26"
 
-window_size: 60
+window_size: 15
 step_size: 1
 
 min_density: 0.1
