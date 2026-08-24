@@ -62,7 +62,7 @@ with open(os.path.join(args.out_dir, f"sub-{args.subid}_windowed_FCs_ses-1_dir-P
     pickle.dump(windowed_fcs, f)
 
 """ Session 1 mean """
-ts_1 = (ts_AP + ts_PA) / 2
+ts_1 = np.concatenate(ts_AP, ts_PA, axis=0)
 
 # Calculate the windowed FC matrices
 n_windows = len(range(0, ts_1.shape[0] - args.window_size, args.step_size))
@@ -119,7 +119,7 @@ with open(os.path.join(args.out_dir, f"sub-{args.subid}_windowed_FCs_ses-2_dir-P
     pickle.dump(windowed_fcs, f)
 
 """ Session 2 mean """
-ts_2 = (ts_AP + ts_PA) / 2
+ts_2 = np.concatenate(ts_AP, ts_PA, axis=0)
 
 # Calculate the windowed FC matrices
 n_windows = len(range(0, ts_2.shape[0] - args.window_size, args.step_size))
@@ -137,7 +137,7 @@ with open(os.path.join(args.out_dir, f"sub-{args.subid}_windowed_FCs_ses-2_mean.
 """ --------- """
 """    Mean   """
 """ --------- """
-ts = (ts_1 + ts_2) / 2
+ts = np.concatenate(ts_1, ts_2, axis=0)
 
 # Calculate the windowed FC matrices
 n_windows = len(range(0, ts.shape[0] - args.window_size, args.step_size))
