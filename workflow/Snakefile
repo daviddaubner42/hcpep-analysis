@@ -17,25 +17,25 @@ os.makedirs(outdir, exist_ok=True)
 
 # Specifies the files which should exist at the end of the processing
 endfiles = [
-    os.path.join(outdir, "static", "images", "{thread}_avg_fc_comparison.png"),
-    os.path.join(outdir, "static", "images", "{thread}_p_vals_uncorrected.png"),
-    os.path.join(outdir, "static", "images", "{thread}_p_vals_fdr.png"),
-    os.path.join(outdir, "dynamic_15", "images", "avg_FCD_comparison_{thread}.png"),
-    os.path.join(outdir, "dynamic_15", "images", "avg_FCD_hist_comparison_{thread}.png"),
-    os.path.join(outdir, "dynamic_15", "images", "avg_FCD_hist_comparison_regr_{thread}.png"),
-    os.path.join(outdir, "graph_theory", "global", "images", "global_metric_comparison_{thread}.png"),
-    os.path.join(outdir, "graph_theory", "local", "{metric}_ps_stats_{thread}.csv"),
+    # os.path.join(outdir, "static", "images", "{thread}_avg_fc_comparison.png"),
+    # os.path.join(outdir, "static", "images", "{thread}_p_vals_uncorrected.png"),
+    # os.path.join(outdir, "static", "images", "{thread}_p_vals_fdr.png"),
+    # os.path.join(outdir, "dynamic_15", "images", "avg_FCD_comparison_{thread}.png"),
+    # os.path.join(outdir, "dynamic_15", "images", "avg_FCD_hist_comparison_{thread}.png"),
+    # os.path.join(outdir, "dynamic_15", "images", "avg_FCD_hist_comparison_regr_{thread}.png"),
+    # os.path.join(outdir, "graph_theory", "global", "images", "global_metric_comparison_{thread}.png"),
+    # os.path.join(outdir, "graph_theory", "local", "{metric}_ps_stats_{thread}.csv"),
     os.path.join(outdir, "nsp", "images", "nsp_coeffs_comparison_{thread}.png"),
 
     # QA outputs
-    # os.path.join(outdir, "quality_control", "desc-metadataCheck_log.txt"),
-    os.path.join(outdir, "quality_control", "figures", "task-rest_desc-maxFramewiseDisplacementScatter_figure.png"),
-    os.path.join(outdir, "quality_control", "task-rest_desc-framewiseDisplacement_log.txt"),
-    # os.path.join(outdir, "quality_control", "sub-{subid}", "figures", "sub-{subid}_task-rest_desc-rawVsClean_figure.png"),
-    # os.path.join(outdir, "quality_control", "task-rest_desc-denoisingVerification_log.txt"),
-    os.path.join(outdir, "quality_control", "figures", "ses-1_task-rest_dir-AP_desc-qcFcCorrelationHistograms_figure.png"),
-    os.path.join(outdir, "quality_control", "figures", "ses-1_task-rest_dir-AP_desc-qcFcDistanceCorrelation_figure.png"),
-    os.path.join(outdir, "quality_control", "task-rest_desc-qcFc_log.txt"),
+    # # os.path.join(outdir, "quality_control", "desc-metadataCheck_log.txt"),
+    # os.path.join(outdir, "quality_control", "figures", "task-rest_desc-maxFramewiseDisplacementScatter_figure.png"),
+    # os.path.join(outdir, "quality_control", "task-rest_desc-framewiseDisplacement_log.txt"),
+    # # os.path.join(outdir, "quality_control", "sub-{subid}", "figures", "sub-{subid}_task-rest_desc-rawVsClean_figure.png"),
+    # # os.path.join(outdir, "quality_control", "task-rest_desc-denoisingVerification_log.txt"),
+    # os.path.join(outdir, "quality_control", "figures", "ses-1_task-rest_dir-AP_desc-qcFcCorrelationHistograms_figure.png"),
+    # os.path.join(outdir, "quality_control", "figures", "ses-1_task-rest_dir-AP_desc-qcFcDistanceCorrelation_figure.png"),
+    # os.path.join(outdir, "quality_control", "task-rest_desc-qcFc_log.txt"),
 ]
 
 # Define the subject IDs to be processed
