@@ -808,7 +808,8 @@ rule nsp_coeffs_comparison:
     input:
         os.path.join(outdir, "nsp", "nsp_coeffs_{thread}.csv"),
         os.path.join(outdir, "quality_control", "task-rest_desc-framewiseDisplacement_summary.tsv"),
-        os.path.join(resourcedir, "ndar_subject01.txt")
+        os.path.join(resourcedir, "ndar_subject01.txt"),
+        exclude=os.path.join(outdir, "intermediaries", "exclusion_dict.pkl")
     params:
         workflowdir=workflowdir,
         outdir=outdir
@@ -821,7 +822,7 @@ rule nsp_coeffs_comparison:
     conda:
         os.path.join(environmentdir, "environment.yaml")
     shell:
-        "python {params.workflowdir}/scripts/nsp_coeffs_comparison.py --input_path {input[0]} --out_dir {params.outdir}/nsp --thread {wildcards.thread} --motion_summary {input[1]} --demo_data {input[2]}"
+        "python {params.workflowdir}/scripts/nsp_coeffs_comparison.py --input_path {input[0]} --out_dir {params.outdir}/nsp --thread {wildcards.thread} --motion_summary {input[1]} --demo_data {input[2]} --exclusion_dict {input.exclude}"
 
 rule plot_nsp_coeffs:
     input:
