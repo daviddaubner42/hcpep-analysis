@@ -50,7 +50,6 @@ for metric in metric_names:
         nsp_coeffs.loc[nsp_coeffs["subid"] == subid, metric] -= confounds[i, 1]*reg.coef_[0][1] + confounds[i, 2]*reg.coef_[0][2]
 
     # Compare groups
-    patient_values = 
     patient_values = nsp_coeffs[(nsp_coeffs["patient"] == 1) & (nsp_coeffs["subid"] in subids)][metric].values
     hc_values = nsp_coeffs[(nsp_coeffs["patient"] == 0) & (nsp_coeffs["subid"] in subids)][metric].values
     res = permutation_test([patient_values, hc_values], statistic, permutation_type="independent", n_resamples=100000, rng=13)
