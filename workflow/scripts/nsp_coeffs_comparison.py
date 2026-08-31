@@ -43,15 +43,15 @@ for metric in metric_names:
     # Regress confounds out
     target = []
     for subid in subids:
-        target.append(nsp_coeffs[nsp_coeffs["subid"] == subid][metric].values)
+        target.append(nsp_coeffs[nsp_coeffs["subid"] == int(subid)][metric].item())
     reg = LinearRegression().fit(confounds, target)
 
     for i, subid in enumerate(subids):
-        nsp_coeffs.loc[nsp_coeffs["subid"] == subid, metric] -= confounds[i, 1]*reg.coef_[0][1] + confounds[i, 2]*reg.coef_[0][2]
+        nsp_coeffs.loc[nsp_coeffs["subid"] == subid, metric] -= confounds[i, 1]*reg.coef_[1] + confounds[i, 2]*reg.coef_[2]
 
     # Compare groups
-    patient_values = nsp_coeffs[(nsp_coeffs["patient"] == 1) & (nsp_coeffs["subid"] in subids)][metric].values
-    hc_values = nsp_coeffs[(nsp_coeffs["patient"] == 0) & (nsp_coeffs["subid"] in subids)][metric].values
+    patient_values = nsp_coeffs.loc[(nsp_coeffs["patient"] == 1) & (nsp_coeffs["subid"].isin([int(id) for id in subids]))][metric].values
+    hc_values = nsp_coeffs.loc[(nsp_coeffs["patient"] == 0) & (nsp_coeffs["subid"].isin([int(id) for id in subids]))][metric].values
     res = permutation_test([patient_values, hc_values], statistic, permutation_type="independent", n_resamples=100000, rng=13)
     ps[metric] = res.pvalue
     stats[metric] = res.statistic
