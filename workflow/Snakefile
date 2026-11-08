@@ -154,7 +154,8 @@ rule create_raw_fc:
 rule regress_confounds:
     input:
         expand(os.path.join(outdir, "static", "sub-{subid}", "sub-{subid}_FC_{{thread}}_raw.csv"), subid=subids),
-        demo=os.path.join(resourcedir, "ndar_subject01.txt")
+        demo=os.path.join(resourcedir, "ndar_subject01.txt"),
+        exclude=os.path.join(outdir, "intermediaries", "exclusion_dict.pkl")
     params:
         workflowdir = workflowdir,
         outdir = outdir,
@@ -168,7 +169,7 @@ rule regress_confounds:
     conda:
         os.path.join(environmentdir, "environment.yaml")
     shell:
-        "python {params.workflowdir}/scripts/regress_confounds.py --fc_dir {params.fcdir} --thread {wildcards.thread} --subids {params.subids} --demo_data_path {input.demo}"
+        "python {params.workflowdir}/scripts/regress_confounds.py --fc_dir {params.fcdir} --thread {wildcards.thread} --subids {params.subids} --demo_data_path {input.demo} --exclusion_dict {input.exclude}"
 
 rule pairwise_comparison:
     input:

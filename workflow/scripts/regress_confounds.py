@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import argparse
 import os
+import pickle
 from sklearn.linear_model import LinearRegression
 
 parser = argparse.ArgumentParser(description="Regress demographic confounds out of the raw FCs")
@@ -9,15 +10,21 @@ parser.add_argument("--fc_dir", type=str, help="The path to the raw FC directory
 parser.add_argument("--thread", type=str, help="The 'thread' being processed (mean/session/direction/...)")
 parser.add_argument("--subids", type=str, nargs="+", help="All the subids to be included")
 parser.add_argument("--demo_data_path", type=str, help="Path to the demographic data")
+parser.add_argument("--exclusion_dict", type=str, help="Path to the exclusion dictionary")
 args = parser.parse_args()
 
 demo_data = pd.read_table(args.demo_data_path)
+
+with open(args.exclusion_dict, "rb") as f:
+    exclusion_dict = pickle.load(f)
+
+subids = exclusion_dict["FC"]
 
 confounds = []
 fcs = []
 
 # Create the confounds matrix and aggregate the individual FCs
-for subid in args.subids:
+for subid in subids:
     cur_sub = demo_data[demo_data["src_subject_id"] == subid]
     confounds.append([int(cur_sub.phenotype.item() == "Patient"), int(cur_sub.interview_age.item()), int(cur_sub.sex.item() == 'F')])
     
@@ -50,5 +57,5 @@ for i in range(fcs.shape[1]):
 
 fcs = np.tanh(fcs)
 
-for i, subid in enumerate(args.subids):
+for i, subid in enumerate(subids):
     np.savetxt(os.path.join(args.fc_dir, f"sub-{subid}", f"sub-{subid}_FC_{args.thread}_regr.csv"), fcs[i], delimiter=',')
